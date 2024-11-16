@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      paper doll demonstration_0: 5079894809744539306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

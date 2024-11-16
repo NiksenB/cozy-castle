@@ -1722,7 +1722,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      char_a_p1_1out_fstr_v04_0: 5220678257822599257
+      char_a_p1_1out_fstr_v04_1: -4847893340290211701
+      char_a_p1_1out_fstr_v04_10: 5908159279171711298
+      char_a_p1_1out_fstr_v04_11: 7933786687353422340
+      char_a_p1_1out_fstr_v04_12: -2220487581647934321
+      char_a_p1_1out_fstr_v04_13: 4397737520843478514
+      char_a_p1_1out_fstr_v04_14: -4990253875057965054
+      char_a_p1_1out_fstr_v04_15: 8591399784004215401
+      char_a_p1_1out_fstr_v04_16: -6930733781414720110
+      char_a_p1_1out_fstr_v04_17: -5579053528297181219
+      char_a_p1_1out_fstr_v04_18: -6522766318133037120
+      char_a_p1_1out_fstr_v04_19: 1898937052470385296
+      char_a_p1_1out_fstr_v04_2: 870129711456614949
+      char_a_p1_1out_fstr_v04_20: -765626030898990811
+      char_a_p1_1out_fstr_v04_21: -5241801475893986917
+      char_a_p1_1out_fstr_v04_22: -1826193937447446607
+      char_a_p1_1out_fstr_v04_23: -1302871187629522929
+      char_a_p1_1out_fstr_v04_24: -1218885022901874147
+      char_a_p1_1out_fstr_v04_25: 1725721349436302362
+      char_a_p1_1out_fstr_v04_26: -5528862521351208912
+      char_a_p1_1out_fstr_v04_27: 479946610011269818
+      char_a_p1_1out_fstr_v04_28: -1913507099292479271
+      char_a_p1_1out_fstr_v04_29: 658173987775064032
+      char_a_p1_1out_fstr_v04_3: -4670815271738027448
+      char_a_p1_1out_fstr_v04_30: 6718464839591168441
+      char_a_p1_1out_fstr_v04_31: 5551133426187020738
+      char_a_p1_1out_fstr_v04_32: 9013221340655624413
+      char_a_p1_1out_fstr_v04_33: -630586128822863085
+      char_a_p1_1out_fstr_v04_34: 1207932571754919413
+      char_a_p1_1out_fstr_v04_35: 6683597978763083940
+      char_a_p1_1out_fstr_v04_36: -5549577330690632652
+      char_a_p1_1out_fstr_v04_37: -7229500652965441412
+      char_a_p1_1out_fstr_v04_38: -5253799301157923547
+      char_a_p1_1out_fstr_v04_39: -7018612353106942703
+      char_a_p1_1out_fstr_v04_4: -7244031669549267266
+      char_a_p1_1out_fstr_v04_40: 7858389609856719750
+      char_a_p1_1out_fstr_v04_41: -6036052689208086665
+      char_a_p1_1out_fstr_v04_42: 4826833635790533997
+      char_a_p1_1out_fstr_v04_43: 7345272302816879986
+      char_a_p1_1out_fstr_v04_44: 6762380728355321282
+      char_a_p1_1out_fstr_v04_45: -4622804575842507949
+      char_a_p1_1out_fstr_v04_46: -5776211432494667675
+      char_a_p1_1out_fstr_v04_47: -7405223800311381646
+      char_a_p1_1out_fstr_v04_48: -4360977350195305183
+      char_a_p1_1out_fstr_v04_49: -8239459651259651245
+      char_a_p1_1out_fstr_v04_5: 7347331430379527104
+      char_a_p1_1out_fstr_v04_50: 8377735114955270902
+      char_a_p1_1out_fstr_v04_51: 8973348540325239233
+      char_a_p1_1out_fstr_v04_52: -59935767906961317
+      char_a_p1_1out_fstr_v04_53: -943678145825671481
+      char_a_p1_1out_fstr_v04_54: 1253122155354210329
+      char_a_p1_1out_fstr_v04_55: 2089408517314268726
+      char_a_p1_1out_fstr_v04_56: -2588798933902697211
+      char_a_p1_1out_fstr_v04_57: -2004252436003052408
+      char_a_p1_1out_fstr_v04_58: 7115102747228145753
+      char_a_p1_1out_fstr_v04_59: 7585959284322138464
+      char_a_p1_1out_fstr_v04_6: -1511394226906181844
+      char_a_p1_1out_fstr_v04_60: -5212074586948587223
+      char_a_p1_1out_fstr_v04_61: -6683814325341375289
+      char_a_p1_1out_fstr_v04_62: 2633581855127187551
+      char_a_p1_1out_fstr_v04_63: 8118915348171074944
+      char_a_p1_1out_fstr_v04_7: 6258704630979517427
+      char_a_p1_1out_fstr_v04_8: 1325747729617020309
+      char_a_p1_1out_fstr_v04_9: -5746216242293988889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

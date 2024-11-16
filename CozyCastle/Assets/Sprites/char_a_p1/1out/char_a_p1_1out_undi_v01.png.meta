@@ -2072,7 +2072,85 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      char_a_p1_1out_undi_v01_0: -3405974587845093511
+      char_a_p1_1out_undi_v01_1: 6301577398396273776
+      char_a_p1_1out_undi_v01_10: 3087773426708546734
+      char_a_p1_1out_undi_v01_11: 4151098679047934197
+      char_a_p1_1out_undi_v01_12: 5723461755433346801
+      char_a_p1_1out_undi_v01_13: -9088372278646657041
+      char_a_p1_1out_undi_v01_14: -1440102539441827152
+      char_a_p1_1out_undi_v01_15: -5082608837306072455
+      char_a_p1_1out_undi_v01_16: 9042144745303028152
+      char_a_p1_1out_undi_v01_17: 6114335001895676591
+      char_a_p1_1out_undi_v01_18: -3774742695872022270
+      char_a_p1_1out_undi_v01_19: -3546491609080431994
+      char_a_p1_1out_undi_v01_2: -4452400142950845011
+      char_a_p1_1out_undi_v01_20: 6987430758271152987
+      char_a_p1_1out_undi_v01_21: 6605000911047218714
+      char_a_p1_1out_undi_v01_22: -193979199197738544
+      char_a_p1_1out_undi_v01_23: 522306468513545426
+      char_a_p1_1out_undi_v01_24: 9031184064607577968
+      char_a_p1_1out_undi_v01_25: -7668530608367953423
+      char_a_p1_1out_undi_v01_26: 6281795001989678908
+      char_a_p1_1out_undi_v01_27: -8697463288851735468
+      char_a_p1_1out_undi_v01_28: 7838820462288607432
+      char_a_p1_1out_undi_v01_29: -5580862554465582539
+      char_a_p1_1out_undi_v01_3: -7650970515206739256
+      char_a_p1_1out_undi_v01_30: -7492412164703260016
+      char_a_p1_1out_undi_v01_31: 4886456448969111691
+      char_a_p1_1out_undi_v01_32: -8812174666167857266
+      char_a_p1_1out_undi_v01_33: -4083644022405392373
+      char_a_p1_1out_undi_v01_34: 4804116231507485744
+      char_a_p1_1out_undi_v01_35: -7470096387810575468
+      char_a_p1_1out_undi_v01_36: -5727484625826363011
+      char_a_p1_1out_undi_v01_37: -3911528313964981988
+      char_a_p1_1out_undi_v01_38: -8651133219100013930
+      char_a_p1_1out_undi_v01_39: -1485375162746313409
+      char_a_p1_1out_undi_v01_4: -389363680720707853
+      char_a_p1_1out_undi_v01_40: 2461544001331682960
+      char_a_p1_1out_undi_v01_41: 8304974200844124022
+      char_a_p1_1out_undi_v01_42: 564996113522378942
+      char_a_p1_1out_undi_v01_43: 4672161321617301298
+      char_a_p1_1out_undi_v01_44: -4163488839900269128
+      char_a_p1_1out_undi_v01_45: -4438343971540312691
+      char_a_p1_1out_undi_v01_46: -88214000604074139
+      char_a_p1_1out_undi_v01_47: -467352826833295349
+      char_a_p1_1out_undi_v01_48: -8093618333520247525
+      char_a_p1_1out_undi_v01_49: -5194239577476128634
+      char_a_p1_1out_undi_v01_5: 3723153083625154767
+      char_a_p1_1out_undi_v01_50: -2051750408693657522
+      char_a_p1_1out_undi_v01_51: -9166613784252478212
+      char_a_p1_1out_undi_v01_52: 5142872595441418610
+      char_a_p1_1out_undi_v01_53: -3333146083257507819
+      char_a_p1_1out_undi_v01_54: 7512805527523327563
+      char_a_p1_1out_undi_v01_55: -2886824462135191360
+      char_a_p1_1out_undi_v01_56: -381568317400313543
+      char_a_p1_1out_undi_v01_57: -3220460513502374665
+      char_a_p1_1out_undi_v01_58: -2182731993224677061
+      char_a_p1_1out_undi_v01_59: 2900233484089629574
+      char_a_p1_1out_undi_v01_6: -7459919617873240361
+      char_a_p1_1out_undi_v01_60: 4981187938859240638
+      char_a_p1_1out_undi_v01_61: -6962814221799013537
+      char_a_p1_1out_undi_v01_62: 6759445526568128787
+      char_a_p1_1out_undi_v01_63: -5418419765998422520
+      char_a_p1_1out_undi_v01_64: -7213407400809856033
+      char_a_p1_1out_undi_v01_65: -4568719341432619568
+      char_a_p1_1out_undi_v01_66: -7392127592013267006
+      char_a_p1_1out_undi_v01_67: 7543852457019737766
+      char_a_p1_1out_undi_v01_68: 1818961102287629062
+      char_a_p1_1out_undi_v01_69: 6721224166159579647
+      char_a_p1_1out_undi_v01_7: 7120500205895599515
+      char_a_p1_1out_undi_v01_70: -238026991856385763
+      char_a_p1_1out_undi_v01_71: -3165799757027794049
+      char_a_p1_1out_undi_v01_72: -30074649183559585
+      char_a_p1_1out_undi_v01_73: 7424622935996150438
+      char_a_p1_1out_undi_v01_74: -4846433201153274861
+      char_a_p1_1out_undi_v01_75: -4538218979786837779
+      char_a_p1_1out_undi_v01_76: -2131256812500942269
+      char_a_p1_1out_undi_v01_77: 5238683751954788974
+      char_a_p1_1out_undi_v01_8: -3323800162477206093
+      char_a_p1_1out_undi_v01_9: -8415511322632138297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
