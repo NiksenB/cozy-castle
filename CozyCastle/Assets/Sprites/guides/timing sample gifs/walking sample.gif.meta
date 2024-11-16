@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 563dd044d49ed074cbcb6c02a15f32ff
+guid: 44633bb23227ae24ba53c12bec35ac53
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -389703300503239284
-    second: princess_right_2_0
+      213: -4221426583654206312
+    second: walking sample_0
+  - first:
+      213: 4573430230138978345
+    second: walking sample_1
+  - first:
+      213: -677610682441644097
+    second: walking sample_2
+  - first:
+      213: 5637206604873938577
+    second: walking sample_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: princess_right_2_0
+      name: walking sample_0
       rect:
         serializedVersion: 2
-        x: 143
-        y: 31
-        width: 194
-        height: 466
+        x: 23
+        y: 210
+        width: 16
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8505b5b9ee779af0800000000000000
-      internalID: -389703300503239284
+      spriteID: 89476e363ea7a65c0800000000000000
+      internalID: -4221426583654206312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking sample_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 146
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92087703096187f30800000000000000
+      internalID: 4573430230138978345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking sample_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 83
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb74e09aca4a896f0800000000000000
+      internalID: -677610682441644097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking sample_3
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 19
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1963ff83a816b3e40800000000000000
+      internalID: 5637206604873938577
       vertices: []
       indices: 
       edges: []
@@ -147,8 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      princess_right_2_0: -389703300503239284
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 563dd044d49ed074cbcb6c02a15f32ff
+guid: 8928a3906c7fb424f9743fa41ce08b1b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -389703300503239284
-    second: princess_right_2_0
+      213: 5079894809744539306
+    second: paper doll demonstration_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: princess_right_2_0
+      name: paper doll demonstration_0
       rect:
         serializedVersion: 2
-        x: 143
-        y: 31
-        width: 194
-        height: 466
+        x: 0
+        y: 0
+        width: 2645
+        height: 2048
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8505b5b9ee779af0800000000000000
-      internalID: -389703300503239284
+      spriteID: aae7c2f3a696f7640800000000000000
+      internalID: 5079894809744539306
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      princess_right_2_0: -389703300503239284
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
