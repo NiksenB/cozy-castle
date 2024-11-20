@@ -10861,7 +10861,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory:
-    slots: []
+    slots:
+    - type: 1
+      count: 2
+      max: 0
 --- !u!1 &883431134
 GameObject:
   m_ObjectHideFlags: 0
