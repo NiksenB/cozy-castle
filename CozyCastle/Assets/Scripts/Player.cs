@@ -7,6 +7,6 @@ public class Player : MonoBehaviour
     // Called when the game starts
     private void Awake()
     {
-        inventory = new Inventory(21);
+        inventory = new Inventory(24);
     }
 }

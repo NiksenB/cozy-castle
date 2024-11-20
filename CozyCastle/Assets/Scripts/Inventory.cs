@@ -1,13 +1,10 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Inventory;
 
 [System.Serializable]
 public class Inventory
 {
-    public List<Slot> slots = new List<Slot>();
+    public List<Slot> slots = new ();
 
     public Inventory(int numSlots)
     {
@@ -22,6 +19,8 @@ public class Inventory
     public class Slot
     { 
         public CollectableType type;
+        public Sprite icon;
+        public bool isStackable;
         public int count;
         public int max;
 
@@ -29,7 +28,7 @@ public class Inventory
         {
             type = CollectableType.NONE;
             count = 0;
-            max = 3;
+            max = 100;
         }
 
         public bool HasRoom()
@@ -37,21 +36,23 @@ public class Inventory
             return count >= max;
         }
 
-        public void AddItem(CollectableType type)
+        public void AddItem(Collectable item)
         { 
-            this.type = type;
+            type = item.type;
+            icon = item.icon;
+            isStackable = item.isStackable;
             count++;
         }
     }
     
-    public void Add(CollectableType type, bool isStackable)
+    public void Add(Collectable item)
     {
         Slot s = null;
-        if (isStackable)
+        if (item.isStackable)
         {
             foreach (Slot slot in slots)
             {
-                if (slot.type == type && slot.HasRoom())
+                if (slot.type == item.type && slot.HasRoom())
                 {
                     s = slot;
                     break;
@@ -73,8 +74,8 @@ public class Inventory
 
         if (s is not null)
         {
-            Debug.Log(type + " added to inventory.");
-            s.AddItem(type);
+            Debug.Log(item.type + " added to inventory.");
+            s.AddItem(item);
         }
         return;
     }

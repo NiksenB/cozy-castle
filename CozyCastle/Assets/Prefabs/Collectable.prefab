@@ -148,3 +148,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  icon: {fileID: 2739118987861793767, guid: d582f518cdd07034f821e1fbbede5dd1, type: 3}
+  isStackable: 1
