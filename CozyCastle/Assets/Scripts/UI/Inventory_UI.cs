@@ -22,11 +22,11 @@ public class Inventory_UI : MonoBehaviour
 
     public void ToggleInventory()
     {
-        
+        Debug.Log("Toggling inventory.");
         if (!inventoryPanel.activeSelf) 
         {
             inventoryPanel.SetActive(true);
-            Setup();
+            Refresh();
         } 
         else
         {
@@ -34,7 +34,7 @@ public class Inventory_UI : MonoBehaviour
         }
     }
 
-    void Setup()
+    private void Refresh()
     {
         if (slots.Count >= player.inventory.slots.Count)
         {
@@ -53,6 +53,19 @@ public class Inventory_UI : MonoBehaviour
         else 
         {
             Debug.Log("Error! Failed to populate inventory: Player has too many inventory slots to show in the UI.");
+        }
+    }
+
+    public void Remove(int slotID)
+    {
+        Debug.Log("Player asked to remove inventory item at index " + slotID);
+
+        Collectable itemToDrop = GameManager.gameInstance.itemManager.GetItemByType(player.inventory.slots[slotID].type);
+        if (itemToDrop != null)
+        {
+            player.inventory.RemoveFromInventory(slotID);
+            player.DropItem(itemToDrop);
+            Refresh();
         }
     }
 }

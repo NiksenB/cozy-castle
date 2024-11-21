@@ -43,9 +43,25 @@ public class Inventory
             isStackable = item.isStackable;
             count++;
         }
+
+        public void RemoveItem()
+        { 
+            Debug.Log("RemoveItem called.");
+            if (count > 0)
+            {
+                count--;
+
+                if (count == 0)
+                {
+                    type = CollectableType.NONE;
+                    icon = null;
+                    isStackable = false;
+                }
+            }
+        }
     }
     
-    public void Add(Collectable item)
+    public void AddToInventory(Collectable item)
     {
         Slot s = null;
         if (item.isStackable)
@@ -78,5 +94,10 @@ public class Inventory
             s.AddItem(item);
         }
         return;
+    }
+
+    public void RemoveFromInventory(int index) 
+    { 
+        slots[index].RemoveItem();
     }
 }

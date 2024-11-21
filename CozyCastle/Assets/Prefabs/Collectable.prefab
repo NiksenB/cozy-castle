@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1789564409044560594}
   - component: {fileID: 4966932936564088555}
   - component: {fileID: 3282743524883485774}
+  - component: {fileID: 3690893711036822466}
   m_Layer: 0
   m_Name: Collectable
   m_TagString: Untagged
@@ -149,4 +150,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   icon: {fileID: 2739118987861793767, guid: d582f518cdd07034f821e1fbbede5dd1, type: 3}
+  rigidbody2d: {fileID: 0}
   isStackable: 1
+--- !u!50 &3690893711036822466
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108379530293324949}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 2
+  m_LinearDamping: 0.5
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

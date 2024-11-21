@@ -10,7 +10,6 @@ public class Slot_UI : MonoBehaviour
 
     public void SetItem(Inventory.Slot slot)
     {
-        Debug.Log("SetItem called for slot " + slot);
         if (slot != null)
         {
             itemIcon.sprite = slot.icon;
