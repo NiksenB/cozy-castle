@@ -14,11 +14,11 @@ public class Player : MonoBehaviour
     {
         Vector2 spawnLocation = transform.position;
 
-        Vector2 spawnOffset = Random.insideUnitSphere * 1.25f;
+        Vector2 spawnOffset = Random.insideUnitCircle * 2f ;
         
         // Spawn in world.
         Collectable droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.identity);
 
-        droppedItem.rigidbody2d.AddForce(spawnOffset * 2f, ForceMode2D.Impulse);
+        droppedItem.rigidbody2d.AddForce(spawnOffset * 3f, ForceMode2D.Impulse);
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3282743524883485774}
   - component: {fileID: 3690893711036822466}
   m_Layer: 0
-  m_Name: Collectable
+  m_Name: CollectableCoffee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 2
   m_Size: {x: 1.25, y: 0.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
     oldSize: {x: 1.25, y: 0.875}
     newSize: {x: 1.25, y: 0.875}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 1.25, y: 0.875}

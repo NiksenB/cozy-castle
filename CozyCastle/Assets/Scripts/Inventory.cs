@@ -46,7 +46,6 @@ public class Inventory
 
         public void RemoveItem()
         { 
-            Debug.Log("RemoveItem called.");
             if (count > 0)
             {
                 count--;
@@ -66,6 +65,7 @@ public class Inventory
         Slot s = null;
         if (item.isStackable)
         {
+            Debug.Log("Attempt add to item stack.");
             foreach (Slot slot in slots)
             {
                 if (slot.type == item.type && slot.HasRoom())

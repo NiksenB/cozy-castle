@@ -22,7 +22,6 @@ public class Inventory_UI : MonoBehaviour
 
     public void ToggleInventory()
     {
-        Debug.Log("Toggling inventory.");
         if (!inventoryPanel.activeSelf) 
         {
             inventoryPanel.SetActive(true);
