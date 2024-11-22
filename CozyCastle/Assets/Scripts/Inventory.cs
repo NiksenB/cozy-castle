@@ -33,7 +33,7 @@ public class Inventory
 
         public bool HasRoom()
         {
-            return count >= max;
+            return count <= max;
         }
 
         public void AddItem(Collectable item)
@@ -67,7 +67,7 @@ public class Inventory
         {
             Debug.Log("Attempt add to item stack.");
             foreach (Slot slot in slots)
-            {
+            {   
                 if (slot.type == item.type && slot.HasRoom())
                 {
                     s = slot;
