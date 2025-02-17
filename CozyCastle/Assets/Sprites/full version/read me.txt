@@ -1,0 +1,6 @@
+
+Howdy farmer!
+
+Thanks for purchasing Cozy Farm! I hope you enjoy working with it!
+
+-shubibubi

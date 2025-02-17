@@ -1,0 +1,1542 @@
+fileFormatVersion: 2
+guid: b3ae91cb562dcd24ab8c769e1d78dd41
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1273153196708885590
+    second: animatedCauldrons_8Frames-export_0
+  - first:
+      213: -1329526973448001790
+    second: animatedCauldrons_8Frames-export_1
+  - first:
+      213: -353278082082355020
+    second: animatedCauldrons_8Frames-export_2
+  - first:
+      213: -511703863167487996
+    second: animatedCauldrons_8Frames-export_3
+  - first:
+      213: 8866240687039193130
+    second: animatedCauldrons_8Frames-export_4
+  - first:
+      213: 1984348578672403638
+    second: animatedCauldrons_8Frames-export_5
+  - first:
+      213: 1267099583308672935
+    second: animatedCauldrons_8Frames-export_6
+  - first:
+      213: 5077512175243958715
+    second: animatedCauldrons_8Frames-export_7
+  - first:
+      213: -6113673376555881806
+    second: animatedCauldrons_8Frames-export_8
+  - first:
+      213: -2760435861701293083
+    second: animatedCauldrons_8Frames-export_9
+  - first:
+      213: -1056992148407039593
+    second: animatedCauldrons_8Frames-export_10
+  - first:
+      213: 7624872227922287352
+    second: animatedCauldrons_8Frames-export_11
+  - first:
+      213: 4526811034508099023
+    second: animatedCauldrons_8Frames-export_12
+  - first:
+      213: -8608361745637639786
+    second: animatedCauldrons_8Frames-export_13
+  - first:
+      213: -3884194166290429933
+    second: animatedCauldrons_8Frames-export_14
+  - first:
+      213: 5551717173983816263
+    second: animatedCauldrons_8Frames-export_15
+  - first:
+      213: 2480156704837161641
+    second: animatedCauldrons_8Frames-export_16
+  - first:
+      213: -8820508211670195948
+    second: animatedCauldrons_8Frames-export_17
+  - first:
+      213: -4660524231719551426
+    second: animatedCauldrons_8Frames-export_18
+  - first:
+      213: 7118886819737518423
+    second: animatedCauldrons_8Frames-export_19
+  - first:
+      213: -6475427706067472315
+    second: animatedCauldrons_8Frames-export_20
+  - first:
+      213: 8174744726209503079
+    second: animatedCauldrons_8Frames-export_21
+  - first:
+      213: 1895469469858181706
+    second: animatedCauldrons_8Frames-export_22
+  - first:
+      213: -4393556797423483735
+    second: animatedCauldrons_8Frames-export_23
+  - first:
+      213: -7036688353306858520
+    second: animatedCauldrons_8Frames-export_24
+  - first:
+      213: 4144868009524048230
+    second: animatedCauldrons_8Frames-export_25
+  - first:
+      213: -2536091945710923703
+    second: animatedCauldrons_8Frames-export_26
+  - first:
+      213: -4283988962744079361
+    second: animatedCauldrons_8Frames-export_27
+  - first:
+      213: -8724418770583763846
+    second: animatedCauldrons_8Frames-export_28
+  - first:
+      213: 7584331599386710022
+    second: animatedCauldrons_8Frames-export_29
+  - first:
+      213: -349589213070994763
+    second: animatedCauldrons_8Frames-export_30
+  - first:
+      213: 4676149671098630368
+    second: animatedCauldrons_8Frames-export_31
+  - first:
+      213: -6613037150774337785
+    second: animatedCauldrons_8Frames-export_32
+  - first:
+      213: 2176901968717566270
+    second: animatedCauldrons_8Frames-export_33
+  - first:
+      213: 4529486038109647784
+    second: animatedCauldrons_8Frames-export_34
+  - first:
+      213: 2526793641766214835
+    second: animatedCauldrons_8Frames-export_35
+  - first:
+      213: 1509489813482780975
+    second: animatedCauldrons_8Frames-export_36
+  - first:
+      213: -1726877891541120000
+    second: animatedCauldrons_8Frames-export_37
+  - first:
+      213: 6504575147228334126
+    second: animatedCauldrons_8Frames-export_38
+  - first:
+      213: 6368847722198126914
+    second: animatedCauldrons_8Frames-export_39
+  - first:
+      213: -8177051421959619693
+    second: animatedCauldrons_8Frames-export_40
+  - first:
+      213: -867692214292604256
+    second: animatedCauldrons_8Frames-export_41
+  - first:
+      213: 3574874296631783383
+    second: animatedCauldrons_8Frames-export_42
+  - first:
+      213: -352491889656657987
+    second: animatedCauldrons_8Frames-export_43
+  - first:
+      213: -1062451980061712302
+    second: animatedCauldrons_8Frames-export_44
+  - first:
+      213: -658165363045071738
+    second: animatedCauldrons_8Frames-export_45
+  - first:
+      213: 7258353200836692940
+    second: animatedCauldrons_8Frames-export_46
+  - first:
+      213: -8390675962008006875
+    second: animatedCauldrons_8Frames-export_47
+  - first:
+      213: 1794392189224492682
+    second: animatedCauldrons_8Frames-export_48
+  - first:
+      213: -3774110555089529832
+    second: animatedCauldrons_8Frames-export_49
+  - first:
+      213: -4504974760808323351
+    second: animatedCauldrons_8Frames-export_50
+  - first:
+      213: -5305487243619058328
+    second: animatedCauldrons_8Frames-export_51
+  - first:
+      213: -1976577473989092069
+    second: animatedCauldrons_8Frames-export_52
+  - first:
+      213: 8073906353024910016
+    second: animatedCauldrons_8Frames-export_53
+  - first:
+      213: -2860652723072708605
+    second: animatedCauldrons_8Frames-export_54
+  - first:
+      213: 296390999877314877
+    second: animatedCauldrons_8Frames-export_55
+  - first:
+      213: -4101424825849547724
+    second: animatedCauldrons_8Frames-export_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 175
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6547c7246162ba110800000000000000
+      internalID: 1273153196708885590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 177
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207e45403429c8de0800000000000000
+      internalID: -1329526973448001790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 181
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8cc82c477e81bf0800000000000000
+      internalID: -353278082082355020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 119
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400f4bd2c0016e8f0800000000000000
+      internalID: -511703863167487996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 173
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a202614fde63b0b70800000000000000
+      internalID: 8866240687039193130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_5
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 177
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4e15ec482d98b10800000000000000
+      internalID: 1984348578672403638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 183
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afa82e8b54a59110800000000000000
+      internalID: 1267099583308672935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_7
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 179
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb9132ceb62f67640800000000000000
+      internalID: 5077512175243958715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_8
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 167
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2baaf95a47ed72ba0800000000000000
+      internalID: -6113673376555881806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_9
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 127
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb8b0e8536f0b9d0800000000000000
+      internalID: -2760435861701293083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_10
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 127
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79942dfbd3fc451f0800000000000000
+      internalID: -1056992148407039593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_11
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 173
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa9c0b94ecf0d960800000000000000
+      internalID: 7624872227922287352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_12
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 171
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd7c2dd6a672de30800000000000000
+      internalID: 4526811034508099023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_13
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 127
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699f435f994f88880800000000000000
+      internalID: -8608361745637639786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_14
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 127
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3184d9f2cf1981ac0800000000000000
+      internalID: -3884194166290429933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_15
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 165
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74aadb00b59ab0d40800000000000000
+      internalID: 5551717173983816263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_16
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 127
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a25f13f1694b6220800000000000000
+      internalID: 2480156704837161641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_17
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 127
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4116bf8b382479580800000000000000
+      internalID: -8820508211670195948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_18
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 117
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e714d57ed725fb0800000000000000
+      internalID: -4660524231719551426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_19
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 111
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7514aa658dd5bc260800000000000000
+      internalID: 7118886819737518423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 113
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54030234fc8a226a0800000000000000
+      internalID: -6475427706067472315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_21
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f173f4407827170800000000000000
+      internalID: 8174744726209503079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_22
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 109
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42be71b07f0e4a10800000000000000
+      internalID: 1895469469858181706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_23
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 113
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4021dee53f603c0800000000000000
+      internalID: -4393556797423483735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_24
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 119
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb24028939a85e90800000000000000
+      internalID: -7036688353306858520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_25
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 115
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661bf848e77858930800000000000000
+      internalID: 4144868009524048230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_26
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 55
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940db2aefcdfdccd0800000000000000
+      internalID: -2536091945710923703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_27
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 63
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffbe1f56cb63c84c0800000000000000
+      internalID: -4283988962744079361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_28
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 63
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74ca932a53ace680800000000000000
+      internalID: -8724418770583763846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_29
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 109
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6001738f765f04960800000000000000
+      internalID: 7584331599386710022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_30
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 107
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b258918672062bf0800000000000000
+      internalID: -349589213070994763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_31
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 103
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0c46eb95505e040800000000000000
+      internalID: 4676149671098630368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 63
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f52adafb5c934a0800000000000000
+      internalID: -6613037150774337785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_33
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 63
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31524c8ec8e53e10800000000000000
+      internalID: 2176901968717566270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_34
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 101
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3fd9cad87fbde30800000000000000
+      internalID: 4529486038109647784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_35
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 63
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bcd03efd69f01320800000000000000
+      internalID: 2526793641766214835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_36
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 63
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2936bcdcf8c2f410800000000000000
+      internalID: 1509489813482780975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_37
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 53
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c473005b5e808e0800000000000000
+      internalID: -1726877891541120000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_38
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 47
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28016932a4e44a50800000000000000
+      internalID: 6504575147228334126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_39
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 49
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241dc2e7241b26850800000000000000
+      internalID: 6368847722198126914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_40
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 53
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b7efb3e07458e80800000000000000
+      internalID: -8177051421959619693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_41
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 45
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa97b0478655f3f0800000000000000
+      internalID: -867692214292604256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_42
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 49
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df69677b318c9130800000000000000
+      internalID: 3574874296631783383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_43
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db70fc27e72bb1bf0800000000000000
+      internalID: -352491889656657987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_44
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 51
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250e281ad896141f0800000000000000
+      internalID: -1062451980061712302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_45
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6848b34e61abdd6f0800000000000000
+      internalID: -658165363045071738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_46
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbc03e97c9dab460800000000000000
+      internalID: 7258353200836692940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_47
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 0
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f8a131ba45e8b80800000000000000
+      internalID: -8390675962008006875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_48
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 45
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e16726036f6e810800000000000000
+      internalID: 1794392189224492682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_49
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 43
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81416dc327aaf9bc0800000000000000
+      internalID: -3774110555089529832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_50
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e66bebc25d1b71c0800000000000000
+      internalID: -4504974760808323351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_51
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d38bb267f1f56b0800000000000000
+      internalID: -5305487243619058328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_52
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d57df7249c194e0800000000000000
+      internalID: -1976577473989092069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_53
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 37
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2c1d9fc074c0070800000000000000
+      internalID: 8073906353024910016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_54
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3005f77318bec48d0800000000000000
+      internalID: -2860652723072708605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_55
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d396f464b0efc1400800000000000000
+      internalID: 296390999877314877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedCauldrons_8Frames-export_56
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 0
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434f446e9dfc417c0800000000000000
+      internalID: -4101424825849547724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
