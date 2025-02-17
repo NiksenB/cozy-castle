@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4966932936564088555}
   - component: {fileID: 3282743524883485774}
   - component: {fileID: 3690893711036822466}
+  - component: {fileID: 4578061513239927387}
   m_Layer: 0
   m_Name: CollectableTomato
   m_TagString: Untagged
@@ -148,10 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b093592dbbf752a4ab2d28e858585cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 2
-  icon: {fileID: 596116185, guid: a6ebf0301947c104bb1e9cd4d3b89bdb, type: 3}
-  rigidbody2d: {fileID: 0}
-  isStackable: 1
 --- !u!50 &3690893711036822466
 Rigidbody2D:
   serializedVersion: 5
@@ -179,3 +176,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4578061513239927387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108379530293324949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5512270ba2da33c46af9f90ec40ab26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 6aeb5b664f000e84085ea7a655594524, type: 2}
+  rigidbody2d: {fileID: 0}
+  isStackable: 1

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 [System.Serializable]
 public class Inventory
@@ -18,7 +19,7 @@ public class Inventory
     [System.Serializable]
     public class Slot
     { 
-        public CollectableType type;
+        public string itemName;
         public Sprite icon;
         public bool isStackable;
         public int count;
@@ -26,7 +27,7 @@ public class Inventory
 
         public Slot()
         {
-            type = CollectableType.NONE;
+            itemName = "";
             count = 0;
             max = 100;
         }
@@ -36,11 +37,11 @@ public class Inventory
             return count <= max;
         }
 
-        public void AddItem(Collectable item)
+        public void AddItem(Item item)
         { 
-            type = item.type;
-            icon = item.icon;
-            isStackable = item.isStackable;
+            itemName = item.data.itemName;
+            icon = item.data.icon;
+            isStackable = item.data.isStackable;
             count++;
         }
 
@@ -52,7 +53,7 @@ public class Inventory
 
                 if (count == 0)
                 {
-                    type = CollectableType.NONE;
+                    itemName = "";
                     icon = null;
                     isStackable = false;
                 }
@@ -60,40 +61,30 @@ public class Inventory
         }
     }
     
-    public void AddToInventory(Collectable item)
+    public void AddToInventory(Item item)
     {
-        Slot s = null;
-        if (item.isStackable)
-        {
-            Debug.Log("Attempt add to item stack.");
-            foreach (Slot slot in slots)
-            {   
-                if (slot.type == item.type && slot.HasRoom())
-                {
-                    s = slot;
-                    break;
-                }
-            }
-        }
+        Slot targetSlot = null;
 
-        if (s is null)
+        if (item.data.isStackable)
         {
-            foreach (Slot slot in slots)
-            {
-                if (slot.type == CollectableType.NONE)
-                {
-                    s = slot;
-                    break;
-                }
+            targetSlot = slots.FirstOrDefault(slot => 
+                slot.itemName == item.data.itemName && slot.HasRoom());
+        
+            if (targetSlot != null)
+                Debug.Log("Adding to existing item stack.");
             }
-        }
 
-        if (s is not null)
+        targetSlot ??= slots.FirstOrDefault(slot => string.IsNullOrEmpty(slot.itemName));
+
+        if (targetSlot != null)
         {
-            Debug.Log(item.type + " added to inventory.");
-            s.AddItem(item);
+            targetSlot.AddItem(item);
+            Debug.Log($"{item.data.itemName} added to inventory.");;
         }
-        return;
+        else
+        {
+            Debug.Log($"No suitable slot found for {item.data.itemName}.");
+        }
     }
 
     public void RemoveFromInventory(int index) 

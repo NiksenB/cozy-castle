@@ -23,17 +23,26 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void DropItem(Collectable item)
+    public void DropItem(Item item)
     {
-        //TODO fix drop location
         //TODO ideally enable drag-and-drop
-        Vector2 spawnLocation = transform.position;
+        float dropRadius = 1.5f;
+        float minDistance = 0.5f;
 
-        Vector2 spawnOffset = Random.insideUnitCircle * 2f ;
+        Vector2 randomDirection = Random.insideUnitCircle.normalized;
+        float randomDistance = Random.Range(minDistance, dropRadius);
+        Vector2 spawnOffset = randomDirection * randomDistance;
+        Vector2 spawnLocation = transform.position + (Vector3)spawnOffset;
         
         // Spawn in world.
-        Collectable droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.identity);
+        float randomRotation = Random.Range(0f, 360f);
+        Item droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.Euler(0f, 0f, randomRotation));
+        
+        droppedItem.rigidbody2d.AddForce(spawnOffset.normalized * 2f, ForceMode2D.Impulse);
 
-        droppedItem.rigidbody2d.AddForce(spawnOffset * 3f, ForceMode2D.Impulse);
+        droppedItem.rigidbody2d.linearDamping = 4f;         // Higher linear drag to stop movement faster
+        droppedItem.rigidbody2d.angularDamping = 2f;  // Higher angular drag to stop rotation faster
+        
+        Debug.Log("Player removed inventory item " + item.data.itemName);
     }
 }

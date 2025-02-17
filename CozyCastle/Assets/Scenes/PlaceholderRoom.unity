@@ -12687,9 +12687,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf3c2166a1fe68949a1e859ba4967180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectableItems:
-  - {fileID: 3282743524883485774, guid: a7d6086341277ae48b7a5535a85d74b3, type: 3}
-  - {fileID: 3282743524883485774, guid: 6ebeafe51cad61e44b2c3b5a6765faa5, type: 3}
+  items:
+  - {fileID: 4578061513239927387, guid: a7d6086341277ae48b7a5535a85d74b3, type: 3}
+  - {fileID: 4578061513239927387, guid: 6ebeafe51cad61e44b2c3b5a6765faa5, type: 3}
 --- !u!114 &599760729
 MonoBehaviour:
   m_ObjectHideFlags: 0

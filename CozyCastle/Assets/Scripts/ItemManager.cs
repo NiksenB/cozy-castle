@@ -3,28 +3,28 @@ using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-    public Collectable[] collectableItems;
+    public Item[] items;
 
-    public Dictionary<CollectableType, Collectable> collectables = new();
+    public Dictionary<string, Item> itemDict = new();
 
     private void Awake()
     {
-        foreach (Collectable item in collectableItems)
+        foreach (Item item in items)
         {
             AddItem(item);
         }
     }
 
-    private void AddItem(Collectable item)
+    private void AddItem(Item item)
     {
-        if (!collectables.ContainsKey(item.type))
+        if (!itemDict.ContainsKey(item.data.itemName))
         {
-            collectables.Add(item.type, item);
+            itemDict.Add(item.data.itemName, item);
         }
     }
 
-    public Collectable GetItemByType(CollectableType type)
+    public Item GetItemByName(string key)
     {
-        return collectables.GetValueOrDefault(type);
+        return itemDict.GetValueOrDefault(key);
     }
 }
