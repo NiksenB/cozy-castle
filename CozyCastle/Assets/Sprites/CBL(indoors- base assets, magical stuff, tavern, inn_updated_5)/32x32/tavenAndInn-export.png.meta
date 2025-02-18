@@ -340,7 +340,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -354,7 +354,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -378,7 +378,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -406,10 +406,10 @@ TextureImporter:
       name: tavenAndInn-export_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 543
-        width: 130
-        height: 72
+        x: 16
+        y: 544
+        width: 128
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: tavenAndInn-export_1
       rect:
         serializedVersion: 2
-        x: 173
-        y: 543
-        width: 106
-        height: 72
+        x: 174
+        y: 544
+        width: 104
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,10 +450,10 @@ TextureImporter:
       name: tavenAndInn-export_2
       rect:
         serializedVersion: 2
-        x: 351
-        y: 543
-        width: 130
-        height: 64
+        x: 352
+        y: 544
+        width: 128
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,10 +472,10 @@ TextureImporter:
       name: tavenAndInn-export_3
       rect:
         serializedVersion: 2
-        x: 511
-        y: 543
-        width: 130
-        height: 64
+        x: 512
+        y: 544
+        width: 128
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,10 +494,10 @@ TextureImporter:
       name: tavenAndInn-export_4
       rect:
         serializedVersion: 2
-        x: 671
-        y: 543
-        width: 96
-        height: 66
+        x: 672
+        y: 544
+        width: 94
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -516,10 +516,10 @@ TextureImporter:
       name: tavenAndInn-export_5
       rect:
         serializedVersion: 2
-        x: 815
-        y: 583
-        width: 12
-        height: 12
+        x: 816
+        y: 584
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -538,10 +538,10 @@ TextureImporter:
       name: tavenAndInn-export_6
       rect:
         serializedVersion: 2
-        x: 827
-        y: 583
-        width: 8
-        height: 10
+        x: 828
+        y: 584
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -560,10 +560,10 @@ TextureImporter:
       name: tavenAndInn-export_7
       rect:
         serializedVersion: 2
-        x: 835
-        y: 583
-        width: 8
-        height: 12
+        x: 836
+        y: 584
+        width: 6
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,10 +582,10 @@ TextureImporter:
       name: tavenAndInn-export_8
       rect:
         serializedVersion: 2
-        x: 843
-        y: 583
-        width: 8
-        height: 12
+        x: 844
+        y: 584
+        width: 6
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,10 +604,10 @@ TextureImporter:
       name: tavenAndInn-export_9
       rect:
         serializedVersion: 2
-        x: 851
-        y: 585
-        width: 6
-        height: 10
+        x: 852
+        y: 586
+        width: 4
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -626,10 +626,10 @@ TextureImporter:
       name: tavenAndInn-export_10
       rect:
         serializedVersion: 2
-        x: 857
-        y: 583
-        width: 8
-        height: 10
+        x: 858
+        y: 584
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -648,10 +648,10 @@ TextureImporter:
       name: tavenAndInn-export_11
       rect:
         serializedVersion: 2
-        x: 873
-        y: 585
-        width: 6
-        height: 10
+        x: 874
+        y: 586
+        width: 4
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -670,10 +670,10 @@ TextureImporter:
       name: tavenAndInn-export_12
       rect:
         serializedVersion: 2
-        x: 879
-        y: 583
-        width: 8
-        height: 10
+        x: 880
+        y: 584
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -692,10 +692,10 @@ TextureImporter:
       name: tavenAndInn-export_13
       rect:
         serializedVersion: 2
-        x: 887
-        y: 585
-        width: 8
-        height: 10
+        x: 888
+        y: 586
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -714,10 +714,10 @@ TextureImporter:
       name: tavenAndInn-export_14
       rect:
         serializedVersion: 2
-        x: 895
-        y: 583
-        width: 8
-        height: 12
+        x: 896
+        y: 584
+        width: 6
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -736,10 +736,10 @@ TextureImporter:
       name: tavenAndInn-export_15
       rect:
         serializedVersion: 2
-        x: 903
-        y: 585
-        width: 8
-        height: 12
+        x: 904
+        y: 586
+        width: 6
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -758,10 +758,10 @@ TextureImporter:
       name: tavenAndInn-export_16
       rect:
         serializedVersion: 2
-        x: 671
-        y: 477
-        width: 96
-        height: 66
+        x: 832
+        y: 512
+        width: 34
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -780,10 +780,10 @@ TextureImporter:
       name: tavenAndInn-export_17
       rect:
         serializedVersion: 2
-        x: 831
-        y: 511
+        x: 894
+        y: 544
         width: 36
-        height: 66
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -802,10 +802,10 @@ TextureImporter:
       name: tavenAndInn-export_18
       rect:
         serializedVersion: 2
-        x: 893
-        y: 543
-        width: 38
-        height: 22
+        x: 938
+        y: 544
+        width: 12
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -824,10 +824,10 @@ TextureImporter:
       name: tavenAndInn-export_19
       rect:
         serializedVersion: 2
-        x: 937
-        y: 543
-        width: 14
-        height: 12
+        x: 32
+        y: 448
+        width: 128
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -846,10 +846,10 @@ TextureImporter:
       name: tavenAndInn-export_20
       rect:
         serializedVersion: 2
-        x: 31
-        y: 447
-        width: 130
-        height: 54
+        x: 188
+        y: 448
+        width: 40
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -868,10 +868,10 @@ TextureImporter:
       name: tavenAndInn-export_21
       rect:
         serializedVersion: 2
-        x: 187
-        y: 447
-        width: 42
-        height: 50
+        x: 256
+        y: 448
+        width: 96
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,10 +890,10 @@ TextureImporter:
       name: tavenAndInn-export_22
       rect:
         serializedVersion: 2
-        x: 255
-        y: 447
-        width: 98
-        height: 64
+        x: 384
+        y: 448
+        width: 192
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -912,9 +912,9 @@ TextureImporter:
       name: tavenAndInn-export_23
       rect:
         serializedVersion: 2
-        x: 383
-        y: 447
-        width: 194
+        x: 672
+        y: 478
+        width: 94
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -934,10 +934,10 @@ TextureImporter:
       name: tavenAndInn-export_24
       rect:
         serializedVersion: 2
-        x: 671
-        y: 411
-        width: 96
-        height: 66
+        x: 32
+        y: 384
+        width: 64
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -956,10 +956,10 @@ TextureImporter:
       name: tavenAndInn-export_25
       rect:
         serializedVersion: 2
-        x: 31
-        y: 383
-        width: 66
-        height: 54
+        x: 128
+        y: 384
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -978,10 +978,10 @@ TextureImporter:
       name: tavenAndInn-export_26
       rect:
         serializedVersion: 2
-        x: 127
-        y: 383
-        width: 66
-        height: 50
+        x: 384
+        y: 320
+        width: 192
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1000,10 +1000,10 @@ TextureImporter:
       name: tavenAndInn-export_27
       rect:
         serializedVersion: 2
-        x: 383
-        y: 319
-        width: 194
-        height: 94
+        x: 672
+        y: 412
+        width: 94
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1022,10 +1022,10 @@ TextureImporter:
       name: tavenAndInn-export_28
       rect:
         serializedVersion: 2
-        x: 15
-        y: 321
-        width: 14
-        height: 22
+        x: 16
+        y: 322
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1044,10 +1044,10 @@ TextureImporter:
       name: tavenAndInn-export_29
       rect:
         serializedVersion: 2
-        x: 31
-        y: 321
-        width: 12
-        height: 20
+        x: 32
+        y: 322
+        width: 10
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1066,10 +1066,10 @@ TextureImporter:
       name: tavenAndInn-export_30
       rect:
         serializedVersion: 2
-        x: 53
-        y: 321
-        width: 22
-        height: 28
+        x: 54
+        y: 322
+        width: 20
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1088,10 +1088,10 @@ TextureImporter:
       name: tavenAndInn-export_31
       rect:
         serializedVersion: 2
-        x: 93
-        y: 319
-        width: 38
-        height: 34
+        x: 94
+        y: 320
+        width: 36
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1110,10 +1110,10 @@ TextureImporter:
       name: tavenAndInn-export_32
       rect:
         serializedVersion: 2
-        x: 157
-        y: 319
-        width: 38
-        height: 34
+        x: 158
+        y: 320
+        width: 36
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1132,10 +1132,10 @@ TextureImporter:
       name: tavenAndInn-export_33
       rect:
         serializedVersion: 2
-        x: 283
-        y: 319
-        width: 42
-        height: 44
+        x: 284
+        y: 320
+        width: 40
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1154,10 +1154,10 @@ TextureImporter:
       name: tavenAndInn-export_34
       rect:
         serializedVersion: 2
-        x: 5
-        y: 289
-        width: 18
-        height: 22
+        x: 6
+        y: 290
+        width: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1176,10 +1176,10 @@ TextureImporter:
       name: tavenAndInn-export_35
       rect:
         serializedVersion: 2
-        x: 31
-        y: 295
-        width: 12
-        height: 20
+        x: 32
+        y: 296
+        width: 10
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1198,10 +1198,10 @@ TextureImporter:
       name: tavenAndInn-export_36
       rect:
         serializedVersion: 2
-        x: 51
-        y: 291
-        width: 14
-        height: 16
+        x: 52
+        y: 292
+        width: 12
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1220,10 +1220,10 @@ TextureImporter:
       name: tavenAndInn-export_37
       rect:
         serializedVersion: 2
-        x: 67
-        y: 299
-        width: 12
-        height: 14
+        x: 68
+        y: 300
+        width: 10
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1242,10 +1242,10 @@ TextureImporter:
       name: tavenAndInn-export_38
       rect:
         serializedVersion: 2
-        x: 93
-        y: 281
-        width: 38
-        height: 34
+        x: 94
+        y: 282
+        width: 36
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1264,10 +1264,10 @@ TextureImporter:
       name: tavenAndInn-export_39
       rect:
         serializedVersion: 2
-        x: 157
-        y: 287
-        width: 38
-        height: 32
+        x: 158
+        y: 288
+        width: 36
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1286,10 +1286,10 @@ TextureImporter:
       name: tavenAndInn-export_40
       rect:
         serializedVersion: 2
-        x: 219
-        y: 255
-        width: 42
-        height: 58
+        x: 220
+        y: 256
+        width: 40
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1308,9 +1308,9 @@ TextureImporter:
       name: tavenAndInn-export_41
       rect:
         serializedVersion: 2
-        x: 285
-        y: 255
-        width: 38
+        x: 384
+        y: 256
+        width: 32
         height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1330,10 +1330,10 @@ TextureImporter:
       name: tavenAndInn-export_42
       rect:
         serializedVersion: 2
-        x: 383
-        y: 255
-        width: 34
-        height: 46
+        x: 448
+        y: 256
+        width: 32
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1352,10 +1352,10 @@ TextureImporter:
       name: tavenAndInn-export_43
       rect:
         serializedVersion: 2
-        x: 447
-        y: 255
-        width: 34
-        height: 46
+        x: 512
+        y: 256
+        width: 32
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1374,10 +1374,10 @@ TextureImporter:
       name: tavenAndInn-export_44
       rect:
         serializedVersion: 2
-        x: 511
-        y: 255
-        width: 34
-        height: 46
+        x: 614
+        y: 288
+        width: 22
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1396,10 +1396,10 @@ TextureImporter:
       name: tavenAndInn-export_45
       rect:
         serializedVersion: 2
-        x: 613
-        y: 287
-        width: 24
-        height: 32
+        x: 644
+        y: 288
+        width: 22
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1418,10 +1418,10 @@ TextureImporter:
       name: tavenAndInn-export_46
       rect:
         serializedVersion: 2
-        x: 643
-        y: 287
-        width: 24
-        height: 32
+        x: 18
+        y: 266
+        width: 10
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1440,10 +1440,10 @@ TextureImporter:
       name: tavenAndInn-export_47
       rect:
         serializedVersion: 2
-        x: 17
-        y: 265
-        width: 12
-        height: 18
+        x: 38
+        y: 264
+        width: 14
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1462,10 +1462,10 @@ TextureImporter:
       name: tavenAndInn-export_48
       rect:
         serializedVersion: 2
-        x: 37
-        y: 263
-        width: 16
-        height: 22
+        x: 158
+        y: 248
+        width: 36
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1484,10 +1484,10 @@ TextureImporter:
       name: tavenAndInn-export_49
       rect:
         serializedVersion: 2
-        x: 157
-        y: 247
-        width: 38
-        height: 40
+        x: 286
+        y: 256
+        width: 36
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1506,10 +1506,10 @@ TextureImporter:
       name: tavenAndInn-export_50
       rect:
         serializedVersion: 2
-        x: 611
-        y: 223
-        width: 28
-        height: 46
+        x: 612
+        y: 224
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1528,10 +1528,10 @@ TextureImporter:
       name: tavenAndInn-export_51
       rect:
         serializedVersion: 2
-        x: 641
-        y: 223
-        width: 28
-        height: 46
+        x: 642
+        y: 224
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1550,10 +1550,10 @@ TextureImporter:
       name: tavenAndInn-export_52
       rect:
         serializedVersion: 2
-        x: 671
-        y: 223
-        width: 34
-        height: 52
+        x: 672
+        y: 224
+        width: 32
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1572,10 +1572,10 @@ TextureImporter:
       name: tavenAndInn-export_53
       rect:
         serializedVersion: 2
-        x: 735
-        y: 209
-        width: 66
-        height: 80
+        x: 736
+        y: 210
+        width: 64
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1594,10 +1594,10 @@ TextureImporter:
       name: tavenAndInn-export_54
       rect:
         serializedVersion: 2
-        x: 831
-        y: 255
-        width: 34
-        height: 34
+        x: 832
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1616,10 +1616,10 @@ TextureImporter:
       name: tavenAndInn-export_55
       rect:
         serializedVersion: 2
-        x: 29
-        y: 223
-        width: 38
-        height: 30
+        x: 30
+        y: 224
+        width: 36
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1638,10 +1638,10 @@ TextureImporter:
       name: tavenAndInn-export_56
       rect:
         serializedVersion: 2
-        x: 77
-        y: 223
-        width: 38
-        height: 30
+        x: 78
+        y: 224
+        width: 36
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1660,10 +1660,10 @@ TextureImporter:
       name: tavenAndInn-export_57
       rect:
         serializedVersion: 2
-        x: 319
-        y: 159
-        width: 66
-        height: 64
+        x: 526
+        y: 160
+        width: 74
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1682,10 +1682,10 @@ TextureImporter:
       name: tavenAndInn-export_58
       rect:
         serializedVersion: 2
-        x: 525
-        y: 159
-        width: 76
-        height: 86
+        x: 30
+        y: 156
+        width: 36
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1704,10 +1704,10 @@ TextureImporter:
       name: tavenAndInn-export_59
       rect:
         serializedVersion: 2
-        x: 29
-        y: 155
-        width: 38
-        height: 38
+        x: 96
+        y: 170
+        width: 64
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1726,10 +1726,10 @@ TextureImporter:
       name: tavenAndInn-export_60
       rect:
         serializedVersion: 2
-        x: 95
-        y: 169
-        width: 66
-        height: 36
+        x: 192
+        y: 166
+        width: 96
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1748,10 +1748,10 @@ TextureImporter:
       name: tavenAndInn-export_61
       rect:
         serializedVersion: 2
-        x: 191
-        y: 165
-        width: 98
-        height: 28
+        x: 320
+        y: 160
+        width: 64
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1770,10 +1770,10 @@ TextureImporter:
       name: tavenAndInn-export_62
       rect:
         serializedVersion: 2
-        x: 391
-        y: 159
-        width: 112
-        height: 56
+        x: 392
+        y: 160
+        width: 110
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1792,10 +1792,10 @@ TextureImporter:
       name: tavenAndInn-export_63
       rect:
         serializedVersion: 2
-        x: 611
-        y: 159
-        width: 28
-        height: 46
+        x: 612
+        y: 160
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1814,10 +1814,10 @@ TextureImporter:
       name: tavenAndInn-export_64
       rect:
         serializedVersion: 2
-        x: 641
-        y: 159
-        width: 28
-        height: 46
+        x: 642
+        y: 160
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1836,10 +1836,10 @@ TextureImporter:
       name: tavenAndInn-export_65
       rect:
         serializedVersion: 2
-        x: 671
-        y: 159
-        width: 34
-        height: 52
+        x: 672
+        y: 160
+        width: 32
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1858,10 +1858,10 @@ TextureImporter:
       name: tavenAndInn-export_66
       rect:
         serializedVersion: 2
-        x: 735
-        y: 113
-        width: 66
-        height: 80
+        x: 736
+        y: 114
+        width: 64
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1880,10 +1880,10 @@ TextureImporter:
       name: tavenAndInn-export_67
       rect:
         serializedVersion: 2
-        x: 831
-        y: 151
-        width: 66
-        height: 42
+        x: 832
+        y: 152
+        width: 64
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1902,10 +1902,10 @@ TextureImporter:
       name: tavenAndInn-export_68
       rect:
         serializedVersion: 2
-        x: 927
-        y: 159
-        width: 28
-        height: 18
+        x: 928
+        y: 160
+        width: 26
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1924,10 +1924,10 @@ TextureImporter:
       name: tavenAndInn-export_69
       rect:
         serializedVersion: 2
-        x: 959
-        y: 159
-        width: 20
-        height: 18
+        x: 960
+        y: 160
+        width: 18
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1946,10 +1946,10 @@ TextureImporter:
       name: tavenAndInn-export_70
       rect:
         serializedVersion: 2
-        x: 95
-        y: 135
-        width: 28
-        height: 26
+        x: 96
+        y: 136
+        width: 26
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1968,10 +1968,10 @@ TextureImporter:
       name: tavenAndInn-export_71
       rect:
         serializedVersion: 2
-        x: 127
-        y: 135
-        width: 32
-        height: 18
+        x: 128
+        y: 136
+        width: 30
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1990,10 +1990,10 @@ TextureImporter:
       name: tavenAndInn-export_72
       rect:
         serializedVersion: 2
-        x: 191
-        y: 137
-        width: 66
-        height: 24
+        x: 192
+        y: 138
+        width: 64
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2012,10 +2012,10 @@ TextureImporter:
       name: tavenAndInn-export_73
       rect:
         serializedVersion: 2
-        x: 3
-        y: 113
-        width: 28
-        height: 14
+        x: 4
+        y: 114
+        width: 26
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2034,10 +2034,10 @@ TextureImporter:
       name: tavenAndInn-export_74
       rect:
         serializedVersion: 2
-        x: 39
-        y: 105
-        width: 22
-        height: 20
+        x: 40
+        y: 106
+        width: 20
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2056,10 +2056,10 @@ TextureImporter:
       name: tavenAndInn-export_75
       rect:
         serializedVersion: 2
-        x: 671
-        y: 95
-        width: 34
-        height: 40
+        x: 672
+        y: 96
+        width: 32
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2078,10 +2078,10 @@ TextureImporter:
       name: tavenAndInn-export_76
       rect:
         serializedVersion: 2
-        x: 5
-        y: 85
-        width: 22
-        height: 10
+        x: 6
+        y: 86
+        width: 20
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2100,10 +2100,10 @@ TextureImporter:
       name: tavenAndInn-export_77
       rect:
         serializedVersion: 2
-        x: 39
-        y: 69
-        width: 20
-        height: 26
+        x: 40
+        y: 70
+        width: 18
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2122,10 +2122,10 @@ TextureImporter:
       name: tavenAndInn-export_78
       rect:
         serializedVersion: 2
-        x: 69
-        y: 69
-        width: 24
-        height: 22
+        x: 70
+        y: 70
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2144,10 +2144,10 @@ TextureImporter:
       name: tavenAndInn-export_79
       rect:
         serializedVersion: 2
-        x: 101
-        y: 69
-        width: 24
-        height: 22
+        x: 102
+        y: 70
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2166,10 +2166,10 @@ TextureImporter:
       name: tavenAndInn-export_80
       rect:
         serializedVersion: 2
-        x: 135
-        y: 69
-        width: 18
-        height: 22
+        x: 136
+        y: 70
+        width: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2188,10 +2188,10 @@ TextureImporter:
       name: tavenAndInn-export_81
       rect:
         serializedVersion: 2
-        x: 163
-        y: 69
-        width: 66
-        height: 22
+        x: 164
+        y: 70
+        width: 64
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2210,10 +2210,10 @@ TextureImporter:
       name: tavenAndInn-export_82
       rect:
         serializedVersion: 2
-        x: 231
-        y: 69
-        width: 34
-        height: 20
+        x: 232
+        y: 70
+        width: 32
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2232,10 +2232,10 @@ TextureImporter:
       name: tavenAndInn-export_83
       rect:
         serializedVersion: 2
-        x: 289
-        y: 67
-        width: 26
-        height: 24
+        x: 290
+        y: 68
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2254,10 +2254,10 @@ TextureImporter:
       name: tavenAndInn-export_84
       rect:
         serializedVersion: 2
-        x: 315
-        y: 67
-        width: 22
-        height: 34
+        x: 316
+        y: 68
+        width: 20
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2276,10 +2276,10 @@ TextureImporter:
       name: tavenAndInn-export_85
       rect:
         serializedVersion: 2
-        x: 339
-        y: 67
-        width: 22
-        height: 34
+        x: 340
+        y: 68
+        width: 20
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2298,10 +2298,10 @@ TextureImporter:
       name: tavenAndInn-export_86
       rect:
         serializedVersion: 2
-        x: 367
-        y: 69
-        width: 66
-        height: 26
+        x: 368
+        y: 70
+        width: 64
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2320,10 +2320,10 @@ TextureImporter:
       name: tavenAndInn-export_87
       rect:
         serializedVersion: 2
-        x: 437
-        y: 69
-        width: 66
-        height: 20
+        x: 438
+        y: 70
+        width: 64
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2342,10 +2342,10 @@ TextureImporter:
       name: tavenAndInn-export_88
       rect:
         serializedVersion: 2
-        x: 507
-        y: 67
-        width: 102
-        height: 20
+        x: 508
+        y: 68
+        width: 100
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2364,10 +2364,10 @@ TextureImporter:
       name: tavenAndInn-export_89
       rect:
         serializedVersion: 2
-        x: 69
-        y: 39
-        width: 24
-        height: 22
+        x: 70
+        y: 40
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2386,10 +2386,10 @@ TextureImporter:
       name: tavenAndInn-export_90
       rect:
         serializedVersion: 2
-        x: 103
-        y: 39
-        width: 24
-        height: 22
+        x: 104
+        y: 40
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2408,10 +2408,10 @@ TextureImporter:
       name: tavenAndInn-export_91
       rect:
         serializedVersion: 2
-        x: 135
-        y: 39
-        width: 18
-        height: 22
+        x: 136
+        y: 40
+        width: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2430,10 +2430,10 @@ TextureImporter:
       name: tavenAndInn-export_92
       rect:
         serializedVersion: 2
-        x: 163
-        y: 35
-        width: 102
-        height: 20
+        x: 164
+        y: 36
+        width: 100
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2452,10 +2452,10 @@ TextureImporter:
       name: tavenAndInn-export_93
       rect:
         serializedVersion: 2
-        x: 265
-        y: 35
-        width: 62
-        height: 20
+        x: 266
+        y: 36
+        width: 60
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2474,10 +2474,10 @@ TextureImporter:
       name: tavenAndInn-export_94
       rect:
         serializedVersion: 2
-        x: 367
-        y: 39
-        width: 66
-        height: 26
+        x: 368
+        y: 40
+        width: 64
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2496,10 +2496,10 @@ TextureImporter:
       name: tavenAndInn-export_95
       rect:
         serializedVersion: 2
-        x: 437
-        y: 39
-        width: 58
-        height: 28
+        x: 438
+        y: 40
+        width: 56
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2518,10 +2518,10 @@ TextureImporter:
       name: tavenAndInn-export_96
       rect:
         serializedVersion: 2
-        x: 503
-        y: 41
-        width: 52
-        height: 16
+        x: 504
+        y: 42
+        width: 50
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2540,10 +2540,10 @@ TextureImporter:
       name: tavenAndInn-export_97
       rect:
         serializedVersion: 2
-        x: 69
-        y: 7
-        width: 24
-        height: 22
+        x: 70
+        y: 8
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2562,10 +2562,10 @@ TextureImporter:
       name: tavenAndInn-export_98
       rect:
         serializedVersion: 2
-        x: 103
-        y: 7
-        width: 24
-        height: 22
+        x: 104
+        y: 8
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2584,10 +2584,10 @@ TextureImporter:
       name: tavenAndInn-export_99
       rect:
         serializedVersion: 2
-        x: 135
-        y: 7
-        width: 18
-        height: 22
+        x: 136
+        y: 8
+        width: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2606,10 +2606,10 @@ TextureImporter:
       name: tavenAndInn-export_100
       rect:
         serializedVersion: 2
-        x: 161
-        y: 1
-        width: 28
-        height: 32
+        x: 162
+        y: 2
+        width: 26
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2628,10 +2628,10 @@ TextureImporter:
       name: tavenAndInn-export_101
       rect:
         serializedVersion: 2
-        x: 189
-        y: 1
-        width: 28
-        height: 32
+        x: 190
+        y: 2
+        width: 26
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2650,7 +2650,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d8d6df5757baafe43a3b13e5441103fc
     internalID: 0
     vertices: []
     indices: 
@@ -2659,7 +2659,109 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tavenAndInn-export_0: -2529574773280034078
+      tavenAndInn-export_1: -6438939594518541974
+      tavenAndInn-export_10: 5021572877692211378
+      tavenAndInn-export_100: 2002109411837625115
+      tavenAndInn-export_101: -4190892825304385487
+      tavenAndInn-export_11: -998338752561932506
+      tavenAndInn-export_12: -6542811793628751249
+      tavenAndInn-export_13: -568887005998653774
+      tavenAndInn-export_14: -2366867364166051713
+      tavenAndInn-export_15: -2293802810918552826
+      tavenAndInn-export_16: 1545188982098251726
+      tavenAndInn-export_17: -5923464589211283957
+      tavenAndInn-export_18: 7066590469293831196
+      tavenAndInn-export_19: -7018274239704119960
+      tavenAndInn-export_2: 3745894280540246587
+      tavenAndInn-export_20: -1081959917069117153
+      tavenAndInn-export_21: -7276761930220325226
+      tavenAndInn-export_22: 6381718731485033682
+      tavenAndInn-export_23: -6235662067755171277
+      tavenAndInn-export_24: 7664035821387680287
+      tavenAndInn-export_25: -2949147219498228225
+      tavenAndInn-export_26: -7781813609543722415
+      tavenAndInn-export_27: -8138342381694283677
+      tavenAndInn-export_28: 122828683783593028
+      tavenAndInn-export_29: -6656376227897673873
+      tavenAndInn-export_3: -1863372693167397911
+      tavenAndInn-export_30: -2676102713759078475
+      tavenAndInn-export_31: 1489552274045290623
+      tavenAndInn-export_32: 4493324458496101948
+      tavenAndInn-export_33: 7369105438588872018
+      tavenAndInn-export_34: 5753899411104001554
+      tavenAndInn-export_35: 150719732395832425
+      tavenAndInn-export_36: 8171168168193130211
+      tavenAndInn-export_37: -5140569037651358222
+      tavenAndInn-export_38: -4036111295380071009
+      tavenAndInn-export_39: -3623047337280721977
+      tavenAndInn-export_4: -8995341557071709893
+      tavenAndInn-export_40: 1209459949672296176
+      tavenAndInn-export_41: -6677879168904743726
+      tavenAndInn-export_42: 4490816181428546189
+      tavenAndInn-export_43: -8333540114133573216
+      tavenAndInn-export_44: 1992448445544275496
+      tavenAndInn-export_45: -468630182882184881
+      tavenAndInn-export_46: -638468846354580855
+      tavenAndInn-export_47: -455550715784925507
+      tavenAndInn-export_48: -1766088264414790277
+      tavenAndInn-export_49: 1015981349892230018
+      tavenAndInn-export_5: -8161701991707048973
+      tavenAndInn-export_50: 4722058118081217794
+      tavenAndInn-export_51: 5929501499229039733
+      tavenAndInn-export_52: 2907096775640595719
+      tavenAndInn-export_53: -6564657288654255625
+      tavenAndInn-export_54: -8665192211496083116
+      tavenAndInn-export_55: 2303411288073029340
+      tavenAndInn-export_56: -3386757802491862214
+      tavenAndInn-export_57: 6831588154097546599
+      tavenAndInn-export_58: 3330191703124178304
+      tavenAndInn-export_59: -8022826055504911871
+      tavenAndInn-export_6: 211969613889087680
+      tavenAndInn-export_60: -6960288440044215503
+      tavenAndInn-export_61: 2599622185114183402
+      tavenAndInn-export_62: 6671663329248355161
+      tavenAndInn-export_63: 9111868552184287439
+      tavenAndInn-export_64: -280701140253469640
+      tavenAndInn-export_65: 1964267784399033106
+      tavenAndInn-export_66: -105356562587628839
+      tavenAndInn-export_67: 992034215436821582
+      tavenAndInn-export_68: -1931559214364290358
+      tavenAndInn-export_69: -7235904846886452172
+      tavenAndInn-export_7: -6257093585313921829
+      tavenAndInn-export_70: 605461643985123533
+      tavenAndInn-export_71: 7322796502649727732
+      tavenAndInn-export_72: -7196885410134936006
+      tavenAndInn-export_73: -4993817124643844908
+      tavenAndInn-export_74: -5179166767854619927
+      tavenAndInn-export_75: 3893987257591258449
+      tavenAndInn-export_76: -2551477216874508985
+      tavenAndInn-export_77: -8182655441141009676
+      tavenAndInn-export_78: -6205168597966828414
+      tavenAndInn-export_79: 2117843124961368377
+      tavenAndInn-export_8: -409455239913340341
+      tavenAndInn-export_80: 2791979048447785617
+      tavenAndInn-export_81: 6034857628241589100
+      tavenAndInn-export_82: 5582967397558372257
+      tavenAndInn-export_83: 2353725990509246892
+      tavenAndInn-export_84: -9165723153045149465
+      tavenAndInn-export_85: 7571207173578903737
+      tavenAndInn-export_86: -210229402140835111
+      tavenAndInn-export_87: -238314806335939342
+      tavenAndInn-export_88: -986316386420456030
+      tavenAndInn-export_89: -6531056416575016290
+      tavenAndInn-export_9: 3427136994662517088
+      tavenAndInn-export_90: -7166043162011962299
+      tavenAndInn-export_91: -7272389612802653529
+      tavenAndInn-export_92: 6462626424720868747
+      tavenAndInn-export_93: 4250862951448726817
+      tavenAndInn-export_94: -5324489313100734701
+      tavenAndInn-export_95: 5333536227703932337
+      tavenAndInn-export_96: 8582843164027166728
+      tavenAndInn-export_97: -9198600382248697015
+      tavenAndInn-export_98: 801993742349157547
+      tavenAndInn-export_99: -2400900178324323228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
