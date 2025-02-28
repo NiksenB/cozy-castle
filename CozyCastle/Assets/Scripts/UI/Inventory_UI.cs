@@ -26,10 +26,12 @@ public class Inventory_UI : MonoBehaviour
         {
             inventoryPanel.SetActive(true);
             Refresh();
+            Time.timeScale = 0;
         } 
         else
         {
             inventoryPanel.SetActive(false);
+            Time.timeScale = 1;
         }
     }
 
