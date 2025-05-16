@@ -1,0 +1,120 @@
+
+TREES
+1. Apple Tree
+2. Orange Tree
+3. Birch Tree
+4. Pine Tree
+5. Plum Tree
+6. Pear Tree
+7. Dragon Tree
+8. Cherry Blossom Tree
+9. Cursed Tree
+10. Dead Old Oaktree
+
+LEAVES
+1. Apple Tree Leaf
+2. Orange Tree Leaf
+3. Birch Tree Leaf
+4. Pine Tree Leaf
+5. Plum Tree Leaf
+6. Pear Tree Leaf
+7. Dragon Tree Leaf
+8. Autumn Leaf 1
+9. Autumn Leaf 2
+10. Autumn Leaf 3
+
+NUTS
+1. Hazelnut
+2. Walnut
+3. Almond
+4. Chashew
+5. Macadamia
+6. Peanut
+7. Pecan Nut
+8. Brazil Nut
+9. Pistachio
+10. Pine Nut
+
+BUSHES
+1. Raspberry Bush
+2. Winter Creeper
+3. Hydrangea
+4.Persian Shield
+5. Juniper Blue Star
+6. Dwarf Norway Spruce
+7. Daphne Odora
+8. Dog Wood
+9. Camelia
+10. Azalea
+
+FLOWERS
+1. Common Hedgenettle
+2. Dandelion
+3. Common Knapweed
+4. Poppy
+5. Chamomille
+6. Purple Foxglove
+7. Musk Mallow
+8. Tansy
+9. Crying Heart
+10. Crested Dog Tail
+
+MUSHROOMS
+1. White Button Mushroom
+2. Crimini Mushroom
+3. Shitake
+4. King Oyster
+5. Enoki
+6. Beech
+7. Black Trumpet
+8. Chanterelle
+9. Morel
+10. Death Cap
+
+ROCKS
+1. Chalk
+2. Mudstone
+3. Gold
+4. Silver
+5. Copper
+6. Diabase
+7. Soapstone
+8. Obsidian
+9. Pumice
+10. Scoria
+
+CRYSTALS
+1. Rose Quartz
+2. Jasper
+3. Citrine
+4. Turquoise
+5. Tiger Eye
+6. Amethyst
+7. Moonstone
+8. Sapphire
+9. Quartz
+10. Bloodstone
+
+BUGS
+1. Lady Bug
+2. Bee
+3. Cross Orbweaver Spider
+4. Roly Poly
+5. Grass Hopper
+6. Luna Moth
+7. Death Head Hawk Moth
+8. Dragonfly
+9. Cockroach
+10. Earth Worm
+
+BUTTERFLIES
+1. Monarch Butterfly
+2. Peacock Butterfly
+3. Zebra Swallowhead
+4. Red Admiral
+5. Morpho
+6. Julia Butterfly
+7. Parides Montezuma
+8. Orange Daggerwing
+9. Carolina Satyr
+10. Mourning Cloak

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Slot_UI : MonoBehaviour
 {
+    public int slotID;
+    public Inventory inventory;
     public UnityEngine.UI.Image itemIcon;
     public TextMeshProUGUI quantityText;
 

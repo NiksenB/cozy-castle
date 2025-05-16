@@ -11,7 +11,7 @@ public class Collectable : MonoBehaviour
         {
             if (TryGetComponent(out Item item))
             {
-                player.inventory.AddToInventory(item);
+                player.inventory.Add("backpack", item);
                 Destroy(gameObject);
             }
         }

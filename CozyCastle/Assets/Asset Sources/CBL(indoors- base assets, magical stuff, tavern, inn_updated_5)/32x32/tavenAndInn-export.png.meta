@@ -1,0 +1,2769 @@
+fileFormatVersion: 2
+guid: 3720f222a2884af4a881cc4ee156be4f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2529574773280034078
+    second: tavenAndInn-export_0
+  - first:
+      213: -6438939594518541974
+    second: tavenAndInn-export_1
+  - first:
+      213: 3745894280540246587
+    second: tavenAndInn-export_2
+  - first:
+      213: -1863372693167397911
+    second: tavenAndInn-export_3
+  - first:
+      213: -8995341557071709893
+    second: tavenAndInn-export_4
+  - first:
+      213: -8161701991707048973
+    second: tavenAndInn-export_5
+  - first:
+      213: 211969613889087680
+    second: tavenAndInn-export_6
+  - first:
+      213: -6257093585313921829
+    second: tavenAndInn-export_7
+  - first:
+      213: -409455239913340341
+    second: tavenAndInn-export_8
+  - first:
+      213: 3427136994662517088
+    second: tavenAndInn-export_9
+  - first:
+      213: 5021572877692211378
+    second: tavenAndInn-export_10
+  - first:
+      213: -998338752561932506
+    second: tavenAndInn-export_11
+  - first:
+      213: -6542811793628751249
+    second: tavenAndInn-export_12
+  - first:
+      213: -568887005998653774
+    second: tavenAndInn-export_13
+  - first:
+      213: -2366867364166051713
+    second: tavenAndInn-export_14
+  - first:
+      213: -2293802810918552826
+    second: tavenAndInn-export_15
+  - first:
+      213: 1545188982098251726
+    second: tavenAndInn-export_16
+  - first:
+      213: -5923464589211283957
+    second: tavenAndInn-export_17
+  - first:
+      213: 7066590469293831196
+    second: tavenAndInn-export_18
+  - first:
+      213: -7018274239704119960
+    second: tavenAndInn-export_19
+  - first:
+      213: -1081959917069117153
+    second: tavenAndInn-export_20
+  - first:
+      213: -7276761930220325226
+    second: tavenAndInn-export_21
+  - first:
+      213: 6381718731485033682
+    second: tavenAndInn-export_22
+  - first:
+      213: -6235662067755171277
+    second: tavenAndInn-export_23
+  - first:
+      213: 7664035821387680287
+    second: tavenAndInn-export_24
+  - first:
+      213: -2949147219498228225
+    second: tavenAndInn-export_25
+  - first:
+      213: -7781813609543722415
+    second: tavenAndInn-export_26
+  - first:
+      213: -8138342381694283677
+    second: tavenAndInn-export_27
+  - first:
+      213: 122828683783593028
+    second: tavenAndInn-export_28
+  - first:
+      213: -6656376227897673873
+    second: tavenAndInn-export_29
+  - first:
+      213: -2676102713759078475
+    second: tavenAndInn-export_30
+  - first:
+      213: 1489552274045290623
+    second: tavenAndInn-export_31
+  - first:
+      213: 4493324458496101948
+    second: tavenAndInn-export_32
+  - first:
+      213: 7369105438588872018
+    second: tavenAndInn-export_33
+  - first:
+      213: 5753899411104001554
+    second: tavenAndInn-export_34
+  - first:
+      213: 150719732395832425
+    second: tavenAndInn-export_35
+  - first:
+      213: 8171168168193130211
+    second: tavenAndInn-export_36
+  - first:
+      213: -5140569037651358222
+    second: tavenAndInn-export_37
+  - first:
+      213: -4036111295380071009
+    second: tavenAndInn-export_38
+  - first:
+      213: -3623047337280721977
+    second: tavenAndInn-export_39
+  - first:
+      213: 1209459949672296176
+    second: tavenAndInn-export_40
+  - first:
+      213: -6677879168904743726
+    second: tavenAndInn-export_41
+  - first:
+      213: 4490816181428546189
+    second: tavenAndInn-export_42
+  - first:
+      213: -8333540114133573216
+    second: tavenAndInn-export_43
+  - first:
+      213: 1992448445544275496
+    second: tavenAndInn-export_44
+  - first:
+      213: -468630182882184881
+    second: tavenAndInn-export_45
+  - first:
+      213: -638468846354580855
+    second: tavenAndInn-export_46
+  - first:
+      213: -455550715784925507
+    second: tavenAndInn-export_47
+  - first:
+      213: -1766088264414790277
+    second: tavenAndInn-export_48
+  - first:
+      213: 1015981349892230018
+    second: tavenAndInn-export_49
+  - first:
+      213: 4722058118081217794
+    second: tavenAndInn-export_50
+  - first:
+      213: 5929501499229039733
+    second: tavenAndInn-export_51
+  - first:
+      213: 2907096775640595719
+    second: tavenAndInn-export_52
+  - first:
+      213: -6564657288654255625
+    second: tavenAndInn-export_53
+  - first:
+      213: -8665192211496083116
+    second: tavenAndInn-export_54
+  - first:
+      213: 2303411288073029340
+    second: tavenAndInn-export_55
+  - first:
+      213: -3386757802491862214
+    second: tavenAndInn-export_56
+  - first:
+      213: 6831588154097546599
+    second: tavenAndInn-export_57
+  - first:
+      213: 3330191703124178304
+    second: tavenAndInn-export_58
+  - first:
+      213: -8022826055504911871
+    second: tavenAndInn-export_59
+  - first:
+      213: -6960288440044215503
+    second: tavenAndInn-export_60
+  - first:
+      213: 2599622185114183402
+    second: tavenAndInn-export_61
+  - first:
+      213: 6671663329248355161
+    second: tavenAndInn-export_62
+  - first:
+      213: 9111868552184287439
+    second: tavenAndInn-export_63
+  - first:
+      213: -280701140253469640
+    second: tavenAndInn-export_64
+  - first:
+      213: 1964267784399033106
+    second: tavenAndInn-export_65
+  - first:
+      213: -105356562587628839
+    second: tavenAndInn-export_66
+  - first:
+      213: 992034215436821582
+    second: tavenAndInn-export_67
+  - first:
+      213: -1931559214364290358
+    second: tavenAndInn-export_68
+  - first:
+      213: -7235904846886452172
+    second: tavenAndInn-export_69
+  - first:
+      213: 605461643985123533
+    second: tavenAndInn-export_70
+  - first:
+      213: 7322796502649727732
+    second: tavenAndInn-export_71
+  - first:
+      213: -7196885410134936006
+    second: tavenAndInn-export_72
+  - first:
+      213: -4993817124643844908
+    second: tavenAndInn-export_73
+  - first:
+      213: -5179166767854619927
+    second: tavenAndInn-export_74
+  - first:
+      213: 3893987257591258449
+    second: tavenAndInn-export_75
+  - first:
+      213: -2551477216874508985
+    second: tavenAndInn-export_76
+  - first:
+      213: -8182655441141009676
+    second: tavenAndInn-export_77
+  - first:
+      213: -6205168597966828414
+    second: tavenAndInn-export_78
+  - first:
+      213: 2117843124961368377
+    second: tavenAndInn-export_79
+  - first:
+      213: 2791979048447785617
+    second: tavenAndInn-export_80
+  - first:
+      213: 6034857628241589100
+    second: tavenAndInn-export_81
+  - first:
+      213: 5582967397558372257
+    second: tavenAndInn-export_82
+  - first:
+      213: 2353725990509246892
+    second: tavenAndInn-export_83
+  - first:
+      213: -9165723153045149465
+    second: tavenAndInn-export_84
+  - first:
+      213: 7571207173578903737
+    second: tavenAndInn-export_85
+  - first:
+      213: -210229402140835111
+    second: tavenAndInn-export_86
+  - first:
+      213: -238314806335939342
+    second: tavenAndInn-export_87
+  - first:
+      213: -986316386420456030
+    second: tavenAndInn-export_88
+  - first:
+      213: -6531056416575016290
+    second: tavenAndInn-export_89
+  - first:
+      213: -7166043162011962299
+    second: tavenAndInn-export_90
+  - first:
+      213: -7272389612802653529
+    second: tavenAndInn-export_91
+  - first:
+      213: 6462626424720868747
+    second: tavenAndInn-export_92
+  - first:
+      213: 4250862951448726817
+    second: tavenAndInn-export_93
+  - first:
+      213: -5324489313100734701
+    second: tavenAndInn-export_94
+  - first:
+      213: 5333536227703932337
+    second: tavenAndInn-export_95
+  - first:
+      213: 8582843164027166728
+    second: tavenAndInn-export_96
+  - first:
+      213: -9198600382248697015
+    second: tavenAndInn-export_97
+  - first:
+      213: 801993742349157547
+    second: tavenAndInn-export_98
+  - first:
+      213: -2400900178324323228
+    second: tavenAndInn-export_99
+  - first:
+      213: 2002109411837625115
+    second: tavenAndInn-export_100
+  - first:
+      213: -4190892825304385487
+    second: tavenAndInn-export_101
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tavenAndInn-export_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 544
+        width: 128
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2badd552525ecd0800000000000000
+      internalID: -2529574773280034078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 544
+        width: 104
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a694682cd8a44a6a0800000000000000
+      internalID: -6438939594518541974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 544
+        width: 128
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32d4c560071cf330800000000000000
+      internalID: 3745894280540246587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 544
+        width: 128
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3289b7868f326e0800000000000000
+      internalID: -1863372693167397911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 544
+        width: 94
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b397e6163802a2380800000000000000
+      internalID: -8995341557071709893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_5
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 584
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f304b5f74fcbbe80800000000000000
+      internalID: -8161701991707048973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_6
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 584
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c82903ad3111f200800000000000000
+      internalID: 211969613889087680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_7
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 584
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd40df029865a29a0800000000000000
+      internalID: -6257093585313921829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_8
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 584
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b420b81f0a2515af0800000000000000
+      internalID: -409455239913340341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_9
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 586
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069857b50f2af8f20800000000000000
+      internalID: 3427136994662517088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_10
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 584
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b094944de530b540800000000000000
+      internalID: 5021572877692211378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_11
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 586
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6271a08a1303522f0800000000000000
+      internalID: -998338752561932506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_12
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 584
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a9588c6534335a0800000000000000
+      internalID: -6542811793628751249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_13
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 586
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be5d1a3848ea18f0800000000000000
+      internalID: -568887005998653774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 584
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78da682ca2372fd0800000000000000
+      internalID: -2366867364166051713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_15
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 586
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b386e1f76ca20e0800000000000000
+      internalID: -2293802810918552826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_16
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 512
+        width: 34
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf40d4413d917510800000000000000
+      internalID: 1545188982098251726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_17
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 544
+        width: 36
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ec4780750abcda0800000000000000
+      internalID: -5923464589211283957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_18
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 544
+        width: 12
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c147b676792911260800000000000000
+      internalID: 7066590469293831196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 128
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865492e63c41a9e90800000000000000
+      internalID: -7018274239704119960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 448
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1952e9103b1cf0f0800000000000000
+      internalID: -1081959917069117153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 96
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696b122149fb30b90800000000000000
+      internalID: -7276761930220325226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 192
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d43f9edf5b609850800000000000000
+      internalID: 6381718731485033682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_23
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 478
+        width: 94
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3324318236a7679a0800000000000000
+      internalID: -6235662067755171277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a8ea749ff1c5a60800000000000000
+      internalID: 7664035821387680287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff52a77aa368217d0800000000000000
+      internalID: -2949147219498228225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 192
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a98de70c1710490800000000000000
+      internalID: -7781813609543722415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_27
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 412
+        width: 94
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3601b9ef8bcce0f80800000000000000
+      internalID: -8138342381694283677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 322
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c5621890064b100800000000000000
+      internalID: 122828683783593028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 322
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67fdc4761dcf93a0800000000000000
+      internalID: -6656376227897673873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_30
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 322
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b76eeba2c29cdad0800000000000000
+      internalID: -2676102713759078475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_31
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 320
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7848d8b6e3fba410800000000000000
+      internalID: 1489552274045290623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_32
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 320
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e0c31d9ce7b5e30800000000000000
+      internalID: 4493324458496101948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_33
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 320
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2552d7b6a52544660800000000000000
+      internalID: 7369105438588872018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_34
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 290
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21eee286705f9df40800000000000000
+      internalID: 5753899411104001554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 296
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964781e4cc6771200800000000000000
+      internalID: 150719732395832425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_36
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 292
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee71210822d56170800000000000000
+      internalID: 8171168168193130211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_37
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 300
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd4b6732b709a8b0800000000000000
+      internalID: -5140569037651358222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_38
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 282
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9dddec392adcf7c0800000000000000
+      internalID: -4036111295380071009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_39
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 288
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb25f874a958bdc0800000000000000
+      internalID: -3623047337280721977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_40
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 256
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe674e8a6dd8c010800000000000000
+      internalID: 1209459949672296176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_41
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4b37cd6486353a0800000000000000
+      internalID: -6677879168904743726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_42
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8aef9d0685925e30800000000000000
+      internalID: 4490816181428546189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_43
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1a99f4b61595c80800000000000000
+      internalID: -8333540114133573216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_44
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 288
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e12f50e4996ab10800000000000000
+      internalID: 1992448445544275496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_45
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 288
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41f742e4571f79f0800000000000000
+      internalID: -468630182882184881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_46
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 266
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ab1ec87f3b327f0800000000000000
+      internalID: -638468846354580855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_47
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 264
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbee670a90f8da9f0800000000000000
+      internalID: -455550715784925507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_48
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 248
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7df195a4189d77e0800000000000000
+      internalID: -1766088264414790277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_49
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 256
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b8fb2a7ad791e00800000000000000
+      internalID: 1015981349892230018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_50
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 224
+        width: 26
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2050bf007de188140800000000000000
+      internalID: 4722058118081217794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_51
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 224
+        width: 26
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c61bc9232d94250800000000000000
+      internalID: 5929501499229039733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_52
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 224
+        width: 32
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70dbdbf6d15185820800000000000000
+      internalID: 2907096775640595719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_53
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 210
+        width: 64
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9859d1af6a5e4a0800000000000000
+      internalID: -6564657288654255625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_54
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 256
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4516b43089d0fb780800000000000000
+      internalID: -8665192211496083116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_55
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 224
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6c73dcc5c57ff10800000000000000
+      internalID: 2303411288073029340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_56
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 224
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33a032f8b1dff0d0800000000000000
+      internalID: -3386757802491862214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_57
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 160
+        width: 74
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76530c81b3daece50800000000000000
+      internalID: 6831588154097546599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_58
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 156
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0857baab5b7373e20800000000000000
+      internalID: 3330191703124178304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 170
+        width: 64
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102a1e2953239a090800000000000000
+      internalID: -8022826055504911871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 166
+        width: 96
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13328ec7a86186f90800000000000000
+      internalID: -6960288440044215503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 64
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6a4fd9a96b31420800000000000000
+      internalID: 2599622185114183402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_62
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 160
+        width: 110
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95329d03372869c50800000000000000
+      internalID: 6671663329248355161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_63
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 160
+        width: 26
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc05ff4eb2cd37e70800000000000000
+      internalID: 9111868552184287439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_64
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 160
+        width: 26
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8341527dccfba1cf0800000000000000
+      internalID: -280701140253469640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_65
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 160
+        width: 32
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21319dc842b724b10800000000000000
+      internalID: 1964267784399033106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_66
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 114
+        width: 64
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da4538b3c2b98ef0800000000000000
+      internalID: -105356562587628839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_67
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 152
+        width: 64
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e442528ecd964cd00800000000000000
+      internalID: 992034215436821582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_68
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 160
+        width: 26
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac21f2dd029b135e0800000000000000
+      internalID: -1931559214364290358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_69
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 160
+        width: 18
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4344ec411e6e49b90800000000000000
+      internalID: -7235904846886452172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_70
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 136
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc87bd64828076800800000000000000
+      internalID: 605461643985123533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_71
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 136
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fae8ee0f9ccf9560800000000000000
+      internalID: 7322796502649727732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 138
+        width: 64
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3637b7a9d68f1c90800000000000000
+      internalID: -7196885410134936006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_73
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 114
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc475498c562bab0800000000000000
+      internalID: -4993817124643844908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_74
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 106
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e27489d347ef18b0800000000000000
+      internalID: -5179166767854619927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_75
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 32
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ddf9097c83a0630800000000000000
+      internalID: 3893987257591258449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_76
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 86
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d41b35df4579cd0800000000000000
+      internalID: -2551477216874508985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_77
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 70
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f27f57da3e517e80800000000000000
+      internalID: -8182655441141009676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_78
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 70
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c47ca5900d2e9a0800000000000000
+      internalID: -6205168597966828414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_79
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 70
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9395351f917146d10800000000000000
+      internalID: 2117843124961368377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_80
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 70
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a301be62a1fb620800000000000000
+      internalID: 2791979048447785617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_81
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 70
+        width: 64
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c637561f90f10c350800000000000000
+      internalID: 6034857628241589100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_82
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 70
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7cd0ca44faa7d40800000000000000
+      internalID: 5582967397558372257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_83
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 68
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca978ea515d1aa020800000000000000
+      internalID: 2353725990509246892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_84
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 68
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8ab29ba5fccc080800000000000000
+      internalID: -9165723153045149465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_85
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 68
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b05f067fc4521960800000000000000
+      internalID: 7571207173578903737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_86
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 70
+        width: 64
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d28d0cf87d151df0800000000000000
+      internalID: -210229402140835111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_87
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 70
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc51af32f551bcf0800000000000000
+      internalID: -238314806335939342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_88
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 68
+        width: 100
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a50347e876ef42f0800000000000000
+      internalID: -986316386420456030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_89
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 40
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92b20acac60d55a0800000000000000
+      internalID: -6531056416575016290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_90
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 40
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544f82326b91d8c90800000000000000
+      internalID: -7166043162011962299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_91
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a248ac8d28431b90800000000000000
+      internalID: -7272389612802653529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_92
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 36
+        width: 100
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b854a892e7cdfa950800000000000000
+      internalID: 6462626424720868747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_93
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 36
+        width: 60
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d48f115591efa30800000000000000
+      internalID: 4250862951448726817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_94
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 40
+        width: 64
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f544a1e2d9b16b0800000000000000
+      internalID: -5324489313100734701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_95
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 40
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b548f8d0f6840a40800000000000000
+      internalID: 5333536227703932337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_96
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 42
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800aab242626c1770800000000000000
+      internalID: 8582843164027166728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_97
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 8
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9434b4940b1085080800000000000000
+      internalID: -9198600382248697015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_98
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 8
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4cecc3f01412b00800000000000000
+      internalID: 801993742349157547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_99
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4648ec1220a4eaed0800000000000000
+      internalID: -2400900178324323228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_100
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 2
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b134c0607ebe8cb10800000000000000
+      internalID: 2002109411837625115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavenAndInn-export_101
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 2
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138bffffd25f6d5c0800000000000000
+      internalID: -4190892825304385487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d8d6df5757baafe43a3b13e5441103fc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tavenAndInn-export_0: -2529574773280034078
+      tavenAndInn-export_1: -6438939594518541974
+      tavenAndInn-export_10: 5021572877692211378
+      tavenAndInn-export_100: 2002109411837625115
+      tavenAndInn-export_101: -4190892825304385487
+      tavenAndInn-export_11: -998338752561932506
+      tavenAndInn-export_12: -6542811793628751249
+      tavenAndInn-export_13: -568887005998653774
+      tavenAndInn-export_14: -2366867364166051713
+      tavenAndInn-export_15: -2293802810918552826
+      tavenAndInn-export_16: 1545188982098251726
+      tavenAndInn-export_17: -5923464589211283957
+      tavenAndInn-export_18: 7066590469293831196
+      tavenAndInn-export_19: -7018274239704119960
+      tavenAndInn-export_2: 3745894280540246587
+      tavenAndInn-export_20: -1081959917069117153
+      tavenAndInn-export_21: -7276761930220325226
+      tavenAndInn-export_22: 6381718731485033682
+      tavenAndInn-export_23: -6235662067755171277
+      tavenAndInn-export_24: 7664035821387680287
+      tavenAndInn-export_25: -2949147219498228225
+      tavenAndInn-export_26: -7781813609543722415
+      tavenAndInn-export_27: -8138342381694283677
+      tavenAndInn-export_28: 122828683783593028
+      tavenAndInn-export_29: -6656376227897673873
+      tavenAndInn-export_3: -1863372693167397911
+      tavenAndInn-export_30: -2676102713759078475
+      tavenAndInn-export_31: 1489552274045290623
+      tavenAndInn-export_32: 4493324458496101948
+      tavenAndInn-export_33: 7369105438588872018
+      tavenAndInn-export_34: 5753899411104001554
+      tavenAndInn-export_35: 150719732395832425
+      tavenAndInn-export_36: 8171168168193130211
+      tavenAndInn-export_37: -5140569037651358222
+      tavenAndInn-export_38: -4036111295380071009
+      tavenAndInn-export_39: -3623047337280721977
+      tavenAndInn-export_4: -8995341557071709893
+      tavenAndInn-export_40: 1209459949672296176
+      tavenAndInn-export_41: -6677879168904743726
+      tavenAndInn-export_42: 4490816181428546189
+      tavenAndInn-export_43: -8333540114133573216
+      tavenAndInn-export_44: 1992448445544275496
+      tavenAndInn-export_45: -468630182882184881
+      tavenAndInn-export_46: -638468846354580855
+      tavenAndInn-export_47: -455550715784925507
+      tavenAndInn-export_48: -1766088264414790277
+      tavenAndInn-export_49: 1015981349892230018
+      tavenAndInn-export_5: -8161701991707048973
+      tavenAndInn-export_50: 4722058118081217794
+      tavenAndInn-export_51: 5929501499229039733
+      tavenAndInn-export_52: 2907096775640595719
+      tavenAndInn-export_53: -6564657288654255625
+      tavenAndInn-export_54: -8665192211496083116
+      tavenAndInn-export_55: 2303411288073029340
+      tavenAndInn-export_56: -3386757802491862214
+      tavenAndInn-export_57: 6831588154097546599
+      tavenAndInn-export_58: 3330191703124178304
+      tavenAndInn-export_59: -8022826055504911871
+      tavenAndInn-export_6: 211969613889087680
+      tavenAndInn-export_60: -6960288440044215503
+      tavenAndInn-export_61: 2599622185114183402
+      tavenAndInn-export_62: 6671663329248355161
+      tavenAndInn-export_63: 9111868552184287439
+      tavenAndInn-export_64: -280701140253469640
+      tavenAndInn-export_65: 1964267784399033106
+      tavenAndInn-export_66: -105356562587628839
+      tavenAndInn-export_67: 992034215436821582
+      tavenAndInn-export_68: -1931559214364290358
+      tavenAndInn-export_69: -7235904846886452172
+      tavenAndInn-export_7: -6257093585313921829
+      tavenAndInn-export_70: 605461643985123533
+      tavenAndInn-export_71: 7322796502649727732
+      tavenAndInn-export_72: -7196885410134936006
+      tavenAndInn-export_73: -4993817124643844908
+      tavenAndInn-export_74: -5179166767854619927
+      tavenAndInn-export_75: 3893987257591258449
+      tavenAndInn-export_76: -2551477216874508985
+      tavenAndInn-export_77: -8182655441141009676
+      tavenAndInn-export_78: -6205168597966828414
+      tavenAndInn-export_79: 2117843124961368377
+      tavenAndInn-export_8: -409455239913340341
+      tavenAndInn-export_80: 2791979048447785617
+      tavenAndInn-export_81: 6034857628241589100
+      tavenAndInn-export_82: 5582967397558372257
+      tavenAndInn-export_83: 2353725990509246892
+      tavenAndInn-export_84: -9165723153045149465
+      tavenAndInn-export_85: 7571207173578903737
+      tavenAndInn-export_86: -210229402140835111
+      tavenAndInn-export_87: -238314806335939342
+      tavenAndInn-export_88: -986316386420456030
+      tavenAndInn-export_89: -6531056416575016290
+      tavenAndInn-export_9: 3427136994662517088
+      tavenAndInn-export_90: -7166043162011962299
+      tavenAndInn-export_91: -7272389612802653529
+      tavenAndInn-export_92: 6462626424720868747
+      tavenAndInn-export_93: 4250862951448726817
+      tavenAndInn-export_94: -5324489313100734701
+      tavenAndInn-export_95: 5333536227703932337
+      tavenAndInn-export_96: 8582843164027166728
+      tavenAndInn-export_97: -9198600382248697015
+      tavenAndInn-export_98: 801993742349157547
+      tavenAndInn-export_99: -2400900178324323228
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

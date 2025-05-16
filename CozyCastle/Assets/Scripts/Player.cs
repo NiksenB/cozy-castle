@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Inventory inventory;
+    public InventoryManager inventory;
     private PlayerStats playerStats;
 
     // Called when the game starts
     private void Awake()
     {
-        inventory = new Inventory(27);
+        inventory = GetComponent<InventoryManager>();
     }
 
     private void Start()
@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
 
     public void DropItem(Item item)
     {
-        //TODO ideally enable drag-and-drop
         float dropRadius = 1.5f;
         float minDistance = 0.5f;
 
@@ -56,12 +55,20 @@ public class Player : MonoBehaviour
         Debug.Log("Player removed inventory item " + item.data.itemName);
     }
 
+    public void DropItem(Item item, int numToDrop)
+    {
+        for(int i = 0; i < numToDrop; i++)
+        {
+            DropItem(item);
+        } 
+    }
+
+
     private void TryInteract(Vector3Int position)
     {
-        // TODO there should be some check here to see what magic is equipped,
-        // then an if-statemet that confirms we are allowed to spend that mana 
-        // before tile is set to interacted. 
-        playerStats.UseMana(25);
-        GameManager.gameInstance.tileManager.SetInteracted(position);
+        if (playerStats.TryUseMana(25)) 
+        {
+            GameManager.gameInstance.tileManager.SetInteracted(position);
+        }
     }
 }

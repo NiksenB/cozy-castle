@@ -23,18 +23,23 @@ public class Inventory
         public Sprite icon;
         public bool isStackable;
         public int count;
-        public int max;
+        public int max = 100;
 
         public Slot()
         {
             itemName = "";
             count = 0;
-            max = 100;
         }
 
-        public bool HasRoom()
+        public bool IsEmpty()
         {
-            return count <= max;
+            Debug.Log("IsEmpty will return " + (itemName == "" && count == 0) + " because itemName == " + itemName + " and count == " + count);
+            return itemName == "" && count == 0;
+        }
+
+        public bool CanAddItem(string itemName)
+        {
+            return IsEmpty() || (isStackable && this.itemName == itemName && count <= max);
         }
 
         public void AddItem(Item item)
@@ -42,6 +47,14 @@ public class Inventory
             itemName = item.data.itemName;
             icon = item.data.icon;
             isStackable = item.data.isStackable;
+            count++;
+        }
+
+        public void AddItem(string itemName, Sprite icon, bool isStackable)
+        {
+            this.itemName = itemName;
+            this.icon = icon;
+            this.isStackable = isStackable;
             count++;
         }
 
@@ -61,20 +74,11 @@ public class Inventory
         }
     }
     
-    public void AddToInventory(Item item)
+    public void AddToInventoryAutomatic(Item item)
     {
         Slot targetSlot = null;
 
-        if (item.data.isStackable)
-        {
-            targetSlot = slots.FirstOrDefault(slot => 
-                slot.itemName == item.data.itemName && slot.HasRoom());
-        
-            if (targetSlot != null)
-                Debug.Log("Adding to existing item stack.");
-            }
-
-        targetSlot ??= slots.FirstOrDefault(slot => string.IsNullOrEmpty(slot.itemName));
+        targetSlot = slots.FirstOrDefault(slot => slot.CanAddItem(item.data.itemName));
 
         if (targetSlot != null)
         {
@@ -90,5 +94,31 @@ public class Inventory
     public void RemoveFromInventory(int index) 
     { 
         slots[index].RemoveItem();
+    }
+
+    public void RemoveFromInventory(int index, int numToRemove) 
+    { 
+        if (slots[index].count >= numToRemove)
+        {
+            for(int i = 0; i < numToRemove; i++)
+            {
+                RemoveFromInventory(index);
+            }
+        }
+    }
+
+    public void MoveSlot(int fromIndex, int toIndex, Inventory toInvevntory, int amountToMove = 1)
+    {
+        Slot fromSlot = slots[fromIndex];
+        Slot toSlot = toInvevntory.slots[toIndex];
+
+        for (int i = 0; i < amountToMove; i++)
+        {
+            if (toSlot.CanAddItem(fromSlot.itemName))
+            {
+                toSlot.AddItem(fromSlot.itemName, fromSlot.icon, fromSlot.isStackable);
+                fromSlot.RemoveItem();
+            }
+        }
     }
 }

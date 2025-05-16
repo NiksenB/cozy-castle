@@ -1,0 +1,2242 @@
+fileFormatVersion: 2
+guid: 9e06d5f851d59544c8ff395c4e96afc5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7357151985884783901
+    second: slime_orange_0
+  - first:
+      213: 3517182811089326236
+    second: slime_orange_1
+  - first:
+      213: 9062310362522847826
+    second: slime_orange_2
+  - first:
+      213: 6387975833522301970
+    second: slime_orange_3
+  - first:
+      213: 6009727136388165257
+    second: slime_orange_4
+  - first:
+      213: 1996445461663787565
+    second: slime_orange_5
+  - first:
+      213: 2101305471632291864
+    second: slime_orange_6
+  - first:
+      213: -6797499805859335177
+    second: slime_orange_7
+  - first:
+      213: 9067566090072082185
+    second: slime_orange_8
+  - first:
+      213: 8479223707118106693
+    second: slime_orange_9
+  - first:
+      213: -3067123386771786554
+    second: slime_orange_10
+  - first:
+      213: 8549072725302682144
+    second: slime_orange_11
+  - first:
+      213: 1329692565336020562
+    second: slime_orange_12
+  - first:
+      213: 5503660505675229085
+    second: slime_orange_13
+  - first:
+      213: 3157612151692941376
+    second: slime_orange_14
+  - first:
+      213: 3534339444140392047
+    second: slime_orange_15
+  - first:
+      213: -8515068882418094373
+    second: slime_orange_16
+  - first:
+      213: 2130291359915533322
+    second: slime_orange_17
+  - first:
+      213: -4849979395309705242
+    second: slime_orange_18
+  - first:
+      213: 5637971035047926353
+    second: slime_orange_19
+  - first:
+      213: 4027378819729079531
+    second: slime_orange_20
+  - first:
+      213: -1524008923352325207
+    second: slime_orange_21
+  - first:
+      213: -4605513112872788835
+    second: slime_orange_22
+  - first:
+      213: 3782055290928042497
+    second: slime_orange_23
+  - first:
+      213: -4230501414496216875
+    second: slime_orange_24
+  - first:
+      213: -4079117261292045888
+    second: slime_orange_25
+  - first:
+      213: 2080131656633020852
+    second: slime_orange_26
+  - first:
+      213: -6854714717888609214
+    second: slime_orange_27
+  - first:
+      213: 3187917664443167092
+    second: slime_orange_28
+  - first:
+      213: -2474589390631087864
+    second: slime_orange_29
+  - first:
+      213: 687756796295627993
+    second: slime_orange_30
+  - first:
+      213: -9005311118985935372
+    second: slime_orange_31
+  - first:
+      213: 5797079983968027070
+    second: slime_orange_32
+  - first:
+      213: -1700044665403090628
+    second: slime_orange_33
+  - first:
+      213: 6016789037374123247
+    second: slime_orange_34
+  - first:
+      213: 322413631795741004
+    second: slime_orange_35
+  - first:
+      213: -2071742528676984837
+    second: slime_orange_36
+  - first:
+      213: -1429648287860208404
+    second: slime_orange_37
+  - first:
+      213: -7319931974375245451
+    second: slime_orange_38
+  - first:
+      213: 2999961983447399940
+    second: slime_orange_39
+  - first:
+      213: 9066508558193504976
+    second: slime_orange_40
+  - first:
+      213: -4678179481259292065
+    second: slime_orange_41
+  - first:
+      213: 5466829239626912028
+    second: slime_orange_42
+  - first:
+      213: -4585257821701596579
+    second: slime_orange_43
+  - first:
+      213: -7195056558421317103
+    second: slime_orange_44
+  - first:
+      213: -9095571902959005914
+    second: slime_orange_45
+  - first:
+      213: 4657873469151147158
+    second: slime_orange_46
+  - first:
+      213: -7402660362859714814
+    second: slime_orange_47
+  - first:
+      213: -8718156196275630119
+    second: slime_orange_48
+  - first:
+      213: -6210130134149683142
+    second: slime_orange_49
+  - first:
+      213: 8299329127539104499
+    second: slime_orange_50
+  - first:
+      213: 4921079866615821434
+    second: slime_orange_51
+  - first:
+      213: -9215494416591231263
+    second: slime_orange_52
+  - first:
+      213: 6953259380730552884
+    second: slime_orange_53
+  - first:
+      213: 2866659035304680665
+    second: slime_orange_54
+  - first:
+      213: -6220355263484260089
+    second: slime_orange_55
+  - first:
+      213: 8632693609641611672
+    second: slime_orange_56
+  - first:
+      213: 7847388845854832053
+    second: slime_orange_57
+  - first:
+      213: -7160505643529586497
+    second: slime_orange_58
+  - first:
+      213: 4044154942750066063
+    second: slime_orange_59
+  - first:
+      213: 7461001211784777613
+    second: slime_orange_60
+  - first:
+      213: -864995287189834357
+    second: slime_orange_61
+  - first:
+      213: -2609858367398515753
+    second: slime_orange_62
+  - first:
+      213: -5583674810231925371
+    second: slime_orange_63
+  - first:
+      213: 4810209268938298643
+    second: slime_orange_64
+  - first:
+      213: 8597671606905597857
+    second: slime_orange_65
+  - first:
+      213: 7416804750667360063
+    second: slime_orange_66
+  - first:
+      213: -4511821844901403917
+    second: slime_orange_67
+  - first:
+      213: 6030159146138118987
+    second: slime_orange_68
+  - first:
+      213: 6602481420295352519
+    second: slime_orange_69
+  - first:
+      213: 6062105159654659442
+    second: slime_orange_70
+  - first:
+      213: 7082064067895755745
+    second: slime_orange_71
+  - first:
+      213: -5074765409745533973
+    second: slime_orange_72
+  - first:
+      213: -615970783639372688
+    second: slime_orange_73
+  - first:
+      213: -3074455159096474350
+    second: slime_orange_74
+  - first:
+      213: 3598634489243958828
+    second: slime_orange_75
+  - first:
+      213: -7697556457330014048
+    second: slime_orange_76
+  - first:
+      213: -3548597342240895185
+    second: slime_orange_77
+  - first:
+      213: 4188209277384184573
+    second: slime_orange_78
+  - first:
+      213: -7794684886092831352
+    second: slime_orange_79
+  - first:
+      213: 2423100728707075686
+    second: slime_orange_80
+  - first:
+      213: -5361309828273872549
+    second: slime_orange_81
+  - first:
+      213: -2415210555761324066
+    second: slime_orange_82
+  - first:
+      213: -9306670612017967
+    second: slime_orange_83
+  - first:
+      213: -7483260362409522647
+    second: slime_orange_84
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slime_orange_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 239
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea17caaf3526e990800000000000000
+      internalID: -7357151985884783901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 240
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90d611c12b8fc030800000000000000
+      internalID: 3517182811089326236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 242
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a0482b24bc3cd70800000000000000
+      internalID: 9062310362522847826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 239
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c60e6fc26a6a850800000000000000
+      internalID: 6387975833522301970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 239
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e21795df6d66350800000000000000
+      internalID: 6009727136388165257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 223
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a29ebd19cc4bb10800000000000000
+      internalID: 1996445461663787565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 224
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8183a397136592d10800000000000000
+      internalID: 2101305471632291864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 226
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3b7f6f0fd6aa1a0800000000000000
+      internalID: -6797499805859335177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 223
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907cf10215776dd70800000000000000
+      internalID: 9067566090072082185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 223
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54878d969014ca570800000000000000
+      internalID: 8479223707118106693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 207
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4bc21b7836f65d0800000000000000
+      internalID: -3067123386771786554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 208
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022a5a6495864a670800000000000000
+      internalID: 8549072725302682144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 210
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256d459d754047210800000000000000
+      internalID: 1329692565336020562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 207
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d976e1df11ee06c40800000000000000
+      internalID: 5503660505675229085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 207
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0485d10b58712db20800000000000000
+      internalID: 3157612151692941376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 191
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6eb3abaffe7c0130800000000000000
+      internalID: 3534339444140392047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_16
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 192
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdeac7957f564d980800000000000000
+      internalID: -8515068882418094373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_17
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 194
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0469df74b0509d10800000000000000
+      internalID: 2130291359915533322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_18
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 191
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7e99eaf6961bcb0800000000000000
+      internalID: -4849979395309705242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a19fdf8c81e3e40800000000000000
+      internalID: 5637971035047926353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 175
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec32e5d2bf14e730800000000000000
+      internalID: 4027378819729079531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 175
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a32f0175f1a9dae0800000000000000
+      internalID: -1524008923352325207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 159
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c50d2993ee510c0800000000000000
+      internalID: -4605513112872788835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_23
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 159
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10217a8bf3f8c7430800000000000000
+      internalID: 3782055290928042497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 143
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d85a2fa06d3a45c0800000000000000
+      internalID: -4230501414496216875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 143
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9f58386701467c0800000000000000
+      internalID: -4079117261292045888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 127
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1f7af78bc1edc10800000000000000
+      internalID: 2080131656633020852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 127
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2448b9b28492fd0a0800000000000000
+      internalID: -6854714717888609214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 111
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471f35ab932cd3c20800000000000000
+      internalID: 3187917664443167092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_29
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 111
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801db766f0e78add0800000000000000
+      internalID: -2474589390631087864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_30
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 113
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4cf0f89276b8900800000000000000
+      internalID: 687756796295627993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_31
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 111
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5c7fcdf35b60380800000000000000
+      internalID: -9005311118985935372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb101faf78d537050800000000000000
+      internalID: 5797079983968027070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 95
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39d950526a3868e0800000000000000
+      internalID: -1700044665403090628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_34
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 95
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec262d40cdef7350800000000000000
+      internalID: 6016789037374123247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_35
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 97
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41cde96d71797400800000000000000
+      internalID: 322413631795741004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_36
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 95
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf783209521bf33e0800000000000000
+      internalID: -2071742528676984837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 95
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecc850f47ed82ce0800000000000000
+      internalID: -1429648287860208404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_38
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 79
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579f657e6a06a6a90800000000000000
+      internalID: -7319931974375245451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_39
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 79
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40efe0b878102a920800000000000000
+      internalID: 2999961983447399940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_40
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 81
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2b92c4f75b2dd70800000000000000
+      internalID: 9066508558193504976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_41
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 79
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ac4004c84c31fb0800000000000000
+      internalID: -4678179481259292065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 79
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c115eab9a341edb40800000000000000
+      internalID: 5466829239626912028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_43
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 63
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a15ed0e44ed50c0800000000000000
+      internalID: -4585257821701596579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_44
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 63
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ae3706e26062c90800000000000000
+      internalID: -7195056558421317103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_45
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 65
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62fca1f6b8906c180800000000000000
+      internalID: -9095571902959005914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_46
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 58
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6947871ed3714a040800000000000000
+      internalID: 4657873469151147158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_47
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 63
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207e1e6fe97744990800000000000000
+      internalID: -7402660362859714814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_48
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 60
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfce985123e20780800000000000000
+      internalID: -8718156196275630119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_49
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 50
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a382f01bb8f21d9a0800000000000000
+      internalID: -6210130134149683142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_50
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 47
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa5509aed32d2370800000000000000
+      internalID: 8299329127539104499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_51
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 53
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7476f0d0103b4440800000000000000
+      internalID: 4921079866615821434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_52
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 54
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6eb7567acfb1080800000000000000
+      internalID: -9215494416591231263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_53
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 58
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432e89b1190fe7060800000000000000
+      internalID: 6953259380730552884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_54
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 52
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dcdf73543b68c720800000000000000
+      internalID: 2866659035304680665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_55
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 57
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7011a4f38dbdca9a0800000000000000
+      internalID: -6220355263484260089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_56
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 56
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8911979991d7dc770800000000000000
+      internalID: 8632693609641611672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_57
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 34
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b53a8bf39687ec60800000000000000
+      internalID: 7847388845854832053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_58
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb83d312e06c0ac90800000000000000
+      internalID: -7160505643529586497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_59
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 37
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85024b5e79bf1830800000000000000
+      internalID: 4044154942750066063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_60
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 42
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fc031721dca8760800000000000000
+      internalID: 7461001211784777613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_61
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 38
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85b9a68e5beef3f0800000000000000
+      internalID: -864995287189834357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_62
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 42
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db612974abe7cbd0800000000000000
+      internalID: -2609858367398515753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_63
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 36
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58554daf75dc282b0800000000000000
+      internalID: -5583674810231925371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_64
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 41
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315db5238db41c240800000000000000
+      internalID: 4810209268938298643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_65
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 40
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afe11926c0115770800000000000000
+      internalID: 8597671606905597857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_66
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 18
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3725f3ff98cde660800000000000000
+      internalID: 7416804750667360063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_67
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2edcccfe9c261c0800000000000000
+      internalID: -4511821844901403917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_68
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 21
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ba2a45bcd6fa350800000000000000
+      internalID: 6030159146138118987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_69
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 26
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c032dcced9b0ab50800000000000000
+      internalID: 6602481420295352519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_70
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 22
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2755748368ce02450800000000000000
+      internalID: 6062105159654659442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_71
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 26
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e30c735fbb884260800000000000000
+      internalID: 7082064067895755745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_72
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 20
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be38da14fbfc299b0800000000000000
+      internalID: -5074765409745533973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_73
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 25
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cf729f5d1a377f0800000000000000
+      internalID: -615970783639372688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_74
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 24
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215003c62575555d0800000000000000
+      internalID: -3074455159096474350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_75
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2efad7600be0f130800000000000000
+      internalID: 3598634489243958828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_76
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8845a7f29cc2590800000000000000
+      internalID: -7697556457330014048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_77
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 5
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f06dcb489d0cec0800000000000000
+      internalID: -3548597342240895185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_78
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 10
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2da7fc5228f1a30800000000000000
+      internalID: 4188209277384184573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_79
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885a454e467b3d390800000000000000
+      internalID: -7794684886092831352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_80
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e439d464590a120800000000000000
+      internalID: 2423100728707075686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_81
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 4
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51eceadd1dc895b0800000000000000
+      internalID: -5361309828273872549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_82
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 9
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf821ebbc27b7ed0800000000000000
+      internalID: -2415210555761324066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_83
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 8
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc0124e1afeedff0800000000000000
+      internalID: -9306670612017967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_orange_84
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ac1d0395e162890800000000000000
+      internalID: -7483260362409522647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
