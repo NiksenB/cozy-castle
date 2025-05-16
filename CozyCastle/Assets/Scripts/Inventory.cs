@@ -33,7 +33,6 @@ public class Inventory
 
         public bool IsEmpty()
         {
-            Debug.Log("IsEmpty will return " + (itemName == "" && count == 0) + " because itemName == " + itemName + " and count == " + count);
             return itemName == "" && count == 0;
         }
 

@@ -9,7 +9,6 @@ public class Inventory_UI : MonoBehaviour
     public string inventoryName;
     public List<Slot_UI> slots = new ();
     [SerializeField] private Canvas canvas;
-    // private int selectedQuantity;
     private Inventory inventory;
     
     private void Awake()
@@ -52,10 +51,10 @@ public class Inventory_UI : MonoBehaviour
         Item itemToDrop = GameManager.gameInstance.itemManager.GetItemByName(inventory.slots[UI_Manager.draggedSlot.slotID].itemName);
         if (itemToDrop != null)
         {
+            int numToRemove = UI_Manager.dragSingle ? 1 : inventory.slots[UI_Manager.draggedSlot.slotID].count;
 
-            int stackSize = inventory.slots[UI_Manager.draggedSlot.slotID].count;
-            inventory.RemoveFromInventory(UI_Manager.draggedSlot.slotID, stackSize);
-            GameManager.gameInstance.player.DropItem(itemToDrop, stackSize);
+            inventory.RemoveFromInventory(UI_Manager.draggedSlot.slotID, numToRemove);
+            GameManager.gameInstance.player.DropItem(itemToDrop, numToRemove);
             Refresh();
         }
 
@@ -84,7 +83,6 @@ public class Inventory_UI : MonoBehaviour
         }
 
         MoveToMousePosition(UI_Manager.draggedIcon.gameObject);
-        Debug.Log("Start dragging slot.");
     }
 
     public void SlotDrag()
