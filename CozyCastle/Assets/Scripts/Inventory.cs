@@ -5,12 +5,13 @@ using System.Linq;
 [System.Serializable]
 public class Inventory
 {
-    public List<Slot> slots = new ();
+    public List<Slot> slots = new();
+    public Slot selectedSlot = null;
 
     public Inventory(int numSlots)
     {
         for (int i = 0; i < numSlots; i++)
-        { 
+        {
             Slot slot = new();
             slots.Add(slot);
         }
@@ -18,7 +19,7 @@ public class Inventory
 
     [System.Serializable]
     public class Slot
-    { 
+    {
         public string itemName;
         public Sprite icon;
         public bool isStackable;
@@ -42,7 +43,7 @@ public class Inventory
         }
 
         public void AddItem(Item item)
-        { 
+        {
             itemName = item.data.itemName;
             icon = item.data.icon;
             isStackable = item.data.isStackable;
@@ -58,7 +59,7 @@ public class Inventory
         }
 
         public void RemoveItem()
-        { 
+        {
             if (count > 0)
             {
                 count--;
@@ -72,7 +73,7 @@ public class Inventory
             }
         }
     }
-    
+
     public void AddToInventoryAutomatic(Item item)
     {
         Slot targetSlot = null;
@@ -82,7 +83,7 @@ public class Inventory
         if (targetSlot != null)
         {
             targetSlot.AddItem(item);
-            Debug.Log($"{item.data.itemName} added to inventory.");;
+            Debug.Log($"{item.data.itemName} added to inventory."); ;
         }
         else
         {
@@ -90,16 +91,16 @@ public class Inventory
         }
     }
 
-    public void RemoveFromInventory(int index) 
-    { 
+    public void RemoveFromInventory(int index)
+    {
         slots[index].RemoveItem();
     }
 
-    public void RemoveFromInventory(int index, int numToRemove) 
-    { 
+    public void RemoveFromInventory(int index, int numToRemove)
+    {
         if (slots[index].count >= numToRemove)
         {
-            for(int i = 0; i < numToRemove; i++)
+            for (int i = 0; i < numToRemove; i++)
             {
                 RemoveFromInventory(index);
             }
@@ -118,6 +119,14 @@ public class Inventory
                 toSlot.AddItem(fromSlot.itemName, fromSlot.icon, fromSlot.isStackable);
                 fromSlot.RemoveItem();
             }
+        }
+    }
+
+    public void SelectSlot(int index)
+    {
+        if (slots != null && slots.Count > 0)
+        { 
+            selectedSlot = slots[index];
         }
     }
 }

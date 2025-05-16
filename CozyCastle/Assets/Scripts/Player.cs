@@ -2,40 +2,50 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public InventoryManager inventory;
+    public InventoryManager inventoryManager;
+    private TileManager tileManager;
     private PlayerStats playerStats;
 
     // Called when the game starts
     private void Awake()
     {
-        inventory = GetComponent<InventoryManager>();
+        inventoryManager = GetComponent<InventoryManager>();
     }
 
     private void Start()
     {
-        playerStats = GetComponent<PlayerStats>(); 
-        if (playerStats == null)
-        {
-            Debug.LogError("PlayerStats component is missing from Player!");
-        }
+        playerStats = GetComponent<PlayerStats>();
+        tileManager = GameManager.gameInstance.tileManager;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Vector3Int position = new ((int)transform.position.x, (int)transform.position.y, 0);
-            
-            if (GameManager.gameInstance.tileManager.IsInteractable(position))
+            if (tileManager != null)
             {
-                TryInteract(position);
+                Vector3Int position = new((int)transform.position.x, (int)transform.position.y, 0);
+
+                // if (tileManager.IsInteractable(position))
+                // {
+                //     TryInteract(position);
+                // }
+                string tileName = tileManager.GetTileName(position);
+
+                if (!string.IsNullOrEmpty(tileName))
+                {
+                    if (tileName == "Interactable" && inventoryManager.toolbar.selectedSlot.itemName == "Magic Wand")
+                    {
+                        TryInteract(position);
+                    }
+                }
             }
         }
     }
 
     public void DropItem(Item item)
     {
-        float dropRadius = 1.5f;
+        float dropRadius = 1.0f;
         float minDistance = 0.5f;
 
         Vector2 randomDirection = Random.insideUnitCircle.normalized;
@@ -68,7 +78,7 @@ public class Player : MonoBehaviour
     {
         if (playerStats.TryUseMana(25)) 
         {
-            GameManager.gameInstance.tileManager.SetInteracted(position);
+            tileManager.SetInteracted(position);
         }
     }
 }
