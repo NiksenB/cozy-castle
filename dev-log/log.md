@@ -1,3 +1,14 @@
+## PR #16 - Chore : Test github actions after fixed permissions (2025-05-22)
+
+### What's changed
+- Updated github action permissions
+
+### Images
+_No images added._
+
+---
+
+
 ## PR #1 - Initial setup (2025-05-22)
 
 ### What's changed
