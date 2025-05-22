@@ -26,6 +26,7 @@ jobs:
         PR_NUMBER: ${{ github.event.pull_request.number }}
         PR_BODY: ${{ github.event.pull_request.body }}
       run: |
+        python3 - <<EOF
         import os
         import re
         import datetime
@@ -65,6 +66,7 @@ jobs:
             old = f.read()
             f.seek(0)
             f.write(entry + "\n" + old)
+        EOF
 
     - name: Commit and push dev log
       env:
