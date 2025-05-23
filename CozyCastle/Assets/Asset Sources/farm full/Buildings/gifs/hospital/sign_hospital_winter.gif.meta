@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sign_hospital_winter_0: 6764572366679000338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

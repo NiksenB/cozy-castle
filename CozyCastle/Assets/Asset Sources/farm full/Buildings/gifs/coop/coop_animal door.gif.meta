@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      coop_animal door_0: 3254782576412787747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_blue_walk_down_0: -2165306176225464124
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

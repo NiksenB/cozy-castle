@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cow_brown animation_0: -7769799896114855145
+      cow_brown animation_1: 2992935410991210466
+      cow_brown animation_10: -3865497678938342590
+      cow_brown animation_11: 1744530277626789073
+      cow_brown animation_12: 7892196092435808753
+      cow_brown animation_13: -6773629549009469896
+      cow_brown animation_2: -8409896253322280070
+      cow_brown animation_3: 4148090384952160423
+      cow_brown animation_4: -5606696968001565083
+      cow_brown animation_5: 7329090348322421108
+      cow_brown animation_6: -7008079515043047546
+      cow_brown animation_7: 3680008835896889064
+      cow_brown animation_8: -233608193857807377
+      cow_brown animation_9: -3985089014879388621
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

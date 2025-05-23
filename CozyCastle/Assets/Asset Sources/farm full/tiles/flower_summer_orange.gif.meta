@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flower_summer_orange_0: -7806517997457538168
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

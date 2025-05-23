@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      animatedFireplace_4Frames_0: -2113966367594314064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

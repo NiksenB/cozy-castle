@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gate_stone_winter_0: 7281218924257721669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

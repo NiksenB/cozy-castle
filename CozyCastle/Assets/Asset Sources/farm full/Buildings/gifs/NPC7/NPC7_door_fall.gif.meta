@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NPC7_door_fall_0: 7448601215290773026
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gate_wood_spring_0: 5622684334923312150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

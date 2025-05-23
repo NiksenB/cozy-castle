@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_green_idle_left_0: 1724828392984127908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

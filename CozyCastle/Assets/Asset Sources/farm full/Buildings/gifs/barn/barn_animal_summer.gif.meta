@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      barn_animal_summer_0: -7913490917025961198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

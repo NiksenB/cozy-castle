@@ -434,7 +434,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      makingBeerAndWine_0: 7271886795368504489
+      makingBeerAndWine_1: -7914151561538467318
+      makingBeerAndWine_10: 4571297961824836532
+      makingBeerAndWine_11: -9107368515372908616
+      makingBeerAndWine_12: 635767450249923007
+      makingBeerAndWine_2: -3197855434703944160
+      makingBeerAndWine_3: 2357838119797451665
+      makingBeerAndWine_4: -5854776922714275683
+      makingBeerAndWine_5: 3208173681047438255
+      makingBeerAndWine_6: 6775902565883550272
+      makingBeerAndWine_7: 6883786987178472872
+      makingBeerAndWine_8: -647193649638481010
+      makingBeerAndWine_9: 7350982390204175875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

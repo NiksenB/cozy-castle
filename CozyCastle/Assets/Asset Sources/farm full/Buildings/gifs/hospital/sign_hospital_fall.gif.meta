@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sign_hospital_fall_0: 1923311062377338022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

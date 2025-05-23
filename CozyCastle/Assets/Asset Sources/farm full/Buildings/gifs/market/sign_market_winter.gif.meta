@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sign_market_winter_0: -587194215747888105
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

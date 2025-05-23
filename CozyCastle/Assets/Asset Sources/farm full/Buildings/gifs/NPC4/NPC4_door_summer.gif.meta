@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NPC4_door_summer_0: 2942759862832294964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bat_black_0: -5967015512198014703
+      bat_black_1: -271067745263776582
+      bat_black_10: 4329796400629879264
+      bat_black_11: -3350573784976050799
+      bat_black_12: 7211802790413434211
+      bat_black_13: -1280681873411088064
+      bat_black_14: -5494942820265037227
+      bat_black_15: 4052805949641680778
+      bat_black_16: -2877516937955613526
+      bat_black_17: 9180248320323186125
+      bat_black_18: -7256945369593643529
+      bat_black_19: 2597767157782745930
+      bat_black_2: -2236723574596796417
+      bat_black_3: -4983524059355371729
+      bat_black_4: 6534291546067125441
+      bat_black_5: 3651020400204613872
+      bat_black_6: 3183144909311376257
+      bat_black_7: -274001260579017037
+      bat_black_8: 3897188556465711319
+      bat_black_9: 3787625209485550401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

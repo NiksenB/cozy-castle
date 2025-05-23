@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_rainbow_walk_up_0: -2381762951849592703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

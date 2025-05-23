@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cozeBeds_0: -8014481690124233734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

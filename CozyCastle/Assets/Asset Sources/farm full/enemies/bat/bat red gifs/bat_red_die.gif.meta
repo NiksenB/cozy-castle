@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bat_red_die_0: 353951086733433174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

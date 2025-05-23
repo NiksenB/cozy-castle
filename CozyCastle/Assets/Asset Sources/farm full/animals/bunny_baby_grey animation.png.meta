@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bunny_baby_grey animation_0: 8371434967505825112
+      bunny_baby_grey animation_1: -2265717399961118366
+      bunny_baby_grey animation_10: -5631618401856270053
+      bunny_baby_grey animation_11: -1754754757912435392
+      bunny_baby_grey animation_12: -6949990416331104012
+      bunny_baby_grey animation_13: -6107305378258539718
+      bunny_baby_grey animation_14: 2298815069505237378
+      bunny_baby_grey animation_15: -6744762880267853518
+      bunny_baby_grey animation_16: -5901677054609823278
+      bunny_baby_grey animation_17: -6285332764765290494
+      bunny_baby_grey animation_18: 2759142979377677483
+      bunny_baby_grey animation_19: 2178248519810062819
+      bunny_baby_grey animation_2: 3930571841035607888
+      bunny_baby_grey animation_3: -533578035297765685
+      bunny_baby_grey animation_4: 1884577192284932929
+      bunny_baby_grey animation_5: 8235851125592750117
+      bunny_baby_grey animation_6: -7245183113246120974
+      bunny_baby_grey animation_7: 1282107132173044708
+      bunny_baby_grey animation_8: -4304352150834414174
+      bunny_baby_grey animation_9: 9094986231063234751
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

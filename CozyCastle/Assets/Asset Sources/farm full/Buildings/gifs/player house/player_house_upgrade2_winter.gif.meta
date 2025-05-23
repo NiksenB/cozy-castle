@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player_house_upgrade2_winter_0: -1984569887756630951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sheep animation_0: -8823968971589436688
+      sheep animation_1: 2050655969793069519
+      sheep animation_10: -7648827896943472923
+      sheep animation_11: -6330300696070502507
+      sheep animation_12: -1727016859518048116
+      sheep animation_13: -172088500061766834
+      sheep animation_14: -2631690575483439899
+      sheep animation_15: -8263451806872571754
+      sheep animation_2: 2889289219574272418
+      sheep animation_3: 948949311252532266
+      sheep animation_4: -993442554113120537
+      sheep animation_5: -188334853897761116
+      sheep animation_6: 8242425277797757552
+      sheep animation_7: -7071734084718998226
+      sheep animation_8: -5902056851849386287
+      sheep animation_9: -7585572734230009482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

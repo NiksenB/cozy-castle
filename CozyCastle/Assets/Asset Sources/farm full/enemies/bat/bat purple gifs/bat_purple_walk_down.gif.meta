@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bat_purple_walk_down_0: -3113140983465041508
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

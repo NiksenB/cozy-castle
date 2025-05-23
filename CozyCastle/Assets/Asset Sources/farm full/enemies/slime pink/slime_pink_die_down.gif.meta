@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_pink_die_down_0: -1246500065392120911
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

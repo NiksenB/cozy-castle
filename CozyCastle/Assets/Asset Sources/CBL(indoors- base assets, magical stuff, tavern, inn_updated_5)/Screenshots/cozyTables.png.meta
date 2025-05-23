@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cozyTables_0: 8994581667089517910
+      cozyTables_1: -5428641735979850619
+      cozyTables_2: -829849523226413013
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

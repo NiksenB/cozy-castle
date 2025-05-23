@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      packedSpriteSheet_wallsAndFloors_0: 5769573246134657986
+      packedSpriteSheet_wallsAndFloors_1: 8234651466500266932
+      packedSpriteSheet_wallsAndFloors_2: 3867222612453446665
+      packedSpriteSheet_wallsAndFloors_3: 8223471047354503252
+      packedSpriteSheet_wallsAndFloors_4: 1780436080254330934
+      packedSpriteSheet_wallsAndFloors_5: -5794612493090127508
+      packedSpriteSheet_wallsAndFloors_6: 1196016226498304456
+      packedSpriteSheet_wallsAndFloors_7: 6050956400796014030
+      packedSpriteSheet_wallsAndFloors_8: -4244615223583572992
+      packedSpriteSheet_wallsAndFloors_9: 1135998313492584862
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

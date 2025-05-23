@@ -1434,7 +1434,60 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      global_shadow_0: 1271783054031032220
+      global_shadow_1: -3097344658070260251
+      global_shadow_10: -8589571840996384348
+      global_shadow_11: 6432861265785947029
+      global_shadow_12: 4077247774692961574
+      global_shadow_13: 6518395372480631466
+      global_shadow_14: -3722735149354892471
+      global_shadow_15: 6927128440180072854
+      global_shadow_16: -7038498253634693606
+      global_shadow_17: 6133688005320209032
+      global_shadow_18: 361446582870936553
+      global_shadow_19: -5501064834437585503
+      global_shadow_2: -5394403228005379455
+      global_shadow_20: 7960065397345153043
+      global_shadow_21: 1765071195353578147
+      global_shadow_22: -7006702964471192083
+      global_shadow_23: 778682837806781496
+      global_shadow_24: -1678068931251630464
+      global_shadow_25: -7968789278468799853
+      global_shadow_26: -5031458171174918323
+      global_shadow_27: 5495284521906788767
+      global_shadow_28: 7653031468358046769
+      global_shadow_29: 4439018021789291573
+      global_shadow_3: -7821215675450877852
+      global_shadow_30: -3340437380117684817
+      global_shadow_31: -1034258469820252004
+      global_shadow_32: -8363982113015984967
+      global_shadow_33: 4113372601375728067
+      global_shadow_34: 7101116053481787171
+      global_shadow_35: -1132443494006321702
+      global_shadow_36: -4006651319411278043
+      global_shadow_37: 4723146230708111435
+      global_shadow_38: 7955563030944405750
+      global_shadow_39: 2411136883805666876
+      global_shadow_4: -1665711947128875859
+      global_shadow_40: 5322540484966488191
+      global_shadow_41: -6162789983557908667
+      global_shadow_42: -5838663978725134153
+      global_shadow_43: 7862953159099787703
+      global_shadow_44: 3594208291154518298
+      global_shadow_45: 8247988112475995369
+      global_shadow_46: -2650153804344318359
+      global_shadow_47: 8692452068424282356
+      global_shadow_48: -6197210934330779275
+      global_shadow_49: 782591795791361986
+      global_shadow_5: -5874710361400423356
+      global_shadow_50: -6710213149465276439
+      global_shadow_51: 8247076342128013678
+      global_shadow_52: 5010166978676398304
+      global_shadow_6: 8670822039914277583
+      global_shadow_7: -7654791870232910040
+      global_shadow_8: -8644550933603172575
+      global_shadow_9: 2486259740792855006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
