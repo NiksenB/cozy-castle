@@ -6,16 +6,28 @@ public class Player : MonoBehaviour
     private TileManager tileManager;
     private PlayerStats playerStats;
     private PlayerMovementScript movementScript;
+    public static Player Instance { get; private set; }
+
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
         inventoryManager = GetComponent<InventoryManager>();
         movementScript = GetComponent<PlayerMovementScript>();
+        playerStats = GetComponent<PlayerStats>();
     }
 
     private void Start()
     {
-        playerStats = GetComponent<PlayerStats>();
         tileManager = GameManager.gameInstance.tileManager;
     }
 

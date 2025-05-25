@@ -4,6 +4,7 @@ using UnityEngine.Tilemaps;
 public class TileManager : MonoBehaviour
 {
     // Serialize is used so we can drag the Tilemap into the Inspector.
+
     [SerializeField] private Tilemap interactableMap;
     [SerializeField] private Tile hiddenInteractableTile;
     [SerializeField] private Tile overgrownTile;
