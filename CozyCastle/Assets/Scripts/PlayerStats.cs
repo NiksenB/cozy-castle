@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
@@ -5,8 +6,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private float maxMana = 200f;  // Set in Inspector
     private float currentMana;
 
-    public delegate void OnManaChanged(float currentMana, float maxMana);
-    public event OnManaChanged onManaChanged; // Event for UI update
+    public event Action<float, float> onManaChanged; // Event for UI update
 
     private void Start()
     {

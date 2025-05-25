@@ -79,7 +79,7 @@ public class UI_Manager : MonoBehaviour
         {
             keyValuePair.Value.Refresh();
         }
-        manabarUI.Refresh();
+        manabarUI?.Refresh();
     }
 
     public Inventory_UI GetInventoryUI(string inventoryName)
