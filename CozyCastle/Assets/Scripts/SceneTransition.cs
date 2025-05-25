@@ -3,27 +3,33 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
-    public int sceneIndex;
-    public string sceneName;
+    public int sceneToLoadIndex;
+    public string sceneToLoadName;
     public Vector3 playerPosition;
     public VectorValue playerPositionValue;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !collision.isTrigger)
         {
+            if (playerPositionValue == null)
+            {
+                Debug.LogError("PlayerPositionValue is not assigned in SceneTransition.");
+                return;
+            }
+
             playerPositionValue.value = playerPosition;
-            Debug.Log("Transitioning to scene: " + sceneName + ", scene index: " + sceneIndex);
-            Debug.Log("Player position set to: " + playerPositionValue.value);
 
             // Load the scene using the scene index or name
-            if (sceneIndex >= 0)
+            if (sceneToLoadIndex >= 0)
             {
-                SceneManager.LoadScene(sceneIndex);
+                Debug.Log("Transitioning to scene: " + sceneToLoadName + ", scene index: " + sceneToLoadIndex);
+                Debug.Log("Player position set to: " + playerPositionValue.value);
+                SceneManager.LoadScene(sceneToLoadIndex);
             }
-            else if (!string.IsNullOrEmpty(sceneName))
+            else if (!string.IsNullOrEmpty(sceneToLoadName))
             {
-                SceneManager.LoadScene(sceneName);
+                SceneManager.LoadScene(sceneToLoadName);
             }
         }
     }

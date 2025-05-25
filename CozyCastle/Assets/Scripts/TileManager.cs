@@ -3,11 +3,25 @@ using UnityEngine.Tilemaps;
 
 public class TileManager : MonoBehaviour
 {
-    // Serialize is used so we can drag the Tilemap into the Inspector.
-
     [SerializeField] private Tilemap interactableMap;
     [SerializeField] private Tile hiddenInteractableTile;
     [SerializeField] private Tile overgrownTile;
+
+    void Awake()
+    {
+        if (interactableMap == null)
+        {
+            Debug.LogError("Interactable Tilemap is not assigned in TileManager.");
+        }
+        if (hiddenInteractableTile == null)
+        {
+            Debug.LogError("Hidden Interactable Tile is not assigned in TileManager.");
+        }
+        if (overgrownTile == null)
+        {
+            Debug.LogError("Overgrown Tile is not assigned in TileManager.");
+        }
+    }
 
     void Start()
     {
@@ -20,17 +34,6 @@ public class TileManager : MonoBehaviour
             }
         }
     }
-
-    // public bool IsInteractable(Vector3Int position)
-    // {
-    //     TileBase tile = interactableMap.GetTile(position);
-
-    //     if (tile != null)
-    //     {
-    //         return tile.name == "Interactable";
-    //     }
-    //     return false;
-    // }
 
     public void SetInteracted(Vector3Int position)
     {

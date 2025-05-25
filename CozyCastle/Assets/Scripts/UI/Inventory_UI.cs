@@ -48,7 +48,7 @@ public class Inventory_UI : MonoBehaviour
     public void Remove()
     {
         Debug.Log("Trying to remove item " + UI_Manager.draggedSlot.slotID);
-        Item itemToDrop = GameManager.gameInstance.itemManager.GetItemByName(inventory.slots[UI_Manager.draggedSlot.slotID].itemName);
+        Item itemToDrop = ItemManager.instance.GetItemByName(inventory.slots[UI_Manager.draggedSlot.slotID].itemName);
         if (itemToDrop != null)
         {
             int numToRemove = UI_Manager.dragSingle ? 1 : inventory.slots[UI_Manager.draggedSlot.slotID].count;
@@ -101,7 +101,7 @@ public class Inventory_UI : MonoBehaviour
         UI_Manager.draggedSlot.inventory.MoveSlot(UI_Manager.draggedSlot.slotID, slot.slotID, slot.inventory, UI_Manager.draggedQuantity);
         Debug.Log("Dropped " + UI_Manager.draggedSlot.name + " on " + slot.name);
 
-        GameManager.gameInstance.uiManager.RefreshAll();
+        UI_Manager.instance.RefreshAll();
     }
 
     private void MoveToMousePosition(GameObject toMove)

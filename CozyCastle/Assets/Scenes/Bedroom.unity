@@ -4563,9 +4563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7968932fe3d7fb745a685caf3cb56277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemManager: {fileID: 0}
   tileManager: {fileID: 0}
-  uiManager: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &599760730
 MonoBehaviour:
@@ -4598,6 +4596,7 @@ MonoBehaviour:
   inventoryUIs:
   - {fileID: 1431990083}
   - {fileID: 794361852}
+  manabarUI: {fileID: 730566090}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -6537,7 +6536,7 @@ MonoBehaviour:
   speed: 4
   animator: {fileID: 728456125}
   wand: {fileID: 1235857792}
-  startPosition: {fileID: 11400000, guid: 04e942a554155ec43b9a85893345ba96, type: 2}
+  startingPosition: {fileID: 11400000, guid: 04e942a554155ec43b9a85893345ba96, type: 2}
 --- !u!114 &883431145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7000,6 +6999,7 @@ GameObject:
   - component: {fileID: 1021893472}
   - component: {fileID: 1021893471}
   - component: {fileID: 1021893470}
+  - component: {fileID: 1021893474}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7093,6 +7093,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1021893474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021893469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d15df07671724479321c0ef5c22d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1049514227
 GameObject:
   m_ObjectHideFlags: 0
@@ -14279,16 +14291,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
+      propertyPath: sceneToLoadName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
       propertyPath: playerPosition.x
-      value: -0.51
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
       propertyPath: playerPosition.y
-      value: -2.79
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
       propertyPath: playerPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
+      propertyPath: sceneToLoadIndex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
       propertyPath: playerPositionValue

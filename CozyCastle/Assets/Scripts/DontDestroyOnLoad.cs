@@ -1,9 +1,18 @@
 using UnityEngine;
 public class DontDestroyOnLoad : MonoBehaviour
 {
+    private static DontDestroyOnLoad instance;
+
     private void Awake()
     {
-        // Ensure this GameObject is not destroyed when loading a new scene
-        DontDestroyOnLoad(gameObject);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(this.gameObject); 
+        }
     }
 }

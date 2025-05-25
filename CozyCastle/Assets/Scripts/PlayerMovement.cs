@@ -6,6 +6,12 @@ public class PlayerMovementScript : MonoBehaviour
     public Animator animator;
     public GameObject wand;
     private Vector3 direction;
+    public VectorValue startingPosition;
+
+    private void Start()
+    {
+        transform.position = startingPosition.value;
+    }
 
     public void Update()
     {

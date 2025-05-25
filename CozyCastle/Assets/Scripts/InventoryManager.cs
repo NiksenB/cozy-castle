@@ -13,21 +13,9 @@ public class InventoryManager : MonoBehaviour
     [Header("Toolbar")]
     public Inventory toolbar;
     public int toolbarSlotsCount;
-    public static InventoryManager Instance { get; private set; }
 
     public void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-        
         backpack = new Inventory(backpackSlotsCount);
         toolbar = new Inventory(toolbarSlotsCount);
 

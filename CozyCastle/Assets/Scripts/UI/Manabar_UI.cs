@@ -14,8 +14,8 @@ public class Manabar_UI : MonoBehaviour
         playerStats = FindFirstObjectByType<PlayerStats>();
         if (playerStats != null)
         {
-            playerStats.onManaChanged += UpdateManaBar; // Subscribe to event
-            UpdateManaBar(playerStats.GetCurrentMana(), playerStats.GetMaxMana());
+            playerStats.onManaChanged += UpdateBar; // Subscribe to event
+            UpdateBar(playerStats.GetCurrentMana(), playerStats.GetMaxMana());
         }
     }
 
@@ -23,7 +23,7 @@ public class Manabar_UI : MonoBehaviour
     {
         if (playerStats != null)
         {
-            playerStats.onManaChanged -= UpdateManaBar; // Unsubscribe from event, avoids memory leaks
+            playerStats.onManaChanged -= UpdateBar; // Unsubscribe from event, avoids memory leaks
             playerStats = null; 
         }
     }
@@ -32,11 +32,11 @@ public class Manabar_UI : MonoBehaviour
     {
         if (playerStats != null)
         {
-            UpdateManaBar(playerStats.GetCurrentMana(), playerStats.GetMaxMana());
+            UpdateBar(playerStats.GetCurrentMana(), playerStats.GetMaxMana());
         }
     }
 
-    public void UpdateManaBar(float currentMana, float maxMana)
+    public void UpdateBar(float currentMana, float maxMana)
     {
         manaFillImage.fillAmount = currentMana / maxMana;
     }
