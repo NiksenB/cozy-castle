@@ -1,4 +1,3 @@
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +15,23 @@ public class Manabar_UI : MonoBehaviour
         if (playerStats != null)
         {
             playerStats.onManaChanged += UpdateManaBar; // Subscribe to event
+            UpdateManaBar(playerStats.GetCurrentMana(), playerStats.GetMaxMana());
+        }
+    }
+
+    public void OnDestroy()
+    {
+        if (playerStats != null)
+        {
+            playerStats.onManaChanged -= UpdateManaBar; // Unsubscribe from event, avoids memory leaks
+            playerStats = null; 
+        }
+    }
+
+    public void Refresh()
+    {
+        if (playerStats != null)
+        {
             UpdateManaBar(playerStats.GetCurrentMana(), playerStats.GetMaxMana());
         }
     }

@@ -7,7 +7,8 @@ public class UI_Manager : MonoBehaviour
     public Dictionary<string, Inventory_UI> inventoryUIByName = new();
     public GameObject inventoryPanel;
     public List<Inventory_UI> inventoryUIs;
-    public static UI_Manager instance;
+    public Manabar_UI manabarUI;
+    public static UI_Manager instance { get; private set; }
     public static Slot_UI draggedSlot;
     public static Image draggedIcon;
     public static int draggedQuantity;
@@ -74,10 +75,11 @@ public class UI_Manager : MonoBehaviour
 
     public void RefreshAll()
     {
-        foreach(KeyValuePair<string, Inventory_UI> keyValuePair in inventoryUIByName)
+        foreach (KeyValuePair<string, Inventory_UI> keyValuePair in inventoryUIByName)
         {
             keyValuePair.Value.Refresh();
         }
+        manabarUI.Refresh();
     }
 
     public Inventory_UI GetInventoryUI(string inventoryName)
