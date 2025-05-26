@@ -7,23 +7,13 @@ public class TileManager : MonoBehaviour
     [SerializeField] private Tile hiddenInteractableTile;
     [SerializeField] private Tile overgrownTile;
 
-    void Awake()
-    {
-        if (interactableMap == null)
-        {
-            Debug.LogError("Interactable Tilemap is not assigned in TileManager.");
-        }
-        if (hiddenInteractableTile == null)
-        {
-            Debug.LogError("Hidden Interactable Tile is not assigned in TileManager.");
-        }
-        if (overgrownTile == null)
-        {
-            Debug.LogError("Overgrown Tile is not assigned in TileManager.");
-        }
-    }
 
     void Start()
+    {
+        HideInteractableTiles();
+    }
+
+    public void HideInteractableTiles()
     {
         foreach (Vector3Int position in interactableMap.cellBounds.allPositionsWithin)
         {
@@ -34,6 +24,24 @@ public class TileManager : MonoBehaviour
             }
         }
     }
+
+    public void RefreshTilemapReference()
+    {
+        GameObject tilemapObj = GameObject.Find("InteractableMap");
+        if (tilemapObj != null)
+        {
+            interactableMap = tilemapObj.GetComponent<Tilemap>();
+            if (interactableMap == null)
+            {
+                Debug.LogError("InteractableMap GameObject found, but no Tilemap component attached.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("InteractableMap GameObject not found in the scene.");
+        }
+    }
+
 
     public void SetInteracted(Vector3Int position)
     {
