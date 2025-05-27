@@ -968,6 +968,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650544337}
     m_Modifications:
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: slotID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 794361852}
     - target: {fileID: 1602174097687929079, guid: 31635f15a4d894348a35919c66930b05, type: 3}
       propertyPath: m_Name
       value: ToolbarSlot (3)
@@ -4969,6 +4977,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650544337}
     m_Modifications:
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: slotID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 794361852}
     - target: {fileID: 1602174097687929079, guid: 31635f15a4d894348a35919c66930b05, type: 3}
       propertyPath: m_Name
       value: ToolbarSlot (7)
@@ -5853,7 +5869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryName: toolbar
-  slots:
+  slotUIs:
   - {fileID: 1233036048}
   - {fileID: 889082121}
   - {fileID: 2074940849}
@@ -5883,6 +5899,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650544337}
     m_Modifications:
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: slotID
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 794361852}
     - target: {fileID: 1602174097687929079, guid: 31635f15a4d894348a35919c66930b05, type: 3}
       propertyPath: m_Name
       value: ToolbarSlot (5)
@@ -6495,7 +6519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 259c06ba5e887464696c287cde19ce29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryManager: {fileID: 0}
+  playerInventoryManager: {fileID: 0}
 --- !u!61 &883431142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6610,24 +6634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c60257d6699f446861c6ad4a0efdb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backpack:
-    slots: []
-    selectedSlot:
-      itemName: 
-      icon: {fileID: 0}
-      isStackable: 0
-      count: 0
-      max: 100
-  backpackSlotsCount: 27
-  toolbar:
-    slots: []
-    selectedSlot:
-      itemName: 
-      icon: {fileID: 0}
-      isStackable: 0
-      count: 0
-      max: 100
-  toolbarSlotsCount: 9
+  backpack: {fileID: 11400000, guid: 121a5cdd90bd09b44a4e84771a262a7d, type: 2}
+  toolbar: {fileID: 11400000, guid: b5f586cb20bac914fb9f831d1c1f7ccf, type: 2}
 --- !u!1001 &889082119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6636,6 +6644,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650544337}
     m_Modifications:
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: slotID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1602174097687929079, guid: 31635f15a4d894348a35919c66930b05, type: 3}
       propertyPath: m_Name
       value: ToolbarSlot (1)
@@ -7533,6 +7549,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650544337}
     m_Modifications:
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: slotID
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 794361852}
     - target: {fileID: 1602174097687929079, guid: 31635f15a4d894348a35919c66930b05, type: 3}
       propertyPath: m_Name
       value: ToolbarSlot (8)
@@ -9128,6 +9152,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650544337}
     m_Modifications:
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 794361852}
     - target: {fileID: 1602174097687929079, guid: 31635f15a4d894348a35919c66930b05, type: 3}
       propertyPath: m_Name
       value: ToolbarSlot
@@ -9704,6 +9732,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650544337}
     m_Modifications:
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: slotID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 794361852}
     - target: {fileID: 1602174097687929079, guid: 31635f15a4d894348a35919c66930b05, type: 3}
       propertyPath: m_Name
       value: ToolbarSlot (6)
@@ -11026,7 +11062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryName: backpack
-  slots:
+  slotUIs:
   - {fileID: 873071731}
   - {fileID: 136112932}
   - {fileID: 585701848}
@@ -13330,6 +13366,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650544337}
     m_Modifications:
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: slotID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 794361852}
     - target: {fileID: 1602174097687929079, guid: 31635f15a4d894348a35919c66930b05, type: 3}
       propertyPath: m_Name
       value: ToolbarSlot (4)
@@ -13932,6 +13976,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650544337}
     m_Modifications:
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: slotID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 518892629954080147, guid: 31635f15a4d894348a35919c66930b05, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 794361852}
     - target: {fileID: 1602174097687929079, guid: 31635f15a4d894348a35919c66930b05, type: 3}
       propertyPath: m_Name
       value: ToolbarSlot (2)
@@ -14348,7 +14400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
       propertyPath: playerPosition.y
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
       propertyPath: playerPosition.z
@@ -14376,9 +14428,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 499899626}
     m_Modifications:
     - target: {fileID: 518892629954080147, guid: 0bdf6b282e448014fb4ac39a8014b47b, type: 3}
+      propertyPath: slotData
+      value: 
+      objectReference: {fileID: 11400000, guid: 47a94f6b14353c045a1255f4076ba099, type: 2}
+    - target: {fileID: 518892629954080147, guid: 0bdf6b282e448014fb4ac39a8014b47b, type: 3}
       propertyPath: quantityText
       value: 
       objectReference: {fileID: 815239899}
+    - target: {fileID: 518892629954080147, guid: 0bdf6b282e448014fb4ac39a8014b47b, type: 3}
+      propertyPath: parentInventoryUI
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1602174097687929079, guid: 0bdf6b282e448014fb4ac39a8014b47b, type: 3}
       propertyPath: m_Name
       value: Slot

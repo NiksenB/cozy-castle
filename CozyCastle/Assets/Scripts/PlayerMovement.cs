@@ -21,7 +21,15 @@ public class PlayerMovementScript : MonoBehaviour
 
         AnimateMovement(direction);
 
-        bool wandEquipped = GameManager.gameInstance.player.inventoryManager.toolbar.selectedSlot.itemName == "Magic Wand";
+        InventoryData toolbarData = GameManager.gameInstance.player.playerInventoryManager.toolbar;
+        bool wandEquipped = false;
+        if (toolbarData != null && toolbarData.selectedSlot != null)
+        {
+            if (toolbarData.selectedSlot.itemName == "Magic Wand")
+            {
+                wandEquipped = true;
+            }
+        }
         if (wand != null)
         {
             wand.SetActive(wandEquipped);

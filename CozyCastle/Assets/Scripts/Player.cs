@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public InventoryManager inventoryManager;
+    public PlayerInventoryManager playerInventoryManager;
     private TileManager tileManager;
     private PlayerStats playerStats;
     private PlayerMovementScript movementScript;
 
     private void Awake()
     {
-        inventoryManager = GetComponent<InventoryManager>();
+        playerInventoryManager = GetComponent<PlayerInventoryManager>();
         movementScript = GetComponent<PlayerMovementScript>();
     }
 
@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
 
                 if (!string.IsNullOrEmpty(tileName))
                 {
-                    if (tileName == "Interactable" && inventoryManager.toolbar.selectedSlot.itemName == "Magic Wand")
+                    if (tileName == "Interactable" && playerInventoryManager.toolbar.selectedSlot.itemName == "Magic Wand")
                     {
                         TryInteract(position);
                     }
