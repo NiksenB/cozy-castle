@@ -11,7 +11,8 @@ public class PlayerMovementScript : MonoBehaviour
     private void Start()
     {
         // TODO remove this, it is only for testing purposes
-        Resources.Load<VectorValue>("PlayerPosition").value = Vector3.zero;
+        VectorValue pos = Resources.Load<VectorValue>("PlayerPosition"); 
+        if (pos != null) pos.value = Vector3.zero;
 
         transform.position = startingPosition.value;
     }

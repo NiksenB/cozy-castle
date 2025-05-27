@@ -269,10 +269,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: c9f81ee03f746a110800000000000000
@@ -295,10 +295,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: 182d48b48da3325b0800000000000000
@@ -316,15 +316,15 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.48968363, y: 0.35900974}
+      pivot: {x: 0.47381067, y: 0.34313646}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: da452453fc332e8e0800000000000000
@@ -347,10 +347,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: fcae7bf84b2f45870800000000000000
@@ -373,10 +373,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: 12fbfc70ab2680880800000000000000
@@ -399,10 +399,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: fad16a3b6e164a1d0800000000000000
@@ -425,10 +425,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: 9bc06fd159a2deb80800000000000000
@@ -451,10 +451,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: 32f0b946d6b3c8260800000000000000
@@ -477,10 +477,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: 52ff3a76ad38568c0800000000000000
@@ -503,10 +503,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: -9}
-        - {x: 5, y: -9}
-        - {x: 5, y: 0}
-        - {x: -5, y: 0}
+      - - {x: -5, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: 5}
+        - {x: -5, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: 6f8dbaf1d66d76e60800000000000000
