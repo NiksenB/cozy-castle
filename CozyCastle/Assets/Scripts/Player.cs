@@ -11,11 +11,11 @@ public class Player : MonoBehaviour
     {
         playerInventoryManager = GetComponent<PlayerInventoryManager>();
         movementScript = GetComponent<PlayerMovementScript>();
+        playerStats = GetComponent<PlayerStats>();
     }
 
     private void Start()
     {
-        playerStats = GetComponent<PlayerStats>();
         tileManager = GameManager.gameInstance.tileManager;
     }
 

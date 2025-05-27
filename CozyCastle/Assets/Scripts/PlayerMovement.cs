@@ -64,8 +64,7 @@ public class PlayerMovementScript : MonoBehaviour
     {
         if (wand != null)
         {
-            Animator wandAnimator = wand.GetComponent<Animator>();
-            if (wandAnimator != null)
+            if (wand.TryGetComponent<Animator>(out var wandAnimator))
             {
                 wandAnimator.SetTrigger("swingWand"); 
             }

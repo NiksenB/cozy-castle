@@ -18,18 +18,14 @@ public class Inventory_UI : MonoBehaviour
         inventoryData = GameManager.gameInstance.player.playerInventoryManager.GetInventoryByName(inventoryName);
 
         Debug.Assert(inventoryData != null, $"Inventory '{inventoryName}' not found in PlayerInventoryManager.");
-        Debug.Log($"Initializing Inventory_UI for '{inventoryName}' with {inventoryData.slots.Count} slots.");
 
         if (inventoryData.slots == null || inventoryData.slots.Count == 0)
         {
-            Debug.LogWarning($"Inventory '{inventoryName}' has no slots defined. Initializing with default slot count: {inventoryData.defaultSlotCount}");
+            Debug.Log($"Inventory '{inventoryName}' has no slots defined. Initializing with default slot count: {inventoryData.defaultSlotCount}");
             inventoryData.InitializeSlots(inventoryData.defaultSlotCount);
         }
 
         SetupSlots();
-
-        
-        
         Refresh();
     }
 
@@ -48,10 +44,11 @@ public class Inventory_UI : MonoBehaviour
                     slotUIs[i].SetEmpty();
                 }
             }
-        } 
-        else 
+        }
+        else
         {
             Debug.Log("Error! Failed to populate inventory: Player has invalid number of inventory slots.");
+            Debug.Log($"Inventory '{inventoryName}' has {inventoryData.slots.Count} slots, but Slot_UI has {slotUIs.Count} slots defined.");
         }
     }
 
@@ -124,7 +121,6 @@ public class Inventory_UI : MonoBehaviour
             targetInventory,
             UI_Manager.draggedQuantity
         );
-
         Debug.Log("Dropped " + sourceSlotUI.name + " on " + targetSlotUI.name);
 
         UI_Manager.instance.RefreshAll();

@@ -11,8 +11,11 @@ public class Collectable : MonoBehaviour
         {
             if (TryGetComponent(out Item item))
             {
-                player.playerInventoryManager.AddItem("backpack", item.data);
+                player.playerInventoryManager.AddItem("toolbar", item.data);
                 Destroy(gameObject);
+            } else
+            {
+                Debug.LogWarning("Collectable does not have an Item component attached.");
             }
         }
     }

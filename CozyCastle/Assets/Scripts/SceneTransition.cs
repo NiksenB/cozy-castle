@@ -24,7 +24,6 @@ public class SceneTransition : MonoBehaviour
             if (sceneToLoadIndex >= 0)
             {
                 Debug.Log("Transitioning to scene: " + sceneToLoadName + ", scene index: " + sceneToLoadIndex);
-                Debug.Log("Player position set to: " + playerPositionValue.value);
                 SceneManager.LoadScene(sceneToLoadIndex);
             }
             else if (!string.IsNullOrEmpty(sceneToLoadName))
