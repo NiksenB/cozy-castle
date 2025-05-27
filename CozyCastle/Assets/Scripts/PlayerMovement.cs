@@ -32,7 +32,7 @@ public class PlayerMovementScript : MonoBehaviour
     public void FixedUpdate()
     {
         // Move the player
-        transform.position += direction * speed * Time.deltaTime;
+        transform.position += speed * Time.deltaTime * direction;
     }
 
     public void AnimateMovement(Vector3 direction)
