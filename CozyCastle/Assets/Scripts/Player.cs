@@ -72,6 +72,7 @@ public class Player : MonoBehaviour
 
     private void TryInteract(Vector3Int position)
     {
+        Debug.Log($"Player trying to interact with tile at position: {position}");
         if (playerStats.TryUseMana(25))
         {
             movementScript.PlayWandSwingAnimation();

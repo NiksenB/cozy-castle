@@ -45,6 +45,7 @@ public class TileManager : MonoBehaviour
 
     public void SetInteracted(Vector3Int position)
     {
+        Debug.Log($"Setting interacted tile at position: {position}");
         interactableMap.SetTile(position, overgrownTile);
     }
 
