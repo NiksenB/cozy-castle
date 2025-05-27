@@ -10,8 +10,14 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         playerInventoryManager = GetComponent<PlayerInventoryManager>();
+        Debug.Assert(playerInventoryManager != null, "PlayerInventoryManager component is missing on Player GameObject.");
+        Debug.Log("PlayerInventoryManager found: " + playerInventoryManager.name);
+
         movementScript = GetComponent<PlayerMovementScript>();
-        playerStats = GetComponent<PlayerStats>();
+        Debug.Assert(movementScript != null, "PlayerMovementScript component is missing on Player GameObject.");
+
+        playerStats = GetComponent<PlayerStats>(); 
+        Debug.Assert(playerStats != null, "PlayerStats component is missing on Player GameObject.");
     }
 
     private void Start()

@@ -28,9 +28,13 @@ public class GameManager : MonoBehaviour
     {
         if (tileManager != null)
         {
+            player = FindFirstObjectByType<Player>();
+            if (player == null)
+            {
+                Debug.LogError("Player not found in the scene after loading.");
+            }
             tileManager.RefreshTilemapReference();
             tileManager.HideInteractableTiles();
         }
     }
-
 }

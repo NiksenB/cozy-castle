@@ -42,6 +42,7 @@ public class InventoryData : ScriptableObject
             return;
         }
 
+        // Else, find an empty slot 
         targetSlot = slots.FirstOrDefault(slot => slot.CanAddItem(item.itemName));
         if (targetSlot != null)
         {

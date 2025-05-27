@@ -7,12 +7,19 @@ public class PlayerInventoryManager : MonoBehaviour
     public InventoryData toolbar;
     public Dictionary<string, InventoryData> inventoryByName = new();
 
-
     public void Awake()
     {
         inventoryByName.Clear();
+
+        // try to find scriptable object in resources 
+        if (backpack == null)
+            backpack = Resources.Load<InventoryData>("Inventory/Backpack");
+
+        if (toolbar == null)
+            toolbar = Resources.Load<InventoryData>("Inventory/Toolbar");
+            
         if (backpack != null) inventoryByName.Add("backpack", backpack);
-        if (toolbar != null) inventoryByName.Add("toolbar", toolbar);
+        if (toolbar != null) inventoryByName.Add("toolbar", toolbar);    
     }
 
     public InventoryData GetInventoryByName(string inventoryName)
