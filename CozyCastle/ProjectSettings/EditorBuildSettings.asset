@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlaceholderRoom.unity
     guid: 1b0ace04b9598854c9f34d8da3a4a7b3
+  - enabled: 1
+    path: Assets/Scenes/Outside.unity
+    guid: c3bb2bb8ff324b84683086ebbddb84a0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
