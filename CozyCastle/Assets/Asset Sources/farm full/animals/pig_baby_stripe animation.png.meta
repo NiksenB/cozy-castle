@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pig_baby_stripe animation_0: -8253821271448824733
+      pig_baby_stripe animation_1: -1534269501880759062
+      pig_baby_stripe animation_10: 3281703638591376962
+      pig_baby_stripe animation_11: -2741338227705604084
+      pig_baby_stripe animation_12: -8703995192749642780
+      pig_baby_stripe animation_13: -1190753634411076914
+      pig_baby_stripe animation_2: -7779445369811332922
+      pig_baby_stripe animation_3: 1385635991075227202
+      pig_baby_stripe animation_4: 3483404297206352057
+      pig_baby_stripe animation_5: 7782682303218084654
+      pig_baby_stripe animation_6: 2861373202894586868
+      pig_baby_stripe animation_7: -2981052218032366377
+      pig_baby_stripe animation_8: 7238136741800720010
+      pig_baby_stripe animation_9: 2403245029938386265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

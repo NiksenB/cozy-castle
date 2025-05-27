@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chicken animation_0: -5737680864494954856
+      chicken animation_1: 1921399782070388316
+      chicken animation_10: -7388655720613412604
+      chicken animation_11: 5924907735789699274
+      chicken animation_12: 8310498034952883614
+      chicken animation_13: -5562276041796443631
+      chicken animation_14: -561456792423250677
+      chicken animation_15: 4473416781820950062
+      chicken animation_16: -5598508156013959031
+      chicken animation_17: -1478818296754664450
+      chicken animation_18: -8382818283152633436
+      chicken animation_19: -8414558584017271924
+      chicken animation_2: -4427340942252035538
+      chicken animation_3: -811032126150311772
+      chicken animation_4: -3619056386165353857
+      chicken animation_5: -4503262417938298005
+      chicken animation_6: 613525822443013879
+      chicken animation_7: -422977374909716455
+      chicken animation_8: -969257198756143438
+      chicken animation_9: 7785667877375974432
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

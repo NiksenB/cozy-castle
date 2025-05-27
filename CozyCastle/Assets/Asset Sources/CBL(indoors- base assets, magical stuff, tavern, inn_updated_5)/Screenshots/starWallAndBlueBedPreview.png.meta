@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      starWallAndBlueBedPreview_0: 439455457673639993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

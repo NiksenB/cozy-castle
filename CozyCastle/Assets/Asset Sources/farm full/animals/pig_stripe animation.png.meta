@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pig_stripe animation_0: 8350437244231296552
+      pig_stripe animation_1: 1101576298546306776
+      pig_stripe animation_10: 1144317286325851052
+      pig_stripe animation_11: 2962184918013190669
+      pig_stripe animation_12: 4296476295761032501
+      pig_stripe animation_13: -227267801774187675
+      pig_stripe animation_2: 1789154880957553378
+      pig_stripe animation_3: 8829321667340931382
+      pig_stripe animation_4: 1485344080833482565
+      pig_stripe animation_5: 4398547265867838804
+      pig_stripe animation_6: -5013756987912819823
+      pig_stripe animation_7: 6126930915227309408
+      pig_stripe animation_8: -6795555594538634562
+      pig_stripe animation_9: -5801859732604590813
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

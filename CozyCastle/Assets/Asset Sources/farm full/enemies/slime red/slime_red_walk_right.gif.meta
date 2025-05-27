@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_red_walk_right_0: 3012405448224138513
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

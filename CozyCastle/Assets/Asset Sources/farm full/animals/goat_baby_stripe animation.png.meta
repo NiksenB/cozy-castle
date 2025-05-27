@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      goat_baby_stripe animation_0: -2059092832512025123
+      goat_baby_stripe animation_1: -2374881613330488928
+      goat_baby_stripe animation_10: -8032078133746344994
+      goat_baby_stripe animation_11: -3619675360642543374
+      goat_baby_stripe animation_12: -5000721694420990567
+      goat_baby_stripe animation_13: 4157236613536746425
+      goat_baby_stripe animation_14: 2400627801921358018
+      goat_baby_stripe animation_15: -5153020415006716448
+      goat_baby_stripe animation_16: -2267593744604617628
+      goat_baby_stripe animation_17: -582487382187700822
+      goat_baby_stripe animation_18: 6604712591192595880
+      goat_baby_stripe animation_19: -2814211705270005966
+      goat_baby_stripe animation_2: 4906672744071218012
+      goat_baby_stripe animation_3: 7439482265708706848
+      goat_baby_stripe animation_4: -7116675377156540771
+      goat_baby_stripe animation_5: 8535628364676832262
+      goat_baby_stripe animation_6: -6292153151701746806
+      goat_baby_stripe animation_7: -4280636511090637300
+      goat_baby_stripe animation_8: 320828427968881842
+      goat_baby_stripe animation_9: 1486578400154850596
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

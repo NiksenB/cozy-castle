@@ -94,6 +94,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotID: 0
+  slotData: {fileID: 11400000, guid: 47a94f6b14353c045a1255f4076ba099, type: 2}
+  parentInventoryUI: {fileID: 0}
   itemIcon: {fileID: 2162355500279513165}
   quantityText: {fileID: 6726220882080366310}
   highlight: {fileID: 6200886282781890732}

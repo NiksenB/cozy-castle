@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pinetree_shake_fall_0: -6945398171149413443
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

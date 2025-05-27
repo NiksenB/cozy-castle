@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hospital_fall_0: -3717862459971624082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bat_purple_die_0: 2938196954296849248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

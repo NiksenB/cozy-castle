@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_yellow_attack_right_0: -1216856662747278062
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

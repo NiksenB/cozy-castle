@@ -7,6 +7,8 @@ public class UI_Manager : MonoBehaviour
     public Dictionary<string, Inventory_UI> inventoryUIByName = new();
     public GameObject inventoryPanel;
     public List<Inventory_UI> inventoryUIs;
+    public Manabar_UI manabarUI;
+    public static UI_Manager instance { get; private set; }
     public static Slot_UI draggedSlot;
     public static Image draggedIcon;
     public static int draggedQuantity;
@@ -14,8 +16,24 @@ public class UI_Manager : MonoBehaviour
 
     void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
+        // Ensure draggedSlot and draggedIcon are initialized.
+        draggedSlot = null;
+        draggedIcon = null;
+        draggedQuantity = 0;
+        dragSingle = false;
+
         Initialize();
-        ToggleInventoryUI();
+        ToggleInventoryUI(); 
     }
 
     public void Update()
@@ -57,10 +75,11 @@ public class UI_Manager : MonoBehaviour
 
     public void RefreshAll()
     {
-        foreach(KeyValuePair<string, Inventory_UI> keyValuePair in inventoryUIByName)
+        foreach (KeyValuePair<string, Inventory_UI> keyValuePair in inventoryUIByName)
         {
             keyValuePair.Value.Refresh();
         }
+        manabarUI?.Refresh();
     }
 
     public Inventory_UI GetInventoryUI(string inventoryName)

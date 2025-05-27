@@ -1134,7 +1134,48 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      button maker_0: -8140277880250018472
+      button maker_1: -5982848714404095629
+      button maker_10: -8181457538139832965
+      button maker_11: 6650623389861696113
+      button maker_12: 2308694054877709681
+      button maker_13: 7149761402337241896
+      button maker_14: 4776749368904130041
+      button maker_15: 6194443926358391026
+      button maker_16: -3199788245861877839
+      button maker_17: -2443621796898263896
+      button maker_18: 1286211430301092263
+      button maker_19: 4521911267435868088
+      button maker_2: -317510128434289226
+      button maker_20: -2760995901135181507
+      button maker_21: 4562454637591888354
+      button maker_22: -2562498682164891141
+      button maker_23: -5866475713386677192
+      button maker_24: 4032847097665565232
+      button maker_25: -7328351186636563057
+      button maker_26: -4580556067950011932
+      button maker_27: -3470791022096985552
+      button maker_28: -4172135883458069173
+      button maker_29: -5344983616690524226
+      button maker_3: -8965767625482997526
+      button maker_30: -8300365089675775847
+      button maker_31: 7201083107619973390
+      button maker_32: 6599395629709643229
+      button maker_33: 4622087261936912884
+      button maker_34: -286412665772811465
+      button maker_35: -2671008243032219192
+      button maker_36: 483566108695997918
+      button maker_37: -519762402540468953
+      button maker_38: -6794221205641472988
+      button maker_39: 1213021816317701506
+      button maker_4: 3931479833706892033
+      button maker_40: -711667984334076132
+      button maker_5: 7468045378819484209
+      button maker_6: -910372342501421700
+      button maker_7: 8467515204476907805
+      button maker_8: 3861246446652811506
+      button maker_9: 2141393800833597450
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

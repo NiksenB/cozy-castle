@@ -6,6 +6,16 @@ public class PlayerMovementScript : MonoBehaviour
     public Animator animator;
     public GameObject wand;
     private Vector3 direction;
+    public VectorValue startingPosition;
+
+    private void Start()
+    {
+        // TODO remove this, it is only for testing purposes
+        VectorValue pos = Resources.Load<VectorValue>("PlayerPosition"); 
+        if (pos != null) pos.value = Vector3.zero;
+
+        transform.position = startingPosition.value;
+    }
 
     public void Update()
     {
@@ -15,7 +25,15 @@ public class PlayerMovementScript : MonoBehaviour
 
         AnimateMovement(direction);
 
-        bool wandEquipped = GameManager.gameInstance.player.inventoryManager.toolbar.selectedSlot.itemName == "Magic Wand";
+        InventoryData toolbarData = GameManager.gameInstance.player.playerInventoryManager.toolbar;
+        bool wandEquipped = false;
+        if (toolbarData != null && toolbarData.selectedSlot != null)
+        {
+            if (toolbarData.selectedSlot.itemName == "Magic Wand")
+            {
+                wandEquipped = true;
+            }
+        }
         if (wand != null)
         {
             wand.SetActive(wandEquipped);
@@ -26,7 +44,7 @@ public class PlayerMovementScript : MonoBehaviour
     public void FixedUpdate()
     {
         // Move the player
-        transform.position += direction * speed * Time.deltaTime;
+        transform.position += speed * Time.deltaTime * direction;
     }
 
     public void AnimateMovement(Vector3 direction)
@@ -50,8 +68,7 @@ public class PlayerMovementScript : MonoBehaviour
     {
         if (wand != null)
         {
-            Animator wandAnimator = wand.GetComponent<Animator>();
-            if (wandAnimator != null)
+            if (wand.TryGetComponent<Animator>(out var wandAnimator))
             {
                 wandAnimator.SetTrigger("swingWand"); 
             }

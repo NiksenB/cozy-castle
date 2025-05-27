@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NPC5_winter_0: 8278710840515064525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

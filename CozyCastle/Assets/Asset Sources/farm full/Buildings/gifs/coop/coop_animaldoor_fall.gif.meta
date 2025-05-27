@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      coop_animaldoor_fall_0: -5831271394993827736
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

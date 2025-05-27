@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      streelight_flicker_winter_0: 6720967851161907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

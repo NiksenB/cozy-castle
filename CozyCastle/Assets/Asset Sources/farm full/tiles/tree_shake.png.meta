@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tree_shake_0: 710184683354828177
+      tree_shake_1: 4376133272983643653
+      tree_shake_2: -3067873325134456742
+      tree_shake_3: 3101929846661496878
+      tree_shake_4: -4446329256607084248
+      tree_shake_5: -8879341465109322514
+      tree_shake_6: -4397851475934983440
+      tree_shake_7: -722574001814924792
+      tree_shake_8: -4534697202939085323
+      tree_shake_9: -3394501068665207146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

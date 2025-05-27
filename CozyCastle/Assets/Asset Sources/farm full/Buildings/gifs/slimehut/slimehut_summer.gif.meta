@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slimehut_summer_0: 4580622822342679496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

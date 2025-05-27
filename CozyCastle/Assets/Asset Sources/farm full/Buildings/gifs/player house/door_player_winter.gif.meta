@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      door_player_winter_0: 3386331818400963615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

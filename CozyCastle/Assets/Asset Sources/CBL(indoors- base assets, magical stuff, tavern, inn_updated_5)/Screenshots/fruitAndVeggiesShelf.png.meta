@@ -534,7 +534,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fruitAndVeggiesShelf_0: -7845476049763375394
+      fruitAndVeggiesShelf_1: -900300140546104740
+      fruitAndVeggiesShelf_10: -5785878225432266745
+      fruitAndVeggiesShelf_11: -1870321613106666180
+      fruitAndVeggiesShelf_12: 7653598997659937110
+      fruitAndVeggiesShelf_13: -6235810772355243088
+      fruitAndVeggiesShelf_14: 7663922919945122025
+      fruitAndVeggiesShelf_15: -8613025450097209781
+      fruitAndVeggiesShelf_16: 8225122028553066246
+      fruitAndVeggiesShelf_2: -6714562784703580280
+      fruitAndVeggiesShelf_3: -4615469762626213935
+      fruitAndVeggiesShelf_4: -5769946886908755419
+      fruitAndVeggiesShelf_5: -7676712648500459960
+      fruitAndVeggiesShelf_6: -7088336031103440327
+      fruitAndVeggiesShelf_7: -2253881947943014171
+      fruitAndVeggiesShelf_8: -2833888398861022290
+      fruitAndVeggiesShelf_9: -4181420323707602856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

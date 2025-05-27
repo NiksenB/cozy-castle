@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mayomaker_0: -6929830043331940761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

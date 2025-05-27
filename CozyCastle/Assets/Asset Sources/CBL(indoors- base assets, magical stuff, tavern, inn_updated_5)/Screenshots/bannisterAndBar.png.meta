@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bannisterAndBar_0: 4609976398315211065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

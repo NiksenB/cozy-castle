@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_rainbow_die_up_0: -2870547339758125745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

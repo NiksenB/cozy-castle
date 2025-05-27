@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slime_pink_attack_down_0: 2702055181322552156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

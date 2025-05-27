@@ -884,7 +884,38 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      market_sign_wood_0: 1431729777740827178
+      market_sign_wood_1: 8405667972347002107
+      market_sign_wood_10: -6345702263900572137
+      market_sign_wood_11: -8614325269153070122
+      market_sign_wood_12: -1599743389305368702
+      market_sign_wood_13: -7739233938306577085
+      market_sign_wood_14: 394138873439316484
+      market_sign_wood_15: -623920604206316670
+      market_sign_wood_16: 5359978592758328901
+      market_sign_wood_17: -8014240961047453675
+      market_sign_wood_18: 3767086848145436214
+      market_sign_wood_19: 4455309611678164132
+      market_sign_wood_2: 5978715380135391819
+      market_sign_wood_20: -2047886046810249625
+      market_sign_wood_21: 7851495334668705891
+      market_sign_wood_22: 2536194240192015044
+      market_sign_wood_23: -5716817724644310148
+      market_sign_wood_24: 5087763078592173608
+      market_sign_wood_25: -6609132518154126778
+      market_sign_wood_26: -8955190983722382442
+      market_sign_wood_27: -1078709812549468803
+      market_sign_wood_28: 4459089252342802149
+      market_sign_wood_29: 4269629378390620606
+      market_sign_wood_3: 8626506388421940873
+      market_sign_wood_30: -7142083279927757813
+      market_sign_wood_4: -741479111434962447
+      market_sign_wood_5: 2612713019820183553
+      market_sign_wood_6: 5990728523579891061
+      market_sign_wood_7: 4752689805059803291
+      market_sign_wood_8: 8343666843133386602
+      market_sign_wood_9: -7163683081642934685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -584,7 +584,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      turkey animation_0: -7981421397487756561
+      turkey animation_1: -5215353311198338494
+      turkey animation_10: 4095084411430204319
+      turkey animation_11: 606640700732609659
+      turkey animation_12: 7976712890817870272
+      turkey animation_13: 4492308062359429860
+      turkey animation_14: 1570189230347539940
+      turkey animation_15: 5754919291908992422
+      turkey animation_16: 6771092933752910495
+      turkey animation_17: 4745719349971981660
+      turkey animation_18: -4026122894644474717
+      turkey animation_2: 1396946297813210676
+      turkey animation_3: 2693376191795823274
+      turkey animation_4: 1495838364150623374
+      turkey animation_5: 7243216281477379366
+      turkey animation_6: 1316430036123652895
+      turkey animation_7: 7530801103519896470
+      turkey animation_8: 1546177681093110555
+      turkey animation_9: 2712281164838680890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

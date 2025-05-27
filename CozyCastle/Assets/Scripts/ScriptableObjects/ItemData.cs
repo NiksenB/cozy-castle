@@ -5,5 +5,5 @@ public class ItemData : ScriptableObject
 {
     public string itemName = "Item Name";
     public Sprite icon;
-    public bool isStackable;
+    public bool isStackable;  
 }

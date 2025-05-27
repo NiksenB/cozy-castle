@@ -1,16 +1,13 @@
-using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Inventory_UI : MonoBehaviour
 {    
     public string inventoryName;
-    public List<Slot_UI> slots = new ();
+    public List<Slot_UI> slotUIs = new ();
     [SerializeField] private Canvas canvas;
-    private Inventory inventory;
-    
+    private InventoryData inventoryData;
+
     private void Awake()
     {
         canvas = FindFirstObjectByType<Canvas>();
@@ -18,42 +15,52 @@ public class Inventory_UI : MonoBehaviour
 
     private void Start()
     {
-        inventory = GameManager.gameInstance.player.inventoryManager.GetInventoryByName(inventoryName);
+        inventoryData = GameManager.gameInstance.player.playerInventoryManager.GetInventoryByName(inventoryName);
+
+        Debug.Assert(inventoryData != null, $"Inventory '{inventoryName}' not found in PlayerInventoryManager.");
+
+        if (inventoryData.slots == null || inventoryData.slots.Count == 0)
+        {
+            Debug.Log($"Inventory '{inventoryName}' has no slots defined. Initializing with default slot count: {inventoryData.defaultSlotCount}");
+            inventoryData.InitializeSlots(inventoryData.defaultSlotCount);
+        }
+
         SetupSlots();
         Refresh();
     }
 
     public void Refresh()
     {
-        if (slots.Count == inventory.slots.Count)
+        if (slotUIs.Count == inventoryData.slots.Count)
         {
-            for (int i = 0; i < slots.Count; i++)
+            for (int i = 0; i < slotUIs.Count; i++)
             {
-                if (inventory.slots[i].itemName != "")
+                if (inventoryData.slots[i].itemName != "")
                 {
-                    slots[i].SetItem(inventory.slots[i]);
+                    slotUIs[i].SetItem(inventoryData.slots[i]);
                 }
                 else
                 {
-                    slots[i].SetEmpty();
+                    slotUIs[i].SetEmpty();
                 }
             }
-        } 
-        else 
+        }
+        else
         {
             Debug.Log("Error! Failed to populate inventory: Player has invalid number of inventory slots.");
+            Debug.Log($"Inventory '{inventoryName}' has {inventoryData.slots.Count} slots, but Slot_UI has {slotUIs.Count} slots defined.");
         }
     }
 
     public void Remove()
     {
         Debug.Log("Trying to remove item " + UI_Manager.draggedSlot.slotID);
-        Item itemToDrop = GameManager.gameInstance.itemManager.GetItemByName(inventory.slots[UI_Manager.draggedSlot.slotID].itemName);
+        Item itemToDrop = ItemManager.instance.GetItemByName(inventoryData.slots[UI_Manager.draggedSlot.slotID].itemName);
         if (itemToDrop != null)
         {
-            int numToRemove = UI_Manager.dragSingle ? 1 : inventory.slots[UI_Manager.draggedSlot.slotID].count;
+            int numToRemove = UI_Manager.dragSingle ? 1 : inventoryData.slots[UI_Manager.draggedSlot.slotID].count;
 
-            inventory.RemoveFromInventory(UI_Manager.draggedSlot.slotID, numToRemove);
+            inventoryData.RemoveFromInventory(UI_Manager.draggedSlot.slotID, numToRemove);
             GameManager.gameInstance.player.DropItem(itemToDrop, numToRemove);
             Refresh();
         }
@@ -96,12 +103,27 @@ public class Inventory_UI : MonoBehaviour
         UI_Manager.draggedIcon = null;
     }
 
-    public void SlotDrop(Slot_UI slot)
+    public void SlotDrop(Slot_UI targetSlotUI)
     {
-        UI_Manager.draggedSlot.inventory.MoveSlot(UI_Manager.draggedSlot.slotID, slot.slotID, slot.inventory, UI_Manager.draggedQuantity);
-        Debug.Log("Dropped " + UI_Manager.draggedSlot.name + " on " + slot.name);
+        if (UI_Manager.draggedSlot == null || targetSlotUI == null)
+        {
+            Debug.LogWarning("Dragged slot or target slot is null. Cannot perform drop.");
+            return;
+        }
 
-        GameManager.gameInstance.uiManager.RefreshAll();
+        Slot_UI sourceSlotUI = UI_Manager.draggedSlot;
+        InventoryData sourceInventory = sourceSlotUI.parentInventoryUI.inventoryData;
+        InventoryData targetInventory = targetSlotUI.parentInventoryUI.inventoryData;
+
+        sourceInventory.MoveSlot(
+            sourceSlotUI.slotID,
+            targetSlotUI.slotID,
+            targetInventory,
+            UI_Manager.draggedQuantity
+        );
+        Debug.Log("Dropped " + sourceSlotUI.name + " on " + targetSlotUI.name);
+
+        UI_Manager.instance.RefreshAll();
     }
 
     private void MoveToMousePosition(GameObject toMove)
@@ -115,10 +137,14 @@ public class Inventory_UI : MonoBehaviour
 
     private void SetupSlots()
     {
-        for (int i = 0; i < slots.Count; i++)
+        Debug.Assert(slotUIs.Count == inventoryData.slots.Count, 
+            $"Inventory_UI '{inventoryName}' has {inventoryData.slots.Count} slots, but Slot_UI has {slotUIs.Count} slots defined.");
+
+        for (int i = 0; i < slotUIs.Count; i++)
         {
-            slots[i].slotID = i;
-            slots[i].inventory = inventory;
+            slotUIs[i].slotID = i;
+            slotUIs[i].SetSlotData(inventoryData.slots[i]);
+            slotUIs[i].parentInventoryUI = this;
         }
     }
 }

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      greenhouse_door_fall_0: -1480901942330776339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

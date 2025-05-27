@@ -2,20 +2,26 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public InventoryManager inventoryManager;
+    public PlayerInventoryManager playerInventoryManager;
     private TileManager tileManager;
     private PlayerStats playerStats;
     private PlayerMovementScript movementScript;
 
     private void Awake()
     {
-        inventoryManager = GetComponent<InventoryManager>();
+        playerInventoryManager = GetComponent<PlayerInventoryManager>();
+        Debug.Assert(playerInventoryManager != null, "PlayerInventoryManager component is missing on Player GameObject.");
+        Debug.Log("PlayerInventoryManager found: " + playerInventoryManager.name);
+
         movementScript = GetComponent<PlayerMovementScript>();
+        Debug.Assert(movementScript != null, "PlayerMovementScript component is missing on Player GameObject.");
+
+        playerStats = GetComponent<PlayerStats>(); 
+        Debug.Assert(playerStats != null, "PlayerStats component is missing on Player GameObject.");
     }
 
     private void Start()
     {
-        playerStats = GetComponent<PlayerStats>();
         tileManager = GameManager.gameInstance.tileManager;
     }
 
@@ -31,7 +37,7 @@ public class Player : MonoBehaviour
 
                 if (!string.IsNullOrEmpty(tileName))
                 {
-                    if (tileName == "Interactable" && inventoryManager.toolbar.selectedSlot.itemName == "Magic Wand")
+                    if (tileName == "Interactable" && playerInventoryManager.toolbar.selectedSlot.itemName == "Magic Wand")
                     {
                         TryInteract(position);
                     }
@@ -72,6 +78,7 @@ public class Player : MonoBehaviour
 
     private void TryInteract(Vector3Int position)
     {
+        Debug.Log($"Player trying to interact with tile at position: {position}");
         if (playerStats.TryUseMana(25))
         {
             movementScript.PlayWandSwingAnimation();

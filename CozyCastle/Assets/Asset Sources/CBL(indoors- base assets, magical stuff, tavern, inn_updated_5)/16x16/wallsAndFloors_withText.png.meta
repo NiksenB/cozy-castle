@@ -1759,7 +1759,73 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wallsAndFloors_withText_0: -8596129476558416103
+      wallsAndFloors_withText_1: 3217689912428309379
+      wallsAndFloors_withText_10: 1902186285498070037
+      wallsAndFloors_withText_11: 6425341839983956733
+      wallsAndFloors_withText_12: -2042256465038119346
+      wallsAndFloors_withText_13: 6296221087325406039
+      wallsAndFloors_withText_14: -7671473881712087147
+      wallsAndFloors_withText_15: -4440714010699947277
+      wallsAndFloors_withText_16: -7118993897694664004
+      wallsAndFloors_withText_17: 3936252856473443545
+      wallsAndFloors_withText_18: 5206366355534436256
+      wallsAndFloors_withText_19: -6495059956478846146
+      wallsAndFloors_withText_2: 6758584082194388597
+      wallsAndFloors_withText_20: 752819051991041062
+      wallsAndFloors_withText_21: 4657083932118464536
+      wallsAndFloors_withText_22: 7623226684043826696
+      wallsAndFloors_withText_23: -653249354687077993
+      wallsAndFloors_withText_24: -8677481598025617850
+      wallsAndFloors_withText_25: -1458558852039824485
+      wallsAndFloors_withText_26: -6644860305983095993
+      wallsAndFloors_withText_27: -8445788061809476604
+      wallsAndFloors_withText_28: -2839776251004921218
+      wallsAndFloors_withText_29: -4215720240864887875
+      wallsAndFloors_withText_3: 4008281593997684634
+      wallsAndFloors_withText_30: -2966162277602386676
+      wallsAndFloors_withText_31: 5897329312225267362
+      wallsAndFloors_withText_32: -1298274252055761521
+      wallsAndFloors_withText_33: 3306315925472673982
+      wallsAndFloors_withText_34: 214281632564803537
+      wallsAndFloors_withText_35: -5133457225267448840
+      wallsAndFloors_withText_36: -6967868042434962375
+      wallsAndFloors_withText_37: -7039342684511759314
+      wallsAndFloors_withText_38: -1347052854950778263
+      wallsAndFloors_withText_39: 1666333494673142145
+      wallsAndFloors_withText_4: 1304425709648642094
+      wallsAndFloors_withText_40: -3784572197435078783
+      wallsAndFloors_withText_41: -5194881597764111050
+      wallsAndFloors_withText_42: -7723242945860332411
+      wallsAndFloors_withText_43: 5953820262538398451
+      wallsAndFloors_withText_44: -5322191855234334591
+      wallsAndFloors_withText_45: -2986752216512345665
+      wallsAndFloors_withText_46: -7586936055093397793
+      wallsAndFloors_withText_47: -5045179633242094061
+      wallsAndFloors_withText_48: 4026206516963109702
+      wallsAndFloors_withText_49: 7962005474591363728
+      wallsAndFloors_withText_5: 9029156606181390831
+      wallsAndFloors_withText_50: 6936624750721831156
+      wallsAndFloors_withText_51: 4588799048590993929
+      wallsAndFloors_withText_52: 3773864850553137470
+      wallsAndFloors_withText_53: -1011143641898757824
+      wallsAndFloors_withText_54: -6459588348344236273
+      wallsAndFloors_withText_55: -3198814392184735751
+      wallsAndFloors_withText_56: -51126523543024398
+      wallsAndFloors_withText_57: -1196889530797541182
+      wallsAndFloors_withText_58: -2433217661304034634
+      wallsAndFloors_withText_59: -5523682462328037500
+      wallsAndFloors_withText_6: -4699732983722755853
+      wallsAndFloors_withText_60: 581438964494182270
+      wallsAndFloors_withText_61: 7953471611630063369
+      wallsAndFloors_withText_62: 1621511928588137766
+      wallsAndFloors_withText_63: -2073891850153522136
+      wallsAndFloors_withText_64: 5702291440181049261
+      wallsAndFloors_withText_65: -7198527222173701325
+      wallsAndFloors_withText_7: 3346585849795804690
+      wallsAndFloors_withText_8: 8563898174625818088
+      wallsAndFloors_withText_9: -2477929335493384386
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tree_shake_spring_0: 1179811171022109865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

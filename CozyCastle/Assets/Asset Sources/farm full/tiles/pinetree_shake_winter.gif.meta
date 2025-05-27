@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pinetree_shake_winter_0: 2891948982236155649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
