@@ -26,7 +26,7 @@ public class PlayerInventoryManager : MonoBehaviour
         var inventory = GetInventoryByName(inventoryName);
         if (inventory != null)
         {
-            inventory.AddToExistingStackElseNew(item); 
+            inventory.AddToSlot(item); 
         }   
     }
 }

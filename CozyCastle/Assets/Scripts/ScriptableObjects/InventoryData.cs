@@ -29,7 +29,7 @@ public class InventoryData : ScriptableObject
         }
     }
 
-    public void AddToExistingStackElseNew(ItemData item)
+    public void AddToSlot(ItemData item)
     {
         SlotData targetSlot = null;
 

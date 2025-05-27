@@ -39,7 +39,7 @@ public class Slot_UI : MonoBehaviour
         UpdateUI();
     }
 
-    public void SetItem(SlotData slotData) 
+    public void SetItem(SlotData slotData)
     {
         if (slotData != null)
         {
@@ -62,7 +62,7 @@ public class Slot_UI : MonoBehaviour
     {
         highlight.SetActive(isOn);
     }
-    
+
     private void UpdateUI()
     {
         if (slotData != null)
@@ -73,6 +73,7 @@ public class Slot_UI : MonoBehaviour
         {
             SetEmpty();
         }
+        parentInventoryUI?.Refresh();
     }
 
 }
