@@ -7,11 +7,16 @@
 - Refactored inventory system so inventory items exist independently of UI and are preserved between scenes
 - Resliced a ton of tiles (I think it actually took me hours)
 
+### Notes
+Shout out to this guy, along with Github Copilot: https://www.youtube.com/watch?v=wNl--exin90&list=PL4vbr3u7UKWp0iM1WIfRjCDTI03u43Zfu&index=30
+
+I will eventually smoothen the current scene transition with a fade-in / fade-out effect.
+
 ### Images
-_No images added._
+![Outside castle](images/2025-05-27-outside-castle.png)
+![Outside hut](images/2025-05-27-outside-hut.png)
 
 ---
-
 
 ## PR #14 - Initial setup (2025-05-22)
 
@@ -25,6 +30,19 @@ _No images added._
 - The abilty to pick up and drop items
 - A manabar
 - A magic wand with a wand-swing animation which produces flowers
+
+### Notes
+Shout-out to:
+
+- Great beginner tutorial: https://www.youtube.com/watch?v=ZPYrdKMDsGI&list=PL4PNgDjMajPN51E5WzEi7cXzJ16BCHZXl&index=1
+- Bugfix (glitchy tilemap): https://www.youtube.com/watch?v=Wf98KrAyB2I&t=29s
+
+Assets:
+
+- Free placeholder character base sprite: https://seliel-the-shaper.itch.io/character-base
+- Purchased Assets:
+    - Tavern and Magical Assets for RPG
+    - 100 Nature Things
 
 ### Images
 ![Ingame](images/2025-05-22-ingame.png)
