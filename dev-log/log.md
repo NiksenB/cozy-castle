@@ -18,7 +18,6 @@ I will eventually smoothen the current scene transition with a fade-in / fade-ou
 
 ---
 
-
 ## PR #14 - Initial setup (2025-05-22)
 
 ### What's changed
