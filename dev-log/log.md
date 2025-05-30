@@ -1,3 +1,20 @@
+## PR #23 - Pimp up the ouside (2025-05-30)
+
+### What's changed
+- Make outside bigger and prettier
+- Improve tile pivot points and custom colliders
+- Decreased player friction
+- Try fix dev-log workflow
+
+### Notes
+
+
+### Images
+_No images added._
+
+---
+
+
 ## PR #19 - Event and outdoors (2025-05-27)
 
 ### What's changed
