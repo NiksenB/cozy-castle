@@ -41,10 +41,6 @@ public class Sign : MonoBehaviour
                 EndDialogue();
             }
         }
-        else
-        {
-            EndDialogue();
-        }
     }
 
     private void StartDialogue()
