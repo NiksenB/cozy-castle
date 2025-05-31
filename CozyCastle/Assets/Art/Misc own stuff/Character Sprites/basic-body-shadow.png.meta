@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      basic-body-shadow_0: 3245706752962827621
+      basic-body-shadow_1: 7523589129028986949
+      basic-body-shadow_10: -7895655183187389990
+      basic-body-shadow_11: -2318302559593323450
+      basic-body-shadow_12: 7314430670637617512
+      basic-body-shadow_13: 1559996715319899324
+      basic-body-shadow_14: 6973394269932977101
+      basic-body-shadow_15: 1402564725966396327
+      basic-body-shadow_2: 2521643865849926798
+      basic-body-shadow_3: 7592612635654367826
+      basic-body-shadow_4: 2373146548763653360
+      basic-body-shadow_5: 4751443222041562284
+      basic-body-shadow_6: 2145690914441204042
+      basic-body-shadow_7: -1358089403638520083
+      basic-body-shadow_8: 404923029128848367
+      basic-body-shadow_9: -7613622685428090073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
