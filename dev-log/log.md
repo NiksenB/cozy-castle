@@ -1,3 +1,18 @@
+## PR #25 - Other creatures (2025-05-31)
+
+### What's changed
+- The camera stops at the corner of the map and has an intentional delay
+- Misc improvements to tiles and settings
+
+### Notes
+No notes.
+
+### Images
+_No images added._
+
+---
+
+
 ## PR #23 - Pimp up the ouside (2025-05-30)
 
 ### What's changed
