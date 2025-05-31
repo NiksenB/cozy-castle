@@ -198,9 +198,9 @@ BlendTree:
   m_Name: Idle Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 5b9a5cd27665b0244b3798e0bb6a3741, type: 2}
+    m_Motion: {fileID: 7400000, guid: fef90161e30b665469eca767efb520fa, type: 2}
     m_Threshold: 0
-    m_Position: {x: 0, y: 1}
+    m_Position: {x: 0, y: -1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: horizontal
@@ -214,9 +214,9 @@ BlendTree:
     m_DirectBlendParameter: horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: fef90161e30b665469eca767efb520fa, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5b9a5cd27665b0244b3798e0bb6a3741, type: 2}
     m_Threshold: 0.6666667
-    m_Position: {x: 0, y: -1}
+    m_Position: {x: 0, y: 1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: horizontal
