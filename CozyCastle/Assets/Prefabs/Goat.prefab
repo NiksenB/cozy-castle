@@ -70,8 +70,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
-  m_LinearDamping: 0
+  m_Mass: 4
+  m_LinearDamping: 20
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -202,7 +202,6 @@ MonoBehaviour:
   isFriendly: 1
   hasEyesOnPlayer: 0
   currentState: 0
-  affectionLevel: 10
   speed: 2
   interactionRadius: 0.8
   visibilityRange: 5

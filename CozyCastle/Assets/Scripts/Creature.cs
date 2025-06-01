@@ -76,25 +76,12 @@ public class Creature : MonoBehaviour
             if (currentState != CreatureState.Moving)
             {
                 ChangeState(CreatureState.Moving);
-                animator.SetBool("isMoving", true);
-                Debug.Log(creatureName + " is now moving towards the player.");
             }
-
-            // Update facing direction based on player position
-            Vector2 directionToPlayer = (playerPosition.position - transform.position).normalized;
-            if (Mathf.Abs(directionToPlayer.x) > Mathf.Abs(directionToPlayer.y))
-            {
-                facingDirection = directionToPlayer.x > 0 ? FacingDirection.Right : FacingDirection.Left;
-            }
-            else
-            {
-                facingDirection = directionToPlayer.y > 0 ? FacingDirection.Up : FacingDirection.Down;
-            }
-
-            animator.SetFloat("horizontal", directionToPlayer.x);
-            animator.SetFloat("vertical", directionToPlayer.y);
 
             Vector2 temp = Vector2.MoveTowards(transform.position, playerPosition.position, speed * Time.deltaTime);
+
+            UpdateDirection(temp - (Vector2)transform.position);
+            ChangeAnim(temp - (Vector2)transform.position);
             myRigidbody.MovePosition(temp);
         }
         else
@@ -109,37 +96,32 @@ public class Creature : MonoBehaviour
         {
             Debug.Log(creatureName + " has spotted the player.");
             ChangeState(CreatureState.Reacting);
-            hasEyesOnPlayer = true;
         }
         else if (!isPlayerVisible && hasEyesOnPlayer)
         {
             Debug.Log(creatureName + " has lost sight of the player.");
-            ChangeState(CreatureState.Idle);
-            animator.SetBool("isMoving", false);
             hasEyesOnPlayer = false;
+            ChangeState(CreatureState.Idle);
         }
     }
 
     public void ReactToPlayer(Rigidbody2D myRigidbody)
     {
-        if (!hasEyesOnPlayer)
-        {
-            hasEyesOnPlayer = true;
-            Debug.Log(creatureName + " has eyes on the player.");
-            ChangeState(CreatureState.Reacting);
-        }
-
-        Debug.Log(creatureName + " is reacting to the player.");
         if (isFriendly)
         {
             if (!IsPlayerInInteractionRange())
             {
+                if (!hasEyesOnPlayer)
+                {
+                    ChangeState(CreatureState.Reacting);;
+                    hasEyesOnPlayer = true;
+                }
+                
                 MoveTowardsPlayer(myRigidbody);
             }
             else
             {
                 ChangeState(CreatureState.Idle);
-                animator.SetBool("isMoving", false);
             }
         }
         else
@@ -155,12 +137,56 @@ public class Creature : MonoBehaviour
             return;
         }
 
-        if (newState == CreatureState.Sleeping)
-        {
-            hasEyesOnPlayer = false;
-        }
-
         currentState = newState;
         Debug.Log(creatureName + " changed state to: " + currentState);
+
+        switch (newState)
+        {
+            case CreatureState.Idle:
+                animator.SetBool("isMoving", false);
+                break;
+            case CreatureState.Moving:
+                animator.SetBool("isMoving", true);
+                break;
+            case CreatureState.Interacting:
+                // animator.SetTrigger("interact");
+                animator.SetBool("isMoving", false);
+                break;
+            case CreatureState.Reacting:
+                // animator.SetTrigger("react");
+                hasEyesOnPlayer = true;
+                animator.SetBool("isMoving", false);
+                break;
+            case CreatureState.Sleeping:
+                animator.SetBool("isSleeping", true);
+                hasEyesOnPlayer = false;
+                break;
+        }
+    }
+
+    private void ChangeAnim(Vector2 direction)
+    {
+        if (animator == null) return;
+
+        animator.SetFloat("horizontal", direction.x);
+        animator.SetFloat("vertical", direction.y);
+    }
+
+    private void UpdateDirection(Vector2 direction)
+    {
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            if (direction.x > 0)
+                facingDirection = FacingDirection.Right;
+            else
+                facingDirection = FacingDirection.Left;
+        }
+        else
+        {
+            if (direction.y > 0)
+                facingDirection = FacingDirection.Up;
+            else
+                facingDirection = FacingDirection.Down;
+        }
     }
 }
