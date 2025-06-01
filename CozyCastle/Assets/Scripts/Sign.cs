@@ -2,13 +2,11 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Sign : MonoBehaviour
+public class Sign : Interactable
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject dialogueBox;
     public Text dialogueText;
     public string[] dialogueLines;
-    private bool isPlayerInRange = false;
 
 
     void Start()
@@ -55,7 +53,7 @@ public class Sign : MonoBehaviour
         {
             Time.timeScale = 0;
             dialogueBox.SetActive(true);
-            dialogueText.text = dialogueLines[0]; 
+            dialogueText.text = dialogueLines[0];
         }
     }
 
@@ -87,20 +85,11 @@ public class Sign : MonoBehaviour
 
         dialogueText.text = dialogueLines[currentLineIndex + 1];
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isPlayerInRange = true;
-        }
-    }
     
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            isPlayerInRange = false;
             dialogueBox.SetActive(false);
         }
     }
