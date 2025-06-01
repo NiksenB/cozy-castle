@@ -3,11 +3,18 @@ using UnityEngine;
 public class Goat : Creature {
 
     private Rigidbody2D myRigidbody;
-    public Animator animator;
 
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+        if (myRigidbody == null) Debug.LogError("Rigidbody2D component not found on the Goat object.");
+
+        animator = GetComponent<Animator>();
+        if (animator == null)
+            Debug.LogError("Animator component not found on the Goat object.");
+        else
+            SetAnimator(animator);
+
         var player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
