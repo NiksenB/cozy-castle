@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: be8000d2941afc642932c60925a59f0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7763841569903202547
+    second: reaction_surprise_0
+  - first:
+      213: 614272335987304190
+    second: reaction_surprise_1
+  - first:
+      213: -2491971072169099640
+    second: reaction_surprise_2
+  - first:
+      213: -1655129178967322193
+    second: reaction_surprise_3
+  - first:
+      213: -6115589356506696816
+    second: reaction_surprise_4
+  - first:
+      213: -6120351931027495534
+    second: reaction_surprise_5
+  - first:
+      213: 8038274624897521400
+    second: reaction_surprise_6
+  - first:
+      213: 2920475387008714950
+    second: reaction_surprise_7
+  - first:
+      213: -2060359614012393569
+    second: reaction_surprise_8
+  - first:
+      213: -2969744162259770163
+    second: reaction_surprise_9
+  - first:
+      213: -7309792284535890531
+    second: reaction_surprise_10
+  - first:
+      213: 1740455555206655414
+    second: reaction_surprise_11
+  - first:
+      213: -5348921663042019763
+    second: reaction_surprise_12
+  - first:
+      213: 1948711428783407360
+    second: reaction_surprise_13
+  - first:
+      213: -4451337755131589202
+    second: reaction_surprise_14
+  - first:
+      213: 8451042344512719350
+    second: reaction_surprise_15
+  - first:
+      213: -6196219602366911746
+    second: reaction_surprise_16
+  - first:
+      213: 3081581878955675716
+    second: reaction_surprise_17
+  - first:
+      213: -2701953098220105520
+    second: reaction_surprise_18
+  - first:
+      213: -1608177669818145428
+    second: reaction_surprise_19
+  - first:
+      213: -4621359742437532862
+    second: reaction_surprise_20
+  - first:
+      213: -1094592001658080853
+    second: reaction_surprise_21
+  - first:
+      213: 4490466663313624478
+    second: reaction_surprise_22
+  - first:
+      213: -6246017802736922140
+    second: reaction_surprise_23
+  - first:
+      213: 3469795691670379817
+    second: reaction_surprise_24
+  - first:
+      213: 2627940563924679882
+    second: reaction_surprise_25
+  - first:
+      213: 2071766419690237586
+    second: reaction_surprise_26
+  - first:
+      213: 3869810080868618770
+    second: reaction_surprise_27
+  - first:
+      213: 1387439622367790890
+    second: reaction_surprise_28
+  - first:
+      213: -6961172180776138889
+    second: reaction_surprise_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 22
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reactions_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7541011dc186740963510d6a5b6421
+      internalID: 902178533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reactions_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cacfec1a0d15d040adb34ccfbab778e
+      internalID: 43272776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 73f10d7defca0c249802df02e7d7dd48
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      reactions_0: 902178533
+      reactions_1: 43272776
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

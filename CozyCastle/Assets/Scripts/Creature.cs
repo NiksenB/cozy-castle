@@ -15,23 +15,21 @@ public class Creature : MonoBehaviour
     public bool isFriendly = true;
     public bool hasEyesOnPlayer = false;
     public CreatureState currentState = CreatureState.Idle;
-    public int affectionLevel = 0;
     public float speed = 4.0f;
     public float interactionRadius = 0.8f;
     public float visibilityRange = 5.0f;
     public Transform playerPosition;
+    public Animator animator;
 
-    public void Interact()
+    public enum FacingDirection { Up, Down, Left, Right }
+    public FacingDirection facingDirection = FacingDirection.Down;
+
+    public void SetAnimator(Animator anim)
     {
-        if (IsPlayerInInteractionRange())
+        animator = anim;
+        if (animator == null)
         {
-            ChangeState(CreatureState.Interacting);
-            affectionLevel++;
-            Debug.Log("Creature interacted with. Affection level: " + affectionLevel);
-        }
-        else
-        {
-            Debug.Log("Player is too far away to interact with the creature.");
+            Debug.LogError("Animator component not found on the Creature object.");
         }
     }
 
@@ -40,9 +38,7 @@ public class Creature : MonoBehaviour
         if (playerPosition != null)
         {
             float distanceToPlayer = Vector3.Distance(transform.position, playerPosition.position);
-            bool isInRange = distanceToPlayer <= interactionRadius;
-            Debug.Log(creatureName + " interaction check: " + (isInRange ? "Player is in range." : "Player is out of range."));
-            return isInRange;
+            return distanceToPlayer <= interactionRadius;
         }
         return false;
     }
@@ -51,10 +47,23 @@ public class Creature : MonoBehaviour
     {
         if (playerPosition != null && currentState != CreatureState.Sleeping)
         {
-            float distanceToPlayer = Vector3.Distance(transform.position, playerPosition.position);
+            Vector2 toPlayer = (playerPosition.position - transform.position).normalized;
+
+            Vector2 facingVector = Vector2.zero;
+            switch (facingDirection)
+            {
+                case FacingDirection.Up: facingVector = Vector2.up; break;
+                case FacingDirection.Down: facingVector = Vector2.down; break;
+                case FacingDirection.Left: facingVector = Vector2.left; break;
+                case FacingDirection.Right: facingVector = Vector2.right; break;
+            }
+            float angle = Vector2.Angle(facingVector, toPlayer);
+
+            float distanceToPlayer = Vector2.Distance(transform.position, playerPosition.position);
+
             return
                 distanceToPlayer <= visibilityRange &&
-                Vector2.Angle(transform.up, playerPosition.position - transform.position) < 60.0f;
+                angle < 60.0f;
         }
         Debug.LogWarning("Player position is not set. Cannot check visibility.");
         return false;
@@ -67,10 +76,23 @@ public class Creature : MonoBehaviour
             if (currentState != CreatureState.Moving)
             {
                 ChangeState(CreatureState.Moving);
+                animator.SetBool("isMoving", true);
                 Debug.Log(creatureName + " is now moving towards the player.");
             }
-            // Vector3 directionToPlayer = (playerPosition.position - transform.position).normalized;
-            // transform.position += speed * Time.deltaTime * directionToPlayer;
+
+            // Update facing direction based on player position
+            Vector2 directionToPlayer = (playerPosition.position - transform.position).normalized;
+            if (Mathf.Abs(directionToPlayer.x) > Mathf.Abs(directionToPlayer.y))
+            {
+                facingDirection = directionToPlayer.x > 0 ? FacingDirection.Right : FacingDirection.Left;
+            }
+            else
+            {
+                facingDirection = directionToPlayer.y > 0 ? FacingDirection.Up : FacingDirection.Down;
+            }
+
+            animator.SetFloat("horizontal", directionToPlayer.x);
+            animator.SetFloat("vertical", directionToPlayer.y);
 
             Vector2 temp = Vector2.MoveTowards(transform.position, playerPosition.position, speed * Time.deltaTime);
             myRigidbody.MovePosition(temp);
@@ -93,6 +115,7 @@ public class Creature : MonoBehaviour
         {
             Debug.Log(creatureName + " has lost sight of the player.");
             ChangeState(CreatureState.Idle);
+            animator.SetBool("isMoving", false);
             hasEyesOnPlayer = false;
         }
     }
@@ -116,6 +139,7 @@ public class Creature : MonoBehaviour
             else
             {
                 ChangeState(CreatureState.Idle);
+                animator.SetBool("isMoving", false);
             }
         }
         else
