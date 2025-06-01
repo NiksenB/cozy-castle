@@ -6,6 +6,7 @@ public class PlayerMovementScript : MonoBehaviour
     public Animator animator;
     public GameObject wand;
     private Vector3 direction;
+    private Rigidbody2D myRigidbody;
     public VectorValue startingPosition;
 
     private void Start()
@@ -14,7 +15,12 @@ public class PlayerMovementScript : MonoBehaviour
         VectorValue pos = Resources.Load<VectorValue>("PlayerPosition"); 
         if (pos != null) pos.value = Vector3.zero;
 
-        transform.position = startingPosition.value;
+        myRigidbody = GetComponent<Rigidbody2D>();
+        if (myRigidbody == null)
+        {
+            Debug.LogError("Rigidbody2D component not found on PlayerMovementScript.");
+        }
+        myRigidbody.MovePosition(startingPosition.value);
     }
 
     public void Update()
@@ -44,7 +50,16 @@ public class PlayerMovementScript : MonoBehaviour
     public void FixedUpdate()
     {
         // Move the player
-        transform.position += speed * Time.deltaTime * direction;
+        //transform.position += speed * Time.deltaTime * direction;
+        if (myRigidbody != null)
+        {
+            Vector3 movement = speed * Time.deltaTime * direction;
+            myRigidbody.MovePosition(transform.position + movement);
+        }
+        else
+        {
+            Debug.LogError("Rigidbody2D is not assigned in PlayerMovementScript.");
+        }
     }
 
     public void AnimateMovement(Vector3 direction)
