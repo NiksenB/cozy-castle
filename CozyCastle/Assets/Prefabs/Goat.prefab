@@ -48,7 +48,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 4
+  m_Mass: 2
   m_LinearDamping: 20
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -126,11 +126,12 @@ MonoBehaviour:
   hasEyesOnPlayer: 0
   currentState: 0
   speed: 2
-  interactionRadius: 1
+  interactionRadius: 1.5
   visibilityRange: 5
   playerPosition: {fileID: 0}
   animator: {fileID: 3915039929267398461}
   facingDirection: 1
+  bubble: {fileID: 5399933266852077214}
 --- !u!1 &5399933266852077214
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +306,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &3915039929267398461
 Animator:
   serializedVersion: 7
