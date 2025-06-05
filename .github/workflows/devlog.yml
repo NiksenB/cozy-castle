@@ -37,30 +37,35 @@ jobs:
         pr_body = os.environ['PR_BODY']
         today = datetime.date.today().isoformat()
 
+        changes = ""
+        notes = ""
+        images_md = ""
+
         # Extract "What's changed" section
         match = re.search(r"## What's changed\s*(.*?)\s*##", pr_body + "\n##", re.DOTALL | re.IGNORECASE)
-        changes = match.group(1).strip() if match else "No details provided."
+        
+        if match: 
+          changes = "\n### What's changed\n" + match.group(1).strip() + "\n"
 
         # Extract "Notes" section
         match = re.search(r"## Notes\s*(.*?)\s*##", pr_body + "\n##", re.DOTALL | re.IGNORECASE)
-        notes = match.group(1).strip() if match else "No notes."
+        if match:
+            notes = "\n### Notes\n" + match.group(1).strip() + "\n"
 
         # Find added image files in the last 10 commits
         result = subprocess.run(["git", "diff", "--name-only", "HEAD~10", "HEAD"], capture_output=True, text=True)
         added_images = [line for line in result.stdout.splitlines() if line.startswith("dev-log/images/") and line.lower().endswith((".png", ".jpg", ".jpeg", ".gif"))]
-
-        images_md = "\n".join(f"![{os.path.basename(img)}]({img})" for img in added_images) if added_images else "_No images added._"
+        if added_images:
+            images_md = "\n".join(f"![{os.path.basename(img)}]({img})" for img in added_images)
+            images_md = "\n### Images\n" + images_md + "\n"
 
         # Construct Markdown entry
         entry = f"""## PR #{pr_number} - {pr_title} ({today})
 
-        ### What's changed
         {changes}
 
-        ### Notes
         {notes}
 
-        ### Images
         {images_md}
 
         ---
