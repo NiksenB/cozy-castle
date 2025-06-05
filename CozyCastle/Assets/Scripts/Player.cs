@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
         movementScript = GetComponent<PlayerMovementScript>();
         Debug.Assert(movementScript != null, "PlayerMovementScript component is missing on Player GameObject.");
 
-        playerStats = GetComponent<PlayerStats>(); 
+        playerStats = GetComponent<PlayerStats>();
         Debug.Assert(playerStats != null, "PlayerStats component is missing on Player GameObject.");
     }
 
@@ -43,6 +43,10 @@ public class Player : MonoBehaviour
                     }
                 }
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            TryInteractWithCreature();
         }
     }
 
@@ -85,10 +89,27 @@ public class Player : MonoBehaviour
             StartCoroutine(DelayedInteract(position, 0.5f));
         }
     }
-    
+
     private System.Collections.IEnumerator DelayedInteract(Vector3Int position, float delay)
     {
         yield return new WaitForSeconds(delay);
         tileManager.SetInteracted(position);
+    }
+    
+    private void TryInteractWithCreature()
+    {
+        // Find creatures in range of circle around player
+        float interactRadius = 1.0f; 
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactRadius);
+
+        foreach (var hit in hits)
+        {
+            Creature creature = hit.GetComponent<Creature>();
+            if (creature != null && creature.IsPlayerInInteractionRange())
+            {
+                creature.GivePat();
+                break; 
+            }
+        }
     }
 }
