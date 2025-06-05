@@ -13,15 +13,15 @@ public class Creature : MonoBehaviour
 {
     public string creatureName = "Default Creature";
     public bool isFriendly = true;
-    public bool hasEyesOnPlayer = false;
-    public CreatureState currentState = CreatureState.Idle;
     public float speed = 4.0f;
     public float interactionRadius = 0.8f;
     public float visibilityRange = 5.0f;
     public Transform playerPosition;
     public Animator animator;
+    private CreatureState currentState = CreatureState.Idle;
     private GameObject loveBubble;
     private bool isFrozen = false;
+    private bool hasEyesOnPlayer = false;
 
     public enum FacingDirection { Up, Down, Left, Right }
     public FacingDirection facingDirection = FacingDirection.Down;
@@ -53,7 +53,7 @@ public class Creature : MonoBehaviour
 
     public bool IsPlayerVisible()
     {
-        if (playerPosition != null && currentState != CreatureState.Sleeping)
+        if (playerPosition != null && IsAlert())
         {
             float distanceToPlayer = Vector2.Distance(transform.position, playerPosition.position);
 
@@ -74,7 +74,8 @@ public class Creature : MonoBehaviour
                 return Vector2.Angle(facingVector, toPlayer) < 60.0f;
             }
         }
-        Debug.LogWarning("Player position is not set. Cannot check visibility.");
+
+        if (playerPosition == null) Debug.LogWarning("Player position is not set. Cannot check visibility.");
         return false;
     }
 
@@ -143,6 +144,11 @@ public class Creature : MonoBehaviour
         {
             Debug.Log(creatureName + " is not friendly and does not approach the player.");
         }
+    }
+
+    public virtual bool IsAlert()
+    {
+        return currentState != CreatureState.Sleeping;
     }
 
     public void ChangeState(CreatureState newState)
