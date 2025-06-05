@@ -53,6 +53,7 @@ public class PlayerMovementScript : MonoBehaviour
         //transform.position += speed * Time.deltaTime * direction;
         if (myRigidbody != null)
         {
+            direction.Normalize(); // Ensure direction is normalized before multiplying by speed
             Vector3 movement = speed * Time.deltaTime * direction;
             myRigidbody.MovePosition(transform.position + movement);
         }
