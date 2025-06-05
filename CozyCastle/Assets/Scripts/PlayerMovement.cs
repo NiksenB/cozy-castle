@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovementScript : MonoBehaviour
@@ -8,11 +9,20 @@ public class PlayerMovementScript : MonoBehaviour
     private Vector3 direction;
     private Rigidbody2D myRigidbody;
     public VectorValue startingPosition;
+    // public PlayerState currentState = PlayerState.Idle;
+
+    // public enum PlayerState
+    // {
+    //     Idle,
+    //     Moving,
+    //     Patting,
+    //     SwingingWand,
+    // }
 
     private void Start()
     {
         // TODO remove this, it is only for testing purposes
-        VectorValue pos = Resources.Load<VectorValue>("PlayerPosition"); 
+        VectorValue pos = Resources.Load<VectorValue>("PlayerPosition");
         if (pos != null) pos.value = Vector3.zero;
 
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -46,14 +56,11 @@ public class PlayerMovementScript : MonoBehaviour
         }
     }
 
-    // Called after collisions are calculated
     public void FixedUpdate()
     {
-        // Move the player
-        //transform.position += speed * Time.deltaTime * direction;
         if (myRigidbody != null)
         {
-            direction.Normalize(); // Ensure direction is normalized before multiplying by speed
+            direction.Normalize(); 
             Vector3 movement = speed * Time.deltaTime * direction;
             myRigidbody.MovePosition(transform.position + movement);
         }
@@ -86,8 +93,27 @@ public class PlayerMovementScript : MonoBehaviour
         {
             if (wand.TryGetComponent<Animator>(out var wandAnimator))
             {
-                wandAnimator.SetTrigger("swingWand"); 
+                wandAnimator.SetTrigger("swingWand");
             }
         }
     }
+
+    // TODO
+    // public void PlayPattingAnimation()
+    // {
+    //     if (animator != null)
+    //     {
+    //         animator.SetTrigger("pat");
+    //     }
+    // }
+
+    // private IEnumerator SwingWandCoroutine(float duration)
+    // {
+    //     animator.SetBool("isMoving", false);
+    //     animator.SetTrigger("swingWand");
+    //     currentState = playerState.SwingingWand;
+    //     yield return null;
+    //     yield return new WaitForSeconds(duration);
+    //     currentState = playerState.Idle;
+    // }
 }
