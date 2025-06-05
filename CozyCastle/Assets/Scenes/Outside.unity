@@ -1027,6 +1027,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &164114840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5399933266852077214, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
+  m_PrefabInstance: {fileID: 2003918933}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &237882719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21039,6 +21044,11 @@ Transform:
   - {fileID: 1598610148}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &726621144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5399933266852077214, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
+  m_PrefabInstance: {fileID: 1688275967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &728456119
 GameObject:
   m_ObjectHideFlags: 0
@@ -36041,6 +36051,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goat (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5324972007424759848, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 726621144}
+    - target: {fileID: 7664405309213241311, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38546,6 +38564,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goat (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5324972007424759848, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 164114840}
+    - target: {fileID: 7664405309213241311, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39642,11 +39668,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197685647192479423, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.12
+      value: -5.07
       objectReference: {fileID: 0}
     - target: {fileID: 197685647192479423, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.47
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 197685647192479423, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -39680,25 +39706,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3126546704563056183, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126546704563056183, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126546704563056183, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4546670720423872926, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
       propertyPath: m_Name
       value: Goat
       objectReference: {fileID: 0}
-    - target: {fileID: 5399933266852077214, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
-      propertyPath: m_Layer
-      value: 0
+    - target: {fileID: 5324972007424759848, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
+      propertyPath: interactionRadius
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664405309213241311, guid: f679ff31fe016cc41981c1d57795e9c5, type: 3}
+      propertyPath: m_Mass
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

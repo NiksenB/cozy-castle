@@ -20,6 +20,8 @@ public class Creature : MonoBehaviour
     public float visibilityRange = 5.0f;
     public Transform playerPosition;
     public Animator animator;
+    private GameObject loveBubble;
+    private bool isFrozen = false;
 
     public enum FacingDirection { Up, Down, Left, Right }
     public FacingDirection facingDirection = FacingDirection.Down;
@@ -31,6 +33,12 @@ public class Creature : MonoBehaviour
         {
             Debug.LogError("Animator component not found on the Creature object.");
         }
+    }
+
+    public void SetLoveBubble(GameObject loveBubble)
+    {
+        this.loveBubble = loveBubble;
+        if (loveBubble != null) loveBubble.SetActive(false);
     }
 
     public bool IsPlayerInInteractionRange()
@@ -47,23 +55,24 @@ public class Creature : MonoBehaviour
     {
         if (playerPosition != null && currentState != CreatureState.Sleeping)
         {
-            Vector2 toPlayer = (playerPosition.position - transform.position).normalized;
-
-            Vector2 facingVector = Vector2.zero;
-            switch (facingDirection)
-            {
-                case FacingDirection.Up: facingVector = Vector2.up; break;
-                case FacingDirection.Down: facingVector = Vector2.down; break;
-                case FacingDirection.Left: facingVector = Vector2.left; break;
-                case FacingDirection.Right: facingVector = Vector2.right; break;
-            }
-            float angle = Vector2.Angle(facingVector, toPlayer);
-
             float distanceToPlayer = Vector2.Distance(transform.position, playerPosition.position);
 
-            return
-                distanceToPlayer <= visibilityRange &&
-                angle < 60.0f;
+            if (distanceToPlayer <= visibilityRange)
+            {
+                if (hasEyesOnPlayer) return true;
+
+                Vector2 facingVector = Vector2.zero;
+                switch (facingDirection)
+                {
+                    case FacingDirection.Up: facingVector = Vector2.up; break;
+                    case FacingDirection.Down: facingVector = Vector2.down; break;
+                    case FacingDirection.Left: facingVector = Vector2.left; break;
+                    case FacingDirection.Right: facingVector = Vector2.right; break;
+                }
+
+                Vector2 toPlayer = (playerPosition.position - transform.position).normalized;
+                return Vector2.Angle(facingVector, toPlayer) < 60.0f;
+            }
         }
         Debug.LogWarning("Player position is not set. Cannot check visibility.");
         return false;
@@ -71,6 +80,12 @@ public class Creature : MonoBehaviour
 
     public void MoveTowardsPlayer(Rigidbody2D myRigidbody)
     {
+        if (isFrozen)
+        {
+            Debug.Log(creatureName + " is frozen and cannot move.");
+            return;
+        }
+
         if (playerPosition != null)
         {
             if (currentState != CreatureState.Moving)
@@ -113,10 +128,10 @@ public class Creature : MonoBehaviour
             {
                 if (!hasEyesOnPlayer)
                 {
-                    ChangeState(CreatureState.Reacting);;
+                    ChangeState(CreatureState.Reacting);
                     hasEyesOnPlayer = true;
                 }
-                
+
                 MoveTowardsPlayer(myRigidbody);
             }
             else
@@ -140,6 +155,8 @@ public class Creature : MonoBehaviour
         currentState = newState;
         Debug.Log(creatureName + " changed state to: " + currentState);
 
+        if (loveBubble != null) loveBubble.SetActive(newState == CreatureState.Reacting);
+
         switch (newState)
         {
             case CreatureState.Idle:
@@ -149,13 +166,12 @@ public class Creature : MonoBehaviour
                 animator.SetBool("isMoving", true);
                 break;
             case CreatureState.Interacting:
-                // animator.SetTrigger("interact");
                 animator.SetBool("isMoving", false);
                 break;
             case CreatureState.Reacting:
-                // animator.SetTrigger("react");
                 hasEyesOnPlayer = true;
-                animator.SetBool("isMoving", false);
+                animator.SetTrigger("react");
+                StartCoroutine(FreezeForSeconds(0.6f));
                 break;
             case CreatureState.Sleeping:
                 animator.SetBool("isSleeping", true);
@@ -188,5 +204,15 @@ public class Creature : MonoBehaviour
             else
                 facingDirection = FacingDirection.Down;
         }
+    }
+    
+    private System.Collections.IEnumerator FreezeForSeconds(float seconds)
+    {
+        isFrozen = true;
+        yield return new WaitForSeconds(seconds);
+        isFrozen = false;
+        // Transition to another state after freezing
+        if (currentState == CreatureState.Reacting)
+            ChangeState(CreatureState.Idle);
     }
 }
