@@ -15,7 +15,7 @@ public class Creature : MonoBehaviour
     public bool isFriendly = true;
     public bool wantsPat = true;
     public float speed = 4.0f;
-    public float interactionRadius = 0.8f;
+    public float interactionRadius = 1.2f;
     public float visibilityRange = 5.0f;
     public Transform playerPosition;
     public Animator animator;
@@ -239,7 +239,7 @@ public class Creature : MonoBehaviour
         isFrozen = true;
         yield return new WaitForSeconds(seconds);
         isFrozen = false;
-        
+
         if (currentState == CreatureState.Reacting
             || currentState == CreatureState.Interacting)
             ChangeState(CreatureState.Idle);
