@@ -123,15 +123,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creatureName: Golly Goat
   isFriendly: 1
-  hasEyesOnPlayer: 0
-  currentState: 0
+  wantsPat: 1
   speed: 2
   interactionRadius: 1.5
   visibilityRange: 5
   playerPosition: {fileID: 0}
   animator: {fileID: 3915039929267398461}
   facingDirection: 1
-  bubble: {fileID: 5399933266852077214}
+  loveBubble: {fileID: 5399933266852077214}
 --- !u!1 &5399933266852077214
 GameObject:
   m_ObjectHideFlags: 0
