@@ -21753,10 +21753,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436e3ce39f0fbc647a9319b5d808cab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 4.5
   animator: {fileID: 728456125}
   wand: {fileID: 1235857792}
   startingPosition: {fileID: 11400000, guid: 04e942a554155ec43b9a85893345ba96, type: 2}
+  currentState: 0
 --- !u!114 &883431145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39612,6 +39613,10 @@ PrefabInstance:
     - target: {fileID: 2011650305562939854, guid: 35b9aa1a34367ed42a79efabe6d84245, type: 3}
       propertyPath: speed
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011650305562939854, guid: 35b9aa1a34367ed42a79efabe6d84245, type: 3}
+      propertyPath: interactionRadius
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5134608427585454713, guid: 35b9aa1a34367ed42a79efabe6d84245, type: 3}
       propertyPath: m_LocalPosition.x

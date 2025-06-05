@@ -13,18 +13,33 @@ public class Creature : MonoBehaviour
 {
     public string creatureName = "Default Creature";
     public bool isFriendly = true;
+    public bool wantsPat = true;
     public float speed = 4.0f;
     public float interactionRadius = 0.8f;
     public float visibilityRange = 5.0f;
     public Transform playerPosition;
     public Animator animator;
     private CreatureState currentState = CreatureState.Idle;
-    private GameObject loveBubble;
+    private GameObject heartBubble;
     private bool isFrozen = false;
     private bool hasEyesOnPlayer = false;
 
     public enum FacingDirection { Up, Down, Left, Right }
     public FacingDirection facingDirection = FacingDirection.Down;
+
+    public void GivePat()
+    { 
+        if (currentState == CreatureState.Idle || currentState == CreatureState.Moving)
+        {
+            wantsPat = false; 
+            ChangeState(CreatureState.Interacting);
+            Debug.Log(creatureName + " has been patted.");
+        }
+        else
+        {
+            Debug.Log(creatureName + " is not in a state to be patted.");
+        }
+    }
 
     public void SetAnimator(Animator anim)
     {
@@ -37,7 +52,7 @@ public class Creature : MonoBehaviour
 
     public void SetLoveBubble(GameObject loveBubble)
     {
-        this.loveBubble = loveBubble;
+        this.heartBubble = loveBubble;
         if (loveBubble != null) loveBubble.SetActive(false);
     }
 
@@ -125,7 +140,7 @@ public class Creature : MonoBehaviour
     {
         if (isFriendly)
         {
-            if (!IsPlayerInInteractionRange())
+            if (!IsPlayerInInteractionRange() && wantsPat)
             {
                 if (!hasEyesOnPlayer)
                 {
@@ -153,37 +168,44 @@ public class Creature : MonoBehaviour
 
     public void ChangeState(CreatureState newState)
     {
-        if (currentState == newState)
-        {
-            return;
-        }
+        if (isFrozen) return;
+
+        if (currentState == newState) return;
 
         currentState = newState;
         Debug.Log(creatureName + " changed state to: " + currentState);
 
-        if (loveBubble != null) loveBubble.SetActive(newState == CreatureState.Reacting);
+        if (heartBubble != null)
+        {
+            heartBubble.SetActive(
+                newState == CreatureState.Reacting ||
+                newState == CreatureState.Interacting
+            );
+        }
 
         switch (newState)
-        {
-            case CreatureState.Idle:
-                animator.SetBool("isMoving", false);
-                break;
-            case CreatureState.Moving:
-                animator.SetBool("isMoving", true);
-                break;
-            case CreatureState.Interacting:
-                animator.SetBool("isMoving", false);
-                break;
-            case CreatureState.Reacting:
-                hasEyesOnPlayer = true;
-                animator.SetTrigger("react");
-                StartCoroutine(FreezeForSeconds(0.6f));
-                break;
-            case CreatureState.Sleeping:
-                animator.SetBool("isSleeping", true);
-                hasEyesOnPlayer = false;
-                break;
-        }
+            {
+                case CreatureState.Idle:
+                    animator.SetBool("isMoving", false);
+                    break;
+                case CreatureState.Moving:
+                    animator.SetBool("isMoving", true);
+                    break;
+                case CreatureState.Interacting:
+                    hasEyesOnPlayer = true;
+                    animator.SetTrigger("interact");
+                    StartCoroutine(FreezeForSeconds(1.0f));
+                    break;
+                case CreatureState.Reacting:
+                    hasEyesOnPlayer = true;
+                    animator.SetTrigger("react");
+                    StartCoroutine(FreezeForSeconds(0.6f));
+                    break;
+                case CreatureState.Sleeping:
+                    animator.SetBool("isSleeping", true);
+                    hasEyesOnPlayer = false;
+                    break;
+            }
     }
 
     private void ChangeAnim(Vector2 direction)
@@ -217,8 +239,9 @@ public class Creature : MonoBehaviour
         isFrozen = true;
         yield return new WaitForSeconds(seconds);
         isFrozen = false;
-        // Transition to another state after freezing
-        if (currentState == CreatureState.Reacting)
+        
+        if (currentState == CreatureState.Reacting
+            || currentState == CreatureState.Interacting)
             ChangeState(CreatureState.Idle);
     }
 }
