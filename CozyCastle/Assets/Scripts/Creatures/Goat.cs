@@ -10,7 +10,7 @@ public class Goat : Creature
         myRigidbody = GetComponent<Rigidbody2D>();
         if (myRigidbody == null) Debug.LogError("Rigidbody2D component not found on the Goat object.");
 
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         if (animator == null) Debug.LogError("Animator component not found on the Goat object.");
         else SetAnimator(animator);
 
