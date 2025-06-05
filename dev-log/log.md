@@ -4,14 +4,7 @@
 - The camera stops at the corner of the map and has an intentional delay
 - Misc improvements to tiles and settings
 
-### Notes
-No notes.
-
-### Images
-_No images added._
-
 ---
-
 
 ## PR #23 - Pimp up the ouside (2025-05-30)
 
@@ -21,14 +14,7 @@ _No images added._
 - Decreased player friction
 - Try fix dev-log workflow
 
-### Notes
-
-
-### Images
-_No images added._
-
 ---
-
 
 ## PR #19 - Event and outdoors (2025-05-27)
 
@@ -79,3 +65,14 @@ Assets:
 ### Images
 ![Ingame](images/2025-05-22-ingame.png)
 ![Toolbar](images/2025-05-22-toolbar.png)
+
+---
+
+## Project start (2024-11-13)
+
+### What's changed
+- Created a Unity project
+- Basic character controls
+- I made the Character Sprite myself, can you tell? (lol)
+
+![Unity](images/2024-11-13-unity.png)
