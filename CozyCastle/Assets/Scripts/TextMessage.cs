@@ -2,19 +2,18 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Sign : Interactable
+public class TextMessage : Interactable
 {
     public GameObject dialogueBox;
     public Text dialogueText;
     public string[] dialogueLines;
-
 
     void Start()
     {
         dialogueBox.SetActive(false);
         if (dialogueLines.Length == 0)
         {
-            Debug.LogWarning("Dialogue lines are not set for the Sign script.");
+            Debug.LogWarning("Dialogue lines are not set.");
         }
     }
 
@@ -24,12 +23,12 @@ public class Sign : Interactable
         {
             if (dialogueBox.activeSelf)
             {
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     ShowNextLineElseClose();
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.E))
+            else if (Input.GetKeyDown(KeyCode.Space))
             {
                 StartDialogue();
             }
@@ -81,13 +80,12 @@ public class Sign : Interactable
             return;
         }
 
-        Debug.Log($"Current line index: {currentLineIndex}, Total lines: {dialogueLines.Length}");
-
         dialogueText.text = dialogueLines[currentLineIndex + 1];
     }
-    
-    void OnTriggerExit2D(Collider2D other)
+
+    private new void OnTriggerExit2D(Collider2D other)
     {
+        base.OnTriggerExit2D(other);
         if (other.CompareTag("Player"))
         {
             dialogueBox.SetActive(false);
