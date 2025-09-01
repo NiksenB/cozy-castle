@@ -2,17 +2,19 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public bool isPlayerInRange = false;
+    protected bool isPlayerInRange = false;
+    protected Vector3 collidingPlayerPosition = Vector3.down;
 
-    void OnTriggerEnter2D(Collider2D other)
+    protected void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            collidingPlayerPosition = other.transform.position;
         }
     }
-    
-    void OnTriggerExit2D(Collider2D other)
+
+    protected void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
