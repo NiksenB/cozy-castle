@@ -25,9 +25,25 @@ public class BoundedNPC : Interactable
         ChangeDirection();
     }
 
+    void Update()
+    {
+        if (isPlayerInRange)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                FacePlayer();
+            }
+        }
+    }
+
     void FixedUpdate()
     {
-        if (!isPlayerInRange) Move();
+        if (!isPlayerInRange)
+        {
+            anim.SetBool("isMoving", true);
+            Move();
+        }
+        else { anim.SetBool("isMoving", false); }
     }
 
     private void Move()
@@ -41,6 +57,21 @@ public class BoundedNPC : Interactable
         {
             ChangeDirection();
         }
+    }
+
+    void FacePlayer()
+    {
+        Vector3 playerDirection = collidingPlayerPosition - new Vector3(myTransform.position.x, myTransform.position.y);
+
+        if (Mathf.Abs(playerDirection.x) > Mathf.Abs(playerDirection.y))
+        {
+            directionVector = playerDirection.x > 0 ? Vector3.right : Vector3.left;
+        }
+        else
+        {
+            directionVector = playerDirection.y > 0 ? Vector3.up : Vector3.down;
+        }
+        UpdateAnimation();
     }
 
     void ChangeDirection()
