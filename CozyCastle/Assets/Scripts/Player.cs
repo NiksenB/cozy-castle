@@ -29,6 +29,8 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            TryInteractWithCreature();
+
             if (tileManager != null)
             {
                 Vector3Int position = new((int)transform.position.x, (int)transform.position.y, 0);
@@ -43,10 +45,6 @@ public class Player : MonoBehaviour
                     }
                 }
             }
-        }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            TryInteractWithCreature();
         }
     }
 
