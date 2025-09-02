@@ -1,8 +1,9 @@
+using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextMessage : Interactable
+public class TextMessage : InteractionZone, IInteractable
 {
     public GameObject dialogueBox;
     public Text dialogueText;
@@ -17,26 +18,20 @@ public class TextMessage : Interactable
         }
     }
 
-    void Update()
+    public void Interact(GameObject player)
     {
-        if (isPlayerInRange)
+        StartOrResumeDialogue();
+    }
+
+    private void StartOrResumeDialogue()
+    {
+        if (dialogueBox.activeSelf)
         {
-            if (dialogueBox.activeSelf)
-            {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    ShowNextLineElseClose();
-                }
-            }
-            else if (Input.GetKeyDown(KeyCode.Space))
-            {
-                StartDialogue();
-            }
-            else if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Debug.Log("Escape key pressed, closing dialogue.");
-                EndDialogue();
-            }
+            ShowNextLineElseClose();
+        }
+        else
+        {
+            StartDialogue();
         }
     }
 
@@ -81,14 +76,5 @@ public class TextMessage : Interactable
         }
 
         dialogueText.text = dialogueLines[currentLineIndex + 1];
-    }
-
-    private new void OnTriggerExit2D(Collider2D other)
-    {
-        base.OnTriggerExit2D(other);
-        if (other.CompareTag("Player"))
-        {
-            dialogueBox.SetActive(false);
-        }
     }
 }
