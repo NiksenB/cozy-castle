@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class BoundedNPC : Interactable
+public class BoundedNPC : VisionAI, IInteractable
 {
 
+    [SerializeField] TextMessage dialogue;
     public Collider2D boundsCollider;
     public float speed = 1.5f;
     private Vector3 directionVector;
+
     private Transform myTransform;
     private Rigidbody2D myRigidbody;
     private Animator anim;
+    private bool awaitInteract;
 
     void Awake()
     {
@@ -25,30 +28,24 @@ public class BoundedNPC : Interactable
         ChangeDirection();
     }
 
-    void Update()
+    public void Interact(GameObject player)
     {
-        if (isPlayerInRange)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                FacePlayer();
-            }
-        }
+        FacePlayer(player);
+        anim.SetBool("isMoving", false);
+        dialogue.Interact(player);
     }
 
     void FixedUpdate()
     {
-        if (!isPlayerInRange)
-        {
-            anim.SetBool("isMoving", true);
-            Move();
-        }
-        else { anim.SetBool("isMoving", false); }
+        if (awaitInteract) return;
+
+        anim.SetBool("isMoving", true);
+        Move();
     }
 
     private void Move()
     {
-        Vector3 targetPosition = myTransform.position + speed * Time.deltaTime * directionVector;
+        Vector3 targetPosition = myTransform.position + speed * Time.deltaTime * GetDirectionVector();
         if (boundsCollider.bounds.Contains(targetPosition))
         {
             myRigidbody.MovePosition(targetPosition);
@@ -59,17 +56,34 @@ public class BoundedNPC : Interactable
         }
     }
 
-    void FacePlayer()
+    private Vector3 GetDirectionVector()
     {
-        Vector3 playerDirection = collidingPlayerPosition - new Vector3(myTransform.position.x, myTransform.position.y);
+        switch (facingDirection)
+        {
+            case FacingDirection.Up:
+                return Vector3.up;
+            case FacingDirection.Down:
+                return Vector3.down;
+            case FacingDirection.Left:
+                return Vector3.left;
+            case FacingDirection.Right:
+                return Vector3.right;
+            default:
+                return Vector3.zero;
+        }
+    }
+
+    void FacePlayer(GameObject player)
+    {
+        Vector3 playerDirection = player.transform.position - new Vector3(myTransform.position.x, myTransform.position.y);
 
         if (Mathf.Abs(playerDirection.x) > Mathf.Abs(playerDirection.y))
         {
-            directionVector = playerDirection.x > 0 ? Vector3.right : Vector3.left;
+            facingDirection = playerDirection.x > 0 ? FacingDirection.Right : FacingDirection.Left;
         }
         else
         {
-            directionVector = playerDirection.y > 0 ? Vector3.up : Vector3.down;
+            facingDirection = playerDirection.y > 0 ? FacingDirection.Up : FacingDirection.Down;
         }
         UpdateAnimation();
     }
@@ -79,17 +93,17 @@ public class BoundedNPC : Interactable
         int direction = Random.Range(0, 4);
         switch (direction)
         {
-            case 0: // Up
-                directionVector = Vector3.up;
+            case 0:
+                facingDirection = FacingDirection.Up;
                 break;
-            case 1: // Down
-                directionVector = Vector3.down;
+            case 1:
+                facingDirection = FacingDirection.Down;
                 break;
-            case 2: // Left
-                directionVector = Vector3.left;
+            case 2:
+                facingDirection = FacingDirection.Left;
                 break;
-            case 3: // Right
-                directionVector = Vector3.right;
+            case 3:
+                facingDirection = FacingDirection.Right;
                 break;
         }
         UpdateAnimation();
@@ -97,12 +111,19 @@ public class BoundedNPC : Interactable
 
     private void UpdateAnimation()
     {
-        anim.SetFloat("horizontal", directionVector.x);
-        anim.SetFloat("vertical", directionVector.y);
+        anim.SetFloat("horizontal", facingDirection == FacingDirection.Left ? -1 : facingDirection == FacingDirection.Right ? 1 : 0);
+        anim.SetFloat("vertical", facingDirection == FacingDirection.Down ? -1 : facingDirection == FacingDirection.Up ? 1 : 0);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            awaitInteract = true;
+            anim.SetBool("isMoving", false);
+            FacePlayer(collision.gameObject);
+            return;
+        }
         Vector3 temp = directionVector;
         ChangeDirection();
         int attempts = 0;
@@ -111,5 +132,10 @@ public class BoundedNPC : Interactable
             attempts++;
             ChangeDirection();
         }
+    }
+    
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player")) awaitInteract = false;
     }
 }

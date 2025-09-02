@@ -9,31 +9,50 @@ public enum CreatureState
     Sleeping,
 }
 
-public class Creature : MonoBehaviour
+public class Creature : VisionAI, IInteractable
 {
-    public string creatureName = "Default Creature";
-    public bool isFriendly = true;
-    public bool wantsPat = true;
-    public float speed = 4.0f;
-    public float interactionRadius = 1.2f;
-    public float visibilityRange = 5.0f;
-    public Transform playerPosition;
-    public Animator animator;
-    private CreatureState currentState = CreatureState.Idle;
-    private GameObject heartBubble;
-    private bool isFrozen = false;
-    private bool hasEyesOnPlayer = false;
+    [SerializeField] protected string creatureName = "Default Creature";
+    [SerializeField] protected bool isFriendly = true;
+    [SerializeField] protected bool wantsPat = true;
+    [SerializeField] protected float speed = 4.0f;
+    protected Animator animator;
+    protected CreatureState currentState = CreatureState.Idle;
+    protected GameObject heartBubble;
+    protected bool isFrozen = false;
+    protected Rigidbody2D myRigidbody;
 
-    public enum FacingDirection { Up, Down, Left, Right }
-    public FacingDirection facingDirection = FacingDirection.Down;
+    void Start()
+    {
+        myRigidbody = GetComponentInChildren<Rigidbody2D>();
+        if (myRigidbody == null) Debug.LogError("Rigidbody2D component not found on the Bunny object.");
 
-    public void GivePat()
-    { 
+        animator = GetComponentInChildren<Animator>();
+        if (animator == null) Debug.LogError("Animator component not found on the Bunny object.");
+        else SetAnimator(animator);
+
+        if (transform.Find("LoveBubble") != null)
+        {
+            heartBubble = transform.Find("LoveBubble").gameObject;
+            heartBubble.SetActive(false);
+        }
+        else
+        {
+            Debug.LogError("Heart Bubble prefab is not assigned. Please assign it in the inspector.");
+        }
+    }
+
+    public void Interact(GameObject player)
+    {
+        GetPat(player);
+    }
+
+    public void GetPat(GameObject player)
+    {
         if (currentState == CreatureState.Idle || currentState == CreatureState.Moving)
         {
             wantsPat = false; 
             ChangeState(CreatureState.Interacting);
-            Debug.Log(creatureName + " has been patted.");
+            Debug.Log(creatureName + " has been patted by " + player.name + ".");
         }
         else
         {
@@ -49,52 +68,7 @@ public class Creature : MonoBehaviour
             Debug.LogError("Animator component not found on the Creature object.");
         }
     }
-
-    public void SetLoveBubble(GameObject loveBubble)
-    {
-        this.heartBubble = loveBubble;
-        if (loveBubble != null) loveBubble.SetActive(false);
-    }
-
-    public bool IsPlayerInInteractionRange()
-    {
-        if (playerPosition != null)
-        {
-            float distanceToPlayer = Vector3.Distance(transform.position, playerPosition.position);
-            return distanceToPlayer <= interactionRadius;
-        }
-        return false;
-    }
-
-    public bool IsPlayerVisible()
-    {
-        if (playerPosition != null && IsAlert())
-        {
-            float distanceToPlayer = Vector2.Distance(transform.position, playerPosition.position);
-
-            if (distanceToPlayer <= visibilityRange)
-            {
-                if (hasEyesOnPlayer) return true;
-
-                Vector2 facingVector = Vector2.zero;
-                switch (facingDirection)
-                {
-                    case FacingDirection.Up: facingVector = Vector2.up; break;
-                    case FacingDirection.Down: facingVector = Vector2.down; break;
-                    case FacingDirection.Left: facingVector = Vector2.left; break;
-                    case FacingDirection.Right: facingVector = Vector2.right; break;
-                }
-
-                Vector2 toPlayer = (playerPosition.position - transform.position).normalized;
-                return Vector2.Angle(facingVector, toPlayer) < 60.0f;
-            }
-        }
-
-        if (playerPosition == null) Debug.LogWarning("Player position is not set. Cannot check visibility.");
-        return false;
-    }
-
-    public void MoveTowardsPlayer(Rigidbody2D myRigidbody)
+    public void MoveTowardsPlayer()
     {
         if (isFrozen)
         {
@@ -102,14 +76,14 @@ public class Creature : MonoBehaviour
             return;
         }
 
-        if (playerPosition != null)
+        if (targetPlayer != null)
         {
             if (currentState != CreatureState.Moving)
             {
                 ChangeState(CreatureState.Moving);
             }
 
-            Vector2 temp = Vector2.MoveTowards(transform.position, playerPosition.position, speed * Time.deltaTime);
+            Vector2 temp = Vector2.MoveTowards(transform.position, targetPlayer.transform.position, speed * Time.deltaTime);
 
             UpdateDirection(temp - (Vector2)transform.position);
             ChangeAnim(temp - (Vector2)transform.position);
@@ -121,47 +95,20 @@ public class Creature : MonoBehaviour
         }
     }
 
-    public void UpdatePlayerVisibility(bool isPlayerVisible = true)
+    protected override void DiscoverPlayer()
     {
-        if (isPlayerVisible && !hasEyesOnPlayer)
+        ChangeState(CreatureState.Reacting);
+    }
+
+    protected override void PlayerInVisibilityRange()
+    {
+        if (isFriendly && wantsPat)
         {
-            Debug.Log(creatureName + " has spotted the player.");
-            ChangeState(CreatureState.Reacting);
-        }
-        else if (!isPlayerVisible && hasEyesOnPlayer)
-        {
-            Debug.Log(creatureName + " has lost sight of the player.");
-            hasEyesOnPlayer = false;
-            ChangeState(CreatureState.Idle);
+            MoveTowardsPlayer();
         }
     }
 
-    public void ReactToPlayer(Rigidbody2D myRigidbody)
-    {
-        if (isFriendly)
-        {
-            if (!IsPlayerInInteractionRange() && wantsPat)
-            {
-                if (!hasEyesOnPlayer)
-                {
-                    ChangeState(CreatureState.Reacting);
-                    hasEyesOnPlayer = true;
-                }
-
-                MoveTowardsPlayer(myRigidbody);
-            }
-            else
-            {
-                ChangeState(CreatureState.Idle);
-            }
-        }
-        else
-        {
-            Debug.Log(creatureName + " is not friendly and does not approach the player.");
-        }
-    }
-
-    public virtual bool IsAlert()
+    protected override bool IsAlert()
     {
         return currentState != CreatureState.Sleeping;
     }
@@ -197,7 +144,6 @@ public class Creature : MonoBehaviour
                     StartCoroutine(FreezeForSeconds(1.0f));
                     break;
                 case CreatureState.Reacting:
-                    hasEyesOnPlayer = true;
                     animator.SetTrigger("react");
                     StartCoroutine(FreezeForSeconds(0.6f));
                     break;
