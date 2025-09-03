@@ -6,8 +6,6 @@ public class BoundedNPC : VisionAI, IInteractable
     [SerializeField] TextMessage dialogue;
     public Collider2D boundsCollider;
     public float speed = 1.5f;
-    private Vector3 directionVector;
-
     private Transform myTransform;
     private Rigidbody2D myRigidbody;
     private Animator anim;
@@ -32,7 +30,7 @@ public class BoundedNPC : VisionAI, IInteractable
     {
         FacePlayer(player);
         anim.SetBool("isMoving", false);
-        dialogue.Interact(player);
+        dialogue.StartOrResumeDialogue();
     }
 
     void FixedUpdate()
@@ -73,18 +71,17 @@ public class BoundedNPC : VisionAI, IInteractable
         }
     }
 
+    private void UpdateFacingDirection(Vector3 sourceVector, Vector3 targetVector)
+    {
+        Vector3 direction = targetVector - sourceVector;
+        facingDirection = Mathf.Abs(direction.x) > Mathf.Abs(direction.y)
+            ? (direction.x > 0 ? FacingDirection.Right : FacingDirection.Left)
+            : (direction.y > 0 ? FacingDirection.Up : FacingDirection.Down);
+    }
+
     void FacePlayer(GameObject player)
     {
-        Vector3 playerDirection = player.transform.position - new Vector3(myTransform.position.x, myTransform.position.y);
-
-        if (Mathf.Abs(playerDirection.x) > Mathf.Abs(playerDirection.y))
-        {
-            facingDirection = playerDirection.x > 0 ? FacingDirection.Right : FacingDirection.Left;
-        }
-        else
-        {
-            facingDirection = playerDirection.y > 0 ? FacingDirection.Up : FacingDirection.Down;
-        }
+        UpdateFacingDirection(myTransform.position, player.transform.position);
         UpdateAnimation();
     }
 
@@ -124,14 +121,15 @@ public class BoundedNPC : VisionAI, IInteractable
             FacePlayer(collision.gameObject);
             return;
         }
-        Vector3 temp = directionVector;
+        Vector3 temp = GetDirectionVector();
         ChangeDirection();
         int attempts = 0;
-        while (directionVector == temp && attempts < 20)
+        while (GetDirectionVector() == temp && attempts < 20)
         {
             attempts++;
             ChangeDirection();
         }
+        if (attempts == 20) Debug.LogWarning("Max attempts reached when changing direction after collision.");
     }
     
     private void OnCollisionExit2D(Collision2D collision)

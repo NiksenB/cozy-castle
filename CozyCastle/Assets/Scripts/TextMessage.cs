@@ -3,11 +3,17 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextMessage : InteractionZone, IInteractable
+public class TextMessage : MonoBehaviour, IInteractable
 {
-    public GameObject dialogueBox;
-    public Text dialogueText;
+    private GameObject dialogueBox;
+    private Text dialogueText;
     public string[] dialogueLines;
+
+    private void Awake()
+    {
+        dialogueBox = GameObject.Find("DialogueBox");
+        dialogueText = dialogueBox.GetComponentInChildren<Text>();
+    }
 
     void Start()
     {
@@ -23,7 +29,7 @@ public class TextMessage : InteractionZone, IInteractable
         StartOrResumeDialogue();
     }
 
-    private void StartOrResumeDialogue()
+    public void StartOrResumeDialogue()
     {
         if (dialogueBox.activeSelf)
         {
