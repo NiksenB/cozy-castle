@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -8,7 +9,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space))
         {
-            var target = interactionZone.CurrentInteractionTarget;
+            var target = interactionZone.CurrentInteractionTargets.FirstOrDefault();
             Debug.Log("Interacting with " + (target != null ? target.ToString() : "nothing"));
             target?.Interact(gameObject); // gameObject = player
         }

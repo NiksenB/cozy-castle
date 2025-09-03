@@ -1,13 +1,18 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractionZone : MonoBehaviour
 {
-    public IInteractable CurrentInteractionTarget { get; private set; }
+    public List<IInteractable> CurrentInteractionTargets { get; private set; } = new List<IInteractable>();
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.TryGetComponent<IInteractable>(out var interactable))
         {
-            CurrentInteractionTarget = interactable;
+            if (!CurrentInteractionTargets.Contains(interactable))
+            {
+                CurrentInteractionTargets.Add(interactable);
+            }
         }
     }
 
@@ -15,10 +20,7 @@ public class InteractionZone : MonoBehaviour
     {
         if (other.TryGetComponent<IInteractable>(out var interactable))
         {
-            if (interactable == CurrentInteractionTarget)
-            {
-                CurrentInteractionTarget = null;
-            }
+            CurrentInteractionTargets.Remove(interactable);
         }
     }
 }

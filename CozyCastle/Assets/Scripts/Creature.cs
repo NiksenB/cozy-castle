@@ -72,7 +72,6 @@ public class Creature : VisionAI, IInteractable
     {
         if (isFrozen)
         {
-            Debug.Log(creatureName + " is frozen and cannot move.");
             return;
         }
 
@@ -98,6 +97,11 @@ public class Creature : VisionAI, IInteractable
     protected override void DiscoverPlayer()
     {
         ChangeState(CreatureState.Reacting);
+    }
+
+    protected override void LoseSight()
+    {
+        ChangeState(CreatureState.Idle);
     }
 
     protected override void PlayerInVisibilityRange()

@@ -7,7 +7,15 @@ public class VisionAI : MonoBehaviour
     [Header("Perception")]
     public float viewDistance = 5f;
     public void SetTarget(Transform t) => targetPlayer = t;
-    public void ClearTarget() => targetPlayer = null;
+    public void ClearTarget()
+    {
+        if (hasEyesOnPlayer)
+        {
+            LoseSight();
+            hasEyesOnPlayer = false;
+        }
+        targetPlayer = null;
+    }
 
     protected bool hasEyesOnPlayer = false;
     protected enum FacingDirection { Up, Down, Left, Right }
@@ -20,7 +28,6 @@ public class VisionAI : MonoBehaviour
         float dist = Vector2.Distance(transform.position, targetPlayer.position);
         if (dist > viewDistance)
         {
-            hasEyesOnPlayer = false;
             ClearTarget();
             return;
         }
@@ -39,7 +46,7 @@ public class VisionAI : MonoBehaviour
         {
             if (hasEyesOnPlayer)
             {
-                hasEyesOnPlayer = false;
+                ClearTarget();
                 LoseSight();
             }
         }
@@ -49,6 +56,7 @@ public class VisionAI : MonoBehaviour
     {
         if (hasEyesOnPlayer)
         {
+            // Debug.Log($"{name} has eyes on the player");
             PlayerInVisibilityRange();
         }
     }
