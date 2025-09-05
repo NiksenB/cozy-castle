@@ -1,3 +1,20 @@
+## PR #35 - Fix : Naming of image files (2025-09-05)
+
+
+### What's changed
+- Nothing
+
+
+
+### Notes
+None.
+
+
+
+
+---
+
+
 ## PR #34 - Clean up (2025-09-05)
 
 
