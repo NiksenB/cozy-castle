@@ -1,3 +1,33 @@
+## PR #33 - Misc from tutorial (2025-09-05)
+
+
+### What's changed
+- Goat and bunny creatures 
+- Creatures are animated and are happy to see you and chase you until you pet them
+- Placeholder guard NPC exists
+- An NPC walks around randomly within an area
+- If player interacts with NPC, a dialogue box appear
+- Signs exist
+- If player interacts with sign, a dialogue box appears
+- Refactored some code (more changes to come)
+
+
+
+### Notes
+Fixed some bugs too, yay we're learning.
+
+
+
+### Images
+![2024-11-13-unity.png](dev-log/images/2024-11-13-unity.png)
+![2025-06-05-chased-by-goats.png](dev-log/images/2025-06-05-chased-by-goats.png)
+![2025-06-05-npc-guard.png](dev-log/images/2025-06-05-npc-guard.png)
+![2025-09-01-npc-guard-dialogue.png](dev-log/images/2025-09-01-npc-guard-dialogue.png)
+
+
+---
+
+
 ## PR #25 - Other creatures (2025-05-31)
 
 ### What's changed
