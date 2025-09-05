@@ -1,3 +1,23 @@
+## PR #34 - Clean up (2025-09-05)
+
+
+### What's changed
+- Moved .gitignore
+
+
+
+
+
+### Images
+![2024-11-13-unity.png](dev-log/images/2024-11-13-unity.png)
+![2025-06-05-chased-by-goats.png](dev-log/images/2025-06-05-chased-by-goats.png)
+![2025-06-05-npc-guard.png](dev-log/images/2025-06-05-npc-guard.png)
+![2025-09-01-npc-guard-dialogue.png](dev-log/images/2025-09-01-npc-guard-dialogue.png)
+
+
+---
+
+
 ## PR #33 - Misc from tutorial (2025-09-05)
 
 
