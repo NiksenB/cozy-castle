@@ -5,16 +5,6 @@
 - Moved .gitignore
 
 
-
-
-
-### Images
-![2024-11-13-unity.png](dev-log/images/2024-11-13-unity.png)
-![2025-06-05-chased-by-goats.png](dev-log/images/2025-06-05-chased-by-goats.png)
-![2025-06-05-npc-guard.png](dev-log/images/2025-06-05-npc-guard.png)
-![2025-09-01-npc-guard-dialogue.png](dev-log/images/2025-09-01-npc-guard-dialogue.png)
-
-
 ---
 
 
@@ -39,10 +29,9 @@ Fixed some bugs too, yay we're learning.
 
 
 ### Images
-![2024-11-13-unity.png](dev-log/images/2024-11-13-unity.png)
-![2025-06-05-chased-by-goats.png](dev-log/images/2025-06-05-chased-by-goats.png)
-![2025-06-05-npc-guard.png](dev-log/images/2025-06-05-npc-guard.png)
-![2025-09-01-npc-guard-dialogue.png](dev-log/images/2025-09-01-npc-guard-dialogue.png)
+![2024-11-13-unity.png](images/2024-11-13-unity.png)
+![2025-06-05-chased-by-goats.png](images/2025-06-05-chased-by-goats.png)
+![2025-09-01-npc-guard-dialogue.png](images/2025-09-01-npc-guard-dialogue.png)
 
 
 ---

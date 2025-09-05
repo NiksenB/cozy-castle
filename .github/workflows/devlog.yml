@@ -52,9 +52,9 @@ jobs:
         if match:
             notes = "\n### Notes\n" + match.group(1).strip() + "\n"
 
-        # Find added image files in the last 15 commits
-        result = subprocess.run(["git", "diff", "--name-only", "HEAD~15", "HEAD"], capture_output=True, text=True)
-        added_images = [line for line in result.stdout.splitlines() if line.startswith("dev-log/images/") and line.lower().endswith((".png", ".jpg", ".jpeg", ".gif"))]
+        # Find added image files from this branch
+        result = subprocess.run(["git", "diff", "--name-status", "origin/main...HEAD"], capture_output=True, text=True)
+        added_images = [line.replace("dev-log/", "") for line in result.stdout.splitlines() if line.startswith("dev-log/images/") and line.lower().endswith((".png", ".jpg", ".jpeg", ".gif"))]
         if added_images:
             images_md = "\n".join(f"![{os.path.basename(img)}]({img})" for img in added_images)
             images_md = "\n### Images\n" + images_md + "\n"
