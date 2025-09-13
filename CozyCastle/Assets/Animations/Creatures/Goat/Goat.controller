@@ -651,7 +651,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Goat_Wake_Up
+  m_Name: Wake_Up
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -759,7 +759,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Goat_Begin_Sleep
+  m_Name: Begin_Sleep
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
