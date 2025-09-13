@@ -52,6 +52,8 @@ public class VisionAI : MonoBehaviour
         }
     }
 
+    public bool HasEyesOnPlayer() => hasEyesOnPlayer;
+
     private void FixedUpdate()
     {
         if (hasEyesOnPlayer)
