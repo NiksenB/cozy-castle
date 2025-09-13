@@ -54,22 +54,25 @@ public class VisionAI : MonoBehaviour
 
     public bool HasEyesOnPlayer() => hasEyesOnPlayer;
 
-    private void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
+        if (targetPlayer == null) return;
+        Debug.DrawRay(transform.position, (targetPlayer.position - transform.position).normalized * viewDistance, Color.red);
         if (hasEyesOnPlayer)
         {
             PlayerInVisibilityRange();
         }
     }
 
-    protected virtual void DiscoverPlayer() 
+    protected virtual void DiscoverPlayer()
     {
         Debug.Log($"{name} has discovered the player!");
     }
 
     protected virtual void PlayerInVisibilityRange() { }
-    
-    protected virtual void LoseSight() {
+
+    protected virtual void LoseSight()
+    {
         Debug.Log($"{name} lost sight of the player.");
     }
 
@@ -92,16 +95,24 @@ public class VisionAI : MonoBehaviour
 
         Vector2 facingVector = facingDirection switch
         {
-            FacingDirection.Up    => Vector2.up,
-            FacingDirection.Down  => Vector2.down,
-            FacingDirection.Left  => Vector2.left,
+            FacingDirection.Up => Vector2.up,
+            FacingDirection.Down => Vector2.down,
+            FacingDirection.Left => Vector2.left,
             FacingDirection.Right => Vector2.right,
-            _                     => Vector2.zero
+            _ => Vector2.zero
         };
 
         Vector2 toPlayer = (targetPlayer.position - transform.position).normalized;
         if (Vector2.Angle(facingVector, toPlayer) >= 60.0f) return false;
 
         return true;
+    }
+    
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            targetPlayer = other.transform;
+        }
     }
 }

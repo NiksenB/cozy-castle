@@ -90,8 +90,9 @@ public class Animal : VisionAI, IInteractable
         }
     }
 
-    void FixedUpdate()
+    protected override void FixedUpdate()
     {
+        base.FixedUpdate();
         if (currentBehavior != null && !currentBehavior.isExitingState)
             currentBehavior.UpdateState();
         else
