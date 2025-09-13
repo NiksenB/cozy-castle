@@ -17,7 +17,6 @@ public class PerceptionZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log($"{visionAI.name} detected the player entering its perception zone.");
             visionAI.SetTarget(other.transform);
         }
     }
@@ -26,7 +25,6 @@ public class PerceptionZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log($"{visionAI.name} detected the player exiting its perception zone.");
             visionAI.ClearTarget();
         }
     }

@@ -7,9 +7,11 @@ public class Chase : AnimalState
     private Transform transform;
     private Rigidbody2D rigidbody;
     private float speed;
+    private GameObject heartBubble;
 
-    public Chase(Animal animal, Animator animator, Transform transform, Rigidbody2D rigidbody, float speed) : base(animal, animator)
+    public Chase(Animal animal, Animator animator, GameObject heartBubble, Transform transform, Rigidbody2D rigidbody, float speed) : base(animal, animator)
     {
+        this.heartBubble = heartBubble;
         this.transform = transform;
         this.rigidbody = rigidbody;
         this.speed = speed;
@@ -18,21 +20,28 @@ public class Chase : AnimalState
     public override void EnterState()
     {
         base.EnterState();
-        Debug.Log(animal.name + " has entered Chase state!!!");
-        animator.SetBool("isMoving", true);
+        animator.SetBool("isMoving", false);
+        heartBubble.SetActive(true);
+        animator.SetTrigger("react");
     }
 
     public override void UpdateState()
     {
-        Debug.Log(animal.name + " is in Chase state...");
         if (isExitingState) return;
         base.UpdateState();
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Reaction"))
+        {
+            return; // Wait until the "Reaction" animation is finished
+        }
+        animator.SetBool("isMoving", true);
+        heartBubble.SetActive(false);
         MoveTowardsPlayer();
     }
 
     public override void ExitState()
     {
         base.ExitState();
+        heartBubble.SetActive(false);
         animator.SetBool("isMoving", false);
     }
 
@@ -45,7 +54,6 @@ public class Chase : AnimalState
     {
         if (targetPlayer != null)
         {
-            Debug.Log(animal.name + " is moving towards player at position: " + targetPlayer.position);
             Vector2 temp = Vector2.MoveTowards(transform.position, targetPlayer.position, speed * Time.deltaTime);
 
             animal.UpdateDirection(temp - (Vector2)transform.position);

@@ -58,7 +58,6 @@ public class VisionAI : MonoBehaviour
     {
         if (hasEyesOnPlayer)
         {
-            // Debug.Log($"{name} has eyes on the player");
             PlayerInVisibilityRange();
         }
     }
@@ -68,10 +67,7 @@ public class VisionAI : MonoBehaviour
         Debug.Log($"{name} has discovered the player!");
     }
 
-    protected virtual void PlayerInVisibilityRange() 
-    {    
-        Debug.Log($"{name} is seeing the player!");
-    }
+    protected virtual void PlayerInVisibilityRange() { }
     
     protected virtual void LoseSight() {
         Debug.Log($"{name} lost sight of the player.");

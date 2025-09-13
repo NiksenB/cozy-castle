@@ -5,27 +5,26 @@ public class Animal : VisionAI, IInteractable
 {
     [SerializeField] protected string creatureName = "Default Creature";
     [SerializeField] protected bool isFriendly = true;
-    [SerializeField] protected bool wantsPat = true;
     [SerializeField] protected float speed = 4.0f;
-    protected Animator animator;
-    protected GameObject heartBubble;
-    protected Rigidbody2D myRigidbody;
-
-    // Behavior toggles
     [SerializeField] protected bool canIdle = true;
     [SerializeField] protected bool canWander = true;
     [SerializeField] protected bool canChase = true;
     [SerializeField] protected bool canFlee = false;
     [SerializeField] protected bool canSleep = false;
-    [SerializeField] protected bool canBeInteracted = true;
+    [SerializeField] protected FacingDirection startFacingDirection = FacingDirection.Down;
+    protected Animator animator;
+    protected GameObject heartBubble;
+    protected Rigidbody2D myRigidbody;
+
     private Idle idleBehavior;
     private Wander wanderBehavior;
     private Chase chaseBehavior;
     private Flee fleeBehavior;
     private Sleep sleepBehavior;
     private Interact interactBehavior;
-    private List<AnimalState> randomBehaviors = new List<AnimalState>();
+    private readonly List<AnimalState> cyclicBehaviors = new();
     private AnimalState currentBehavior;
+    private bool wantsPat;
 
     void Start()
     {
@@ -45,23 +44,30 @@ public class Animal : VisionAI, IInteractable
             Debug.LogError("Heart Bubble prefab is not assigned. Please assign it in the inspector.");
         }
 
-        if (canWander)
-            wanderBehavior = new Wander(this, animator);
-            randomBehaviors.Add(wanderBehavior);
+        facingDirection = startFacingDirection;
+        ChangeAnim(GetDirection());
+
+        wantsPat = isFriendly;
+        interactBehavior = new Interact(this, animator, heartBubble);
         if (canChase)
-            chaseBehavior = new Chase(this, animator, transform, myRigidbody, speed);
+            chaseBehavior = new Chase(this, animator, heartBubble, transform, myRigidbody, speed);
         if (canFlee)
             fleeBehavior = new Flee(this, animator, transform, myRigidbody, speed);
+        if (canWander)
+        {
+            wanderBehavior = new Wander(this, animator, myRigidbody, transform, speed);
+            cyclicBehaviors.Add(wanderBehavior);
+        }
         if (canSleep)
+        {
             sleepBehavior = new Sleep(this, animator);
-            randomBehaviors.Add(sleepBehavior);
-            currentBehavior = sleepBehavior;
-        if (canBeInteracted)
-            interactBehavior = new Interact(this, animator, heartBubble);
+            cyclicBehaviors.Add(sleepBehavior);
+        }
         if (canIdle)
+        {
             idleBehavior = new Idle(this, animator);
-            randomBehaviors.Add(idleBehavior);
-            currentBehavior = idleBehavior;
+            cyclicBehaviors.Add(idleBehavior);
+        }
     }
 
     void FixedUpdate()
@@ -70,18 +76,17 @@ public class Animal : VisionAI, IInteractable
             currentBehavior.UpdateState();
         else
         {
-            Debug.LogWarning("Current behavior is not set. Setting to random behavior.");
-            if (randomBehaviors.Count > 0)
+            if (cyclicBehaviors.Count > 0)
             {
-                ChangeBehavior(randomBehaviors[Random.Range(0, randomBehaviors.Count)]);
+                ChangeBehavior(cyclicBehaviors[Random.Range(0, cyclicBehaviors.Count)]);
             }
-            else { Debug.LogError("No behaviors available to switch to.");}
+            else { Debug.LogError("No behaviors available."); }
         }
     }
 
     public void Interact(GameObject player)
     {
-        if (canBeInteracted)
+        if (isFriendly)
         {
             wantsPat = false;
             ChangeBehavior(interactBehavior);
@@ -90,22 +95,15 @@ public class Animal : VisionAI, IInteractable
 
     protected override void DiscoverPlayer()
     {
-        if (canChase || canFlee)
-        {
-            if (isFriendly && wantsPat && canChase)
-            {
-                animator.SetTrigger("react");
-                Debug.Log(creatureName + " wants to be patted!");
-                if (canBeInteracted) ChangeBehavior(interactBehavior);
 
-                chaseBehavior.SetTargetPlayer(targetPlayer);
-                ChangeBehavior(chaseBehavior);
-                Debug.Log(creatureName + " has discovered the player and is now chasing.");
-            }
-            else if (!isFriendly && canFlee)
-            {
-                ChangeBehavior(fleeBehavior);
-            }
+        if (canChase && isFriendly && wantsPat)
+        {
+            chaseBehavior.SetTargetPlayer(targetPlayer);
+            ChangeBehavior(chaseBehavior);
+        }
+        else if (canFlee && !isFriendly)
+        {
+            ChangeBehavior(fleeBehavior);
         }
     }
 
@@ -113,7 +111,6 @@ public class Animal : VisionAI, IInteractable
     {
         if (canIdle)
         {
-            Debug.Log(creatureName + " has lost sight of the player and is now idling.");
             ChangeBehavior(idleBehavior);
         }
     }
@@ -122,7 +119,6 @@ public class Animal : VisionAI, IInteractable
     {
         if (canChase && isFriendly && wantsPat)
         {
-            Debug.Log(creatureName + " is chasing.");
             chaseBehavior.SetTargetPlayer(targetPlayer);
             ChangeBehavior(chaseBehavior);
         }
@@ -139,15 +135,11 @@ public class Animal : VisionAI, IInteractable
 
     public void ChangeBehavior(AnimalState newBehavior)
     {
-        Debug.Log(creatureName + " attempting to change behavior from " + (currentBehavior != null ? currentBehavior.GetType().Name : "null") + " to: " + (newBehavior != null ? newBehavior.GetType().Name : "null"));
         if (currentBehavior == newBehavior) return;
 
         currentBehavior?.ExitState();
         newBehavior?.EnterState();
         currentBehavior = newBehavior;
-        Debug.Log(creatureName + " changed behavior to: " + currentBehavior?.GetType().Name);
-
-        
     }
 
     public void ChangeAnim(Vector2 direction)
@@ -160,19 +152,31 @@ public class Animal : VisionAI, IInteractable
 
     public void UpdateDirection(Vector2 direction)
     {
-        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        facingDirection = Mathf.Abs(direction.x) > Mathf.Abs(direction.y)
+            ? (direction.x > 0 ? FacingDirection.Right : FacingDirection.Left)
+            : (direction.y > 0 ? FacingDirection.Up : FacingDirection.Down);
+    }
+
+    public Vector3 GetDirection()
+    {
+        return facingDirection switch
         {
-            if (direction.x > 0)
-                facingDirection = FacingDirection.Right;
-            else
-                facingDirection = FacingDirection.Left;
-        }
-        else
-        {
-            if (direction.y > 0)
-                facingDirection = FacingDirection.Up;
-            else
-                facingDirection = FacingDirection.Down;
-        }
+            FacingDirection.Up => Vector3.up,
+            FacingDirection.Down => Vector3.down,
+            FacingDirection.Left => Vector3.left,
+            FacingDirection.Right => Vector3.right,
+            _ => Vector3.zero,
+        };
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Animal collided with " + collision.gameObject.name);
+        currentBehavior?.OnCollisionEnter2D(collision);
+    }
+
+    public void OnCollisionStay2D(Collision2D collision)
+    {
+        currentBehavior?.OnCollisionStay2D(collision);
     }
 }
