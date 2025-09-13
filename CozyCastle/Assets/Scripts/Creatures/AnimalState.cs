@@ -27,4 +27,11 @@ public class AnimalState
         isExitingState = true;
         startTime = 0f;
     }
+
+    public virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("AnimalState collided with " + collision.gameObject.name);
+    }
+
+    public virtual void OnCollisionStay2D(Collision2D collision){}
 }

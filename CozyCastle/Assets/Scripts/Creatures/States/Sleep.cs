@@ -12,7 +12,7 @@ public class Sleep : AnimalState
         base.EnterState();
         animator.SetBool("isMoving", false);
         animator.SetBool("isSleeping", true);
-        sleepDuration = Random.Range(5.0f, 120.0f); 
+        sleepDuration = Random.Range(12.0f, 120.0f); // Ideal 12-120
     }
 
     public override void UpdateState()

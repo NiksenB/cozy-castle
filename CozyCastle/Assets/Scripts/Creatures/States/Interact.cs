@@ -17,7 +17,6 @@ public class Interact : AnimalState
     public override void UpdateState()
     {
         base.UpdateState();
-        Debug.Log("Interact State Update");
         if (Time.time > startTime + 1.0f)
         {
             ExitState();
@@ -26,7 +25,6 @@ public class Interact : AnimalState
 
     public override void ExitState()
     {
-        Debug.Log("Exiting Interact State");
         base.ExitState();
         heartBubble.SetActive(false);
     }
