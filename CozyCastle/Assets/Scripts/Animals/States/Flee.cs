@@ -92,8 +92,8 @@ public class Flee : AnimalState
     {
         panickedRedirectTime = Time.time;
 
-        // rotate 120 degrees to the right
+        // rotate 100 degrees to the right
         Vector3 dir = transform.position - targetPlayer.position;
-        panickedDirection = Quaternion.Euler(0, 0, 120) * dir;
+        panickedDirection = Quaternion.Euler(0, 0, 100) * dir;
     }
 }
