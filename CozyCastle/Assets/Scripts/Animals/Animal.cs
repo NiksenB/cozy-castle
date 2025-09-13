@@ -96,6 +96,11 @@ public class Animal : VisionAI, IInteractable
             wantsPat = false;
             ChangeBehavior(interactBehavior);
         }
+        else if (canFlee)
+        {
+            fleeBehavior.SetTargetPlayer(player.transform);
+            ChangeBehavior(fleeBehavior);
+        }
     }
 
     protected override void DiscoverPlayer()
@@ -143,7 +148,6 @@ public class Animal : VisionAI, IInteractable
     {
         if (currentBehavior == newBehavior) return;
 
-        Debug.Log(animalName + " changing behavior from " + (currentBehavior != null ? currentBehavior.GetType().Name : "None") + " to " + (newBehavior != null ? newBehavior.GetType().Name : "None"));
         currentBehavior?.ExitState();
         newBehavior?.EnterState();
         currentBehavior = newBehavior;

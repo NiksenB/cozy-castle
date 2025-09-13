@@ -137,11 +137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: canSleep
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: canWander
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: animalName
@@ -36976,7 +36976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: canWander
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: animalName
