@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 public class NPC : VisionAI, IInteractable
 {
@@ -96,8 +97,9 @@ public class NPC : VisionAI, IInteractable
         }
     }
 
-    void FixedUpdate()
+    protected override void FixedUpdate()
     {
+        base.FixedUpdate();
         if (currentBehavior != null && !currentBehavior.isExitingState)
         {
             currentBehavior.UpdateState();
@@ -106,7 +108,7 @@ public class NPC : VisionAI, IInteractable
         {
             int nextIndex = Random.Range(0, cyclicBehaviors.Count);
             ChangeBehavior(cyclicBehaviors[nextIndex]);
-        } 
+        }
         else
         {
             Debug.LogWarning(npcName + " has no behaviors to switch to.");
@@ -128,13 +130,15 @@ public class NPC : VisionAI, IInteractable
 
     protected override void DiscoverPlayer()
     {
+        base.DiscoverPlayer();
         Debug.Log(npcName + " has discovered the player.");
         if (followsPlayer && currentBehavior != talkBehavior)
         {
             followBehavior.SetTarget(targetPlayer);
             StartCoroutine(ShowBubble(1.0f, exclamationBubble));
             ChangeBehavior(followBehavior);
-        } else if (hasMessage && currentBehavior != talkBehavior)
+        }
+        else if (hasMessage && currentBehavior != talkBehavior)
         {
             Debug.Log(npcName + " has a message.");
             exclamationBubble.SetActive(true);
@@ -143,6 +147,7 @@ public class NPC : VisionAI, IInteractable
 
     protected override void LoseSight()
     {
+        base.LoseSight();
         Debug.Log(npcName + " has lost sight of the player.");
         if (followsPlayer && currentBehavior != talkBehavior)
         {
@@ -156,7 +161,6 @@ public class NPC : VisionAI, IInteractable
     {
         if (hasMessage && currentBehavior != talkBehavior)
         {
-            Debug.Log(npcName + " sees the player and has a message.");
             exclamationBubble.SetActive(true);
         }
     }
@@ -178,7 +182,7 @@ public class NPC : VisionAI, IInteractable
     public void ChangeAnim(Vector2 direction)
     {
         if (animator == null)
-        { 
+        {
             Debug.LogWarning("Animator is null, cannot change animation.");
             return;
         }
