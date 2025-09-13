@@ -21,7 +21,6 @@ public class Inventory_UI : MonoBehaviour
 
         if (inventoryData.slots == null || inventoryData.slots.Count == 0)
         {
-            Debug.Log($"Inventory '{inventoryName}' has no slots defined. Initializing with default slot count: {inventoryData.defaultSlotCount}");
             inventoryData.InitializeSlots(inventoryData.defaultSlotCount);
         }
 

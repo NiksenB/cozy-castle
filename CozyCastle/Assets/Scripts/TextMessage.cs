@@ -1,13 +1,13 @@
-using Unity.VisualScripting;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextMessage : MonoBehaviour, IInteractable
+public class TextMessage : MonoBehaviour
 {
     private GameObject dialogueBox;
     private Text dialogueText;
     public string[] dialogueLines;
+    public bool isActive = false;
+    public bool IsActive() => isActive;
 
     private void Awake()
     {
@@ -24,13 +24,9 @@ public class TextMessage : MonoBehaviour, IInteractable
         }
     }
 
-    public void Interact(GameObject player)
-    {
-        StartOrResumeDialogue();
-    }
-
     public void StartOrResumeDialogue()
     {
+        isActive = true;
         if (dialogueBox.activeSelf)
         {
             ShowNextLineElseClose();
@@ -57,8 +53,9 @@ public class TextMessage : MonoBehaviour, IInteractable
         }
     }
 
-    private void EndDialogue()
+    public void EndDialogue()
     {
+        isActive = false;
         if (dialogueBox.activeSelf)
         {
             dialogueBox.SetActive(false);
