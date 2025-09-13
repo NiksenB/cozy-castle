@@ -162,7 +162,6 @@ public class Animal : VisionAI, IInteractable
     public void ChangeBehavior(AnimalState newBehavior)
     {
         if (currentBehavior == newBehavior) return;
-        Debug.Log(animalName + " changing behavior from " + (currentBehavior != null ? currentBehavior.GetType().Name : "None") + " to " + (newBehavior != null ? newBehavior.GetType().Name : "None"));
 
         currentBehavior?.ExitState();
         currentBehavior = newBehavior;
@@ -211,7 +210,6 @@ public class Animal : VisionAI, IInteractable
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(animalName + " collided with " + collision.gameObject.name);
         currentBehavior?.OnCollisionEnter2D(collision);
     }
 

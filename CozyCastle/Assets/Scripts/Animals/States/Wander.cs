@@ -77,6 +77,10 @@ public class Wander : AnimalState
         {
             myRigidbody.MovePosition(targetPosition);
         }
+        else if (!boundsCollider.bounds.Contains(myTransform.position))
+        {
+            ExitState(); // If outside bounds, exit wander state
+        }
         else
         {
             ChangeDirection();

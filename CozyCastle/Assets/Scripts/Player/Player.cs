@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
     {
         playerInventoryManager = GetComponent<PlayerInventoryManager>();
         Debug.Assert(playerInventoryManager != null, "PlayerInventoryManager component is missing on Player GameObject.");
-        Debug.Log("PlayerInventoryManager found: " + playerInventoryManager.name);
 
         movementScript = GetComponent<PlayerMovementScript>();
         Debug.Assert(movementScript != null, "PlayerMovementScript component is missing on Player GameObject.");
