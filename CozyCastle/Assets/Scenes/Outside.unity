@@ -119,6 +119,91 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &83232123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1685054148}
+    m_Modifications:
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canFlee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canChase
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canSleep
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canWander
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: animalName
+      value: Goaty
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: isFriendly
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: startFacingDirection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911778782405684540, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_Name
+      value: Scared Goat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
 --- !u!1001 &84503960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1655,6 +1740,11 @@ MonoBehaviour:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4371221955024564764, guid: 0bdf6b282e448014fb4ac39a8014b47b, type: 3}
   m_PrefabInstance: {fileID: 301951769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &305091586 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+  m_PrefabInstance: {fileID: 83232123}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &314650841
 GameObject:
@@ -23590,7 +23680,7 @@ TilemapRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.5095196, y: 1.7078896, z: 0}
+  m_ChunkCullingBounds: {x: 0.52539253, y: 1.5174141, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -27377,7 +27467,7 @@ TilemapRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.56825185, y: 1.7912169, z: 0}
+  m_ChunkCullingBounds: {x: 0.56825185, y: 1.5658312, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -30774,7 +30864,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.56825185, y: 1.7912169, z: 0}
+  m_ChunkCullingBounds: {x: 0.56825185, y: 1.5658312, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -36416,6 +36506,7 @@ Transform:
   - {fileID: 1291381241}
   - {fileID: 1764100722}
   - {fileID: 1016904567}
+  - {fileID: 305091586}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1688721398
@@ -36833,11 +36924,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3253830889544971975, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.36
+      value: -10.62
       objectReference: {fileID: 0}
     - target: {fileID: 3253830889544971975, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.34
+      value: -7.24
       objectReference: {fileID: 0}
     - target: {fileID: 3253830889544971975, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36871,9 +36962,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: canFlee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: canChase
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: canSleep
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: canWander
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: animalName
+      value: Bun-bun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: isFriendly
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: startFacingDirection
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7520994183355396929, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: m_Name
-      value: Bunny (1)
+      value: Scared Bunny
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

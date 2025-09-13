@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Animal : VisionAI, IInteractable
 {
-    [SerializeField] protected string creatureName = "Default Creature";
+    [SerializeField] protected string animalName = "Default Animal";
     [SerializeField] protected bool isFriendly = true;
     [SerializeField] protected float speed = 4.0f;
     [SerializeField] protected bool canIdle = true;
@@ -14,6 +14,7 @@ public class Animal : VisionAI, IInteractable
     [SerializeField] protected FacingDirection startFacingDirection = FacingDirection.Down;
     protected Animator animator;
     protected GameObject heartBubble;
+    protected GameObject exclamationBubble;
     protected Rigidbody2D myRigidbody;
 
     private Idle idleBehavior;
@@ -39,10 +40,14 @@ public class Animal : VisionAI, IInteractable
             heartBubble = transform.Find("LoveBubble").gameObject;
             heartBubble.SetActive(false);
         }
-        else
+        else Debug.LogError("Heart Bubble prefab is not assigned. Please assign it in the inspector.");
+
+        if (transform.Find("ExclamationBubble") != null)
         {
-            Debug.LogError("Heart Bubble prefab is not assigned. Please assign it in the inspector.");
+            exclamationBubble = transform.Find("ExclamationBubble").gameObject;
+            exclamationBubble.SetActive(false);
         }
+        else Debug.LogError("Exclamation Bubble prefab is not assigned. Please assign it in the inspector.");
 
         facingDirection = startFacingDirection;
         ChangeAnim(GetDirection());
@@ -52,7 +57,7 @@ public class Animal : VisionAI, IInteractable
         if (canChase)
             chaseBehavior = new Chase(this, animator, heartBubble, transform, myRigidbody, speed);
         if (canFlee)
-            fleeBehavior = new Flee(this, animator, transform, myRigidbody, speed);
+            fleeBehavior = new Flee(this, animator, exclamationBubble, transform, myRigidbody, speed);
         if (canWander)
         {
             wanderBehavior = new Wander(this, animator, myRigidbody, transform, speed);
@@ -103,13 +108,14 @@ public class Animal : VisionAI, IInteractable
         }
         else if (canFlee && !isFriendly)
         {
+            fleeBehavior.SetTargetPlayer(targetPlayer);
             ChangeBehavior(fleeBehavior);
         }
     }
 
     protected override void LoseSight()
     {
-        if (canIdle)
+        if (canIdle && currentBehavior != fleeBehavior)
         {
             ChangeBehavior(idleBehavior);
         }
@@ -137,6 +143,7 @@ public class Animal : VisionAI, IInteractable
     {
         if (currentBehavior == newBehavior) return;
 
+        Debug.Log(animalName + " changing behavior from " + (currentBehavior != null ? currentBehavior.GetType().Name : "None") + " to " + (newBehavior != null ? newBehavior.GetType().Name : "None"));
         currentBehavior?.ExitState();
         newBehavior?.EnterState();
         currentBehavior = newBehavior;
@@ -171,7 +178,7 @@ public class Animal : VisionAI, IInteractable
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Animal collided with " + collision.gameObject.name);
+        Debug.Log(animalName + " collided with " + collision.gameObject.name);
         currentBehavior?.OnCollisionEnter2D(collision);
     }
 

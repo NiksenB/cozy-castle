@@ -9,15 +9,6 @@ public class PlayerMovementScript : MonoBehaviour
     private Vector3 direction;
     private Rigidbody2D myRigidbody;
     public VectorValue startingPosition;
-    // public PlayerState currentState = PlayerState.Idle;
-
-    // public enum PlayerState
-    // {
-    //     Idle,
-    //     Moving,
-    //     Patting,
-    //     SwingingWand,
-    // }
 
     private void Start()
     {
@@ -97,23 +88,4 @@ public class PlayerMovementScript : MonoBehaviour
             }
         }
     }
-
-    // TODO
-    // public void PlayPattingAnimation()
-    // {
-    //     if (animator != null)
-    //     {
-    //         animator.SetTrigger("pat");
-    //     }
-    // }
-
-    // private IEnumerator SwingWandCoroutine(float duration)
-    // {
-    //     animator.SetBool("isMoving", false);
-    //     animator.SetTrigger("swingWand");
-    //     currentState = playerState.SwingingWand;
-    //     yield return null;
-    //     yield return new WaitForSeconds(duration);
-    //     currentState = playerState.Idle;
-    // }
 }

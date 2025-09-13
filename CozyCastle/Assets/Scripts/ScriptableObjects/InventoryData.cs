@@ -19,7 +19,6 @@ public class InventoryData : ScriptableObject
 
         if (slotCount == null || slotCount <= 0)
         {
-            Debug.LogWarning("Invalid slot count provided. Using default slot count.");
             slotCount = defaultSlotCount;
         }
         

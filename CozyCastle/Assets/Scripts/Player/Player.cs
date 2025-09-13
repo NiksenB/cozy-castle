@@ -29,8 +29,6 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // TryInteractWithCreature();
-
             if (tileManager != null)
             {
                 Vector3Int position = new((int)transform.position.x, (int)transform.position.y, 0);
@@ -93,21 +91,4 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(delay);
         tileManager.SetInteracted(position);
     }
-    
-    // private void TryInteractWithCreature()
-    // {
-    //     // Find creatures in range of circle around player
-    //     float interactRadius = 1.0f; 
-    //     Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactRadius);
-
-    //     foreach (var hit in hits)
-    //     {
-    //         Creature creature = hit.GetComponent<Creature>();
-    //         if (creature != null && creature.IsPlayerInInteractionRange())
-    //         {
-    //             creature.GivePat();
-    //             break; 
-    //         }
-    //     }
-    // }
 }
