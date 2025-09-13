@@ -1,9 +1,11 @@
+using System;
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 
 public class Flee : AnimalState
 {
+    public static event Action<Transform> onFlee;
     private Transform targetPlayer;
     private Transform transform;
     private Rigidbody2D rigidbody;
@@ -28,16 +30,23 @@ public class Flee : AnimalState
         animator.SetBool("isMoving", false);
         exclamationBubble.SetActive(true);
         animator.SetTrigger("react");
+        TriggerFlee(targetPlayer);
+    }
+    
+    public static void TriggerFlee(Transform targetTransform)
+    {
+        onFlee?.Invoke(targetTransform);
+        onFlee = null; // Clear all subscribers after invoking
     }
 
     public override void UpdateState()
     {
         if (isExitingState) return;
         base.UpdateState();
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Reaction"))
-        {
-            return; // Wait until the "Reaction" animation is finished
-        }
+
+        // Wait until animation is finished
+        if (animal.IsNonStandardAnimationPlaying()) { return; } 
+
         animator.SetBool("isMoving", true);
         exclamationBubble.SetActive(false);
         if (Time.time > startTime + despawnTime)
@@ -53,7 +62,7 @@ public class Flee : AnimalState
             ExitState();
             return;
         }
-        
+
         if (Time.time - panickedRedirectTime < 1f)
         {
             Vector3 newPosition = transform.position + 1.8f * speed * Time.deltaTime * panickedDirection.normalized;

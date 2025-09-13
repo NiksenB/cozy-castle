@@ -132,8 +132,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canIdle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: canChase
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: canSleep
@@ -149,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: isFriendly
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: startFacingDirection
@@ -22435,6 +22439,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1685054148}
     m_Modifications:
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canIdle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canChase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canWander
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: isFriendly
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4911778782405684540, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_Name
       value: Goat (2)
@@ -27032,6 +27056,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1685054148}
     m_Modifications:
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: isFriendly
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4911778782405684540, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_Name
       value: Goat
@@ -36860,6 +36892,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1685054148}
     m_Modifications:
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: canFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: isFriendly
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4911778782405684540, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_Name
       value: Goat (1)
@@ -36924,7 +36964,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3253830889544971975, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.62
+      value: -12.03
       objectReference: {fileID: 0}
     - target: {fileID: 3253830889544971975, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -36967,12 +37007,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: canIdle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: canChase
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: canSleep
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: canWander
@@ -40322,6 +40366,14 @@ PrefabInstance:
     - target: {fileID: 3253830889544971975, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: canFlee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: isFriendly
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7520994183355396929, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: m_Name

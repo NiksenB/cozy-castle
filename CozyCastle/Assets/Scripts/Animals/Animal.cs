@@ -53,21 +53,36 @@ public class Animal : VisionAI, IInteractable
         ChangeAnim(GetDirection());
 
         wantsPat = isFriendly;
+        SetupBehaviors();
+    }
+
+    private void SetupBehaviors()
+    {
         interactBehavior = new Interact(this, animator, heartBubble);
+
         if (canChase)
             chaseBehavior = new Chase(this, animator, heartBubble, transform, myRigidbody, speed);
+
         if (canFlee)
             fleeBehavior = new Flee(this, animator, exclamationBubble, transform, myRigidbody, speed);
+            Flee.onFlee += source =>
+            {
+                if (currentBehavior != fleeBehavior && !isFriendly)
+                    StartCoroutine(WaitForFlee(source));
+            };
+
         if (canWander)
         {
             wanderBehavior = new Wander(this, animator, myRigidbody, transform, speed);
             cyclicBehaviors.Add(wanderBehavior);
         }
+
         if (canSleep)
         {
             sleepBehavior = new Sleep(this, animator);
             cyclicBehaviors.Add(sleepBehavior);
         }
+
         if (canIdle)
         {
             idleBehavior = new Idle(this, animator);
@@ -147,10 +162,11 @@ public class Animal : VisionAI, IInteractable
     public void ChangeBehavior(AnimalState newBehavior)
     {
         if (currentBehavior == newBehavior) return;
+        Debug.Log(animalName + " changing behavior from " + (currentBehavior != null ? currentBehavior.GetType().Name : "None") + " to " + (newBehavior != null ? newBehavior.GetType().Name : "None"));
 
         currentBehavior?.ExitState();
-        newBehavior?.EnterState();
         currentBehavior = newBehavior;
+        newBehavior?.EnterState();
     }
 
     public void ChangeAnim(Vector2 direction)
@@ -178,6 +194,19 @@ public class Animal : VisionAI, IInteractable
             FacingDirection.Right => Vector3.right,
             _ => Vector3.zero,
         };
+    }
+
+    public bool IsNonStandardAnimationPlaying()
+    {
+        return !(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") ||
+               animator.GetCurrentAnimatorStateInfo(0).IsName("Walk"));
+    }
+
+    private IEnumerator WaitForFlee(Transform source)
+    {
+        yield return new WaitForSeconds(0.5f);
+        fleeBehavior.SetTargetPlayer(source);
+        ChangeBehavior(fleeBehavior);
     }
 
     public void OnCollisionEnter2D(Collision2D collision)

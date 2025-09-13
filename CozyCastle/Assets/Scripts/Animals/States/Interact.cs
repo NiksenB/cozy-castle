@@ -10,13 +10,21 @@ public class Interact : AnimalState
 
     public override void EnterState()
     {
-        base.EnterState();
-        heartBubble.SetActive(true);         
+        base.EnterState();        
     }
 
     public override void UpdateState()
     {
         base.UpdateState();
+        
+        // Wait until animation is finished
+        if (animal.IsNonStandardAnimationPlaying()) { return; }
+        if (heartBubble.activeSelf == false)
+        {
+            heartBubble.SetActive(true);
+            startTime = Time.time; // Reset start time when bubble is shown
+        }
+
         if (Time.time > startTime + 1.0f)
         {
             ExitState();
