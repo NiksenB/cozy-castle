@@ -2069,9 +2069,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 624790371}
-          m_TargetAssemblyTypeName: Inventory_UI, Assembly-CSharp
-          m_MethodName: Remove
+        - m_Target: {fileID: 2043667256}
+          m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
+          m_MethodName: RemoveDragged
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

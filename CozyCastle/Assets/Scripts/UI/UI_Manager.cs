@@ -92,6 +92,15 @@ public class UI_Manager : MonoBehaviour
         return null;
     }
 
+    public void RemoveDragged()
+    { 
+        if (draggedSlot != null)
+        {
+            draggedSlot.parentInventoryUI.Remove(draggedSlot.slotID, dragSingle);
+            draggedSlot = null;
+        }
+    }
+
     private void Initialize()
     {
         foreach (Inventory_UI ui in inventoryUIs)
