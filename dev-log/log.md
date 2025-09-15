@@ -1,3 +1,25 @@
+## PR #38 - New guard types + animal behavior (2025-09-15)
+
+
+### What's changed
+- Refactored animals to use state machine (..ish)
+- Animals now walk around within an area when idle
+- Animals can now flee, triggers group panic (yayy)
+- The default guard NPC no longer naked
+- Added different types of guard NPCs: Idle, patrolling, tailing
+- Updated dialogue logic a bit
+
+
+
+### Notes
+- The animals are done for now, but I'll probably get back to the NPC and the dialogue logic soon enough. And create a player "state machine" corresponding to the one for animals.
+
+
+
+
+---
+
+
 ## PR #34 - Clean up (2025-09-05)
 
 
