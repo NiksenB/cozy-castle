@@ -5,27 +5,24 @@ using UnityEngine;
 public class NPC : VisionAI, IInteractable
 {
     [SerializeField] protected string npcName = "Alice Robertson Carlisle";
-    [SerializeField] protected bool followsPlayer = true;
-    [SerializeField] protected bool canSleep = false;
     [SerializeField] protected bool hasMessage = false;
+    [SerializeField] protected bool isRandomlyIdle = true;
     [SerializeField] protected FacingDirection startFacingDirection = FacingDirection.Down;
     [SerializeField] protected float speed = 1.5f;
     protected Animator animator;
     protected GameObject heartBubble;
     protected GameObject exclamationBubble;
     protected Rigidbody2D myRigidbody;
-    protected TextMessage dialogue;
+    protected MessageHandler dialogue;
+    protected NPCState currentBehavior;
 
-    private NPCIdle idleBehavior;
-    private NPCFollow followBehavior;
-    private NPCTalk talkBehavior;
-    private NPCPatrol patrolBehavior;
-    private NPCSleep sleepBehavior;
-    private NPCState currentBehavior;
-    private EdgeCollider2D patrolRoute;
-    private readonly List<NPCState> cyclicBehaviors = new();
+    protected NPCIdle idleBehavior;
+    protected NPCTalk talkBehavior;
+    protected NPCPatrol patrolBehavior;
+    protected EdgeCollider2D patrolRoute;
+    protected readonly List<NPCState> cyclicBehaviors = new();
 
-    void Start()
+    protected virtual void Start()
     {
         myRigidbody = GetComponentInChildren<Rigidbody2D>();
         if (myRigidbody == null) Debug.LogError("Rigidbody2D component not found on the object.");
@@ -36,10 +33,6 @@ public class NPC : VisionAI, IInteractable
         if (GetComponentInParent<EdgeCollider2D>() != null)
         {
             patrolRoute = GetComponentInParent<EdgeCollider2D>();
-        }
-        if (patrolRoute == null && !followsPlayer)
-        {
-            Debug.LogWarning(npcName + " has no patrol route defined and does not follow the player. It will remain idle.");
         }
 
         if (transform.Find("LoveBubble") != null)
@@ -56,9 +49,9 @@ public class NPC : VisionAI, IInteractable
         }
         else Debug.LogError("Exclamation Bubble prefab is not assigned. Please assign it in the inspector.");
 
-        if (GetComponentInChildren<TextMessage>() != null)
+        if (GetComponentInChildren<MessageHandler>() != null)
         {
-            dialogue = GetComponentInChildren<TextMessage>();
+            dialogue = GetComponentInChildren<MessageHandler>();
         }
         else Debug.LogError("Dialogue component not found. Please add a TextMessage component as a child.");
 
@@ -71,19 +64,17 @@ public class NPC : VisionAI, IInteractable
     private void SetupBehaviors()
     {
         talkBehavior = new NPCTalk(this, animator, dialogue);
-
-        if (canSleep)
+        
+        if (isRandomlyIdle)
         {
-            sleepBehavior = new NPCSleep(this, animator);
-            cyclicBehaviors.Add(sleepBehavior);
+            idleBehavior = new NPCIdle(this, animator, isTemporary: true);
+            cyclicBehaviors.Add(idleBehavior);
+        } else
+        {
+            idleBehavior = new NPCIdle(this, animator, isTemporary: false);
         }
 
-        if (followsPlayer)
-        {
-            followBehavior = new NPCFollow(this, animator, heartBubble, transform, myRigidbody);
-            currentBehavior = followBehavior;
-        }
-        else if (patrolRoute != null)
+        if (patrolRoute != null)
         {
             patrolBehavior = new NPCPatrol(this, animator, myRigidbody, transform, speed, patrolRoute);
             currentBehavior = patrolBehavior;
@@ -91,9 +82,7 @@ public class NPC : VisionAI, IInteractable
         }
         else
         {
-            idleBehavior = new NPCIdle(this, animator);
             currentBehavior = idleBehavior;
-            cyclicBehaviors.Add(idleBehavior);
         }
     }
 
@@ -126,19 +115,15 @@ public class NPC : VisionAI, IInteractable
         if (exclamationBubble != null) exclamationBubble.SetActive(false);
         talkBehavior.SetPlayer(player);
         ChangeBehavior(talkBehavior);
+        hasMessage = false;
     }
 
     protected override void DiscoverPlayer()
     {
         base.DiscoverPlayer();
         Debug.Log(npcName + " has discovered the player.");
-        if (followsPlayer && currentBehavior != talkBehavior)
-        {
-            followBehavior.SetTarget(targetPlayer);
-            StartCoroutine(ShowBubble(1.0f, exclamationBubble));
-            ChangeBehavior(followBehavior);
-        }
-        else if (hasMessage && currentBehavior != talkBehavior)
+        
+        if (hasMessage && currentBehavior != talkBehavior)
         {
             Debug.Log(npcName + " has a message.");
             exclamationBubble.SetActive(true);
@@ -149,11 +134,7 @@ public class NPC : VisionAI, IInteractable
     {
         base.LoseSight();
         Debug.Log(npcName + " has lost sight of the player.");
-        if (followsPlayer && currentBehavior != talkBehavior)
-        {
-            StartCoroutine(ShowBubble(1.0f, exclamationBubble));
-            ChangeBehavior(idleBehavior);
-        }
+        
         exclamationBubble.SetActive(false);
     }
 
@@ -163,11 +144,6 @@ public class NPC : VisionAI, IInteractable
         {
             exclamationBubble.SetActive(true);
         }
-    }
-
-    protected override bool IsAlert()
-    {
-        return currentBehavior != sleepBehavior;
     }
 
     public void ChangeBehavior(NPCState newBehavior)
@@ -218,9 +194,9 @@ public class NPC : VisionAI, IInteractable
             : (direction.y > 0 ? FacingDirection.Up : FacingDirection.Down);
     }
 
-    public void FacePlayer(GameObject player)
+    public void FaceTarget(Transform target)
     {
-        UpdateFacingDirection(transform.position, player.transform.position);
+        UpdateFacingDirection(transform.position, target.position);
         ChangeAnim(GetDirection());
     }
 

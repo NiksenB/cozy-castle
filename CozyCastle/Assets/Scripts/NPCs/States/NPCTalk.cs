@@ -3,8 +3,9 @@ using UnityEngine;
 public class NPCTalk : NPCState
 {
     private GameObject player;
-    private TextMessage dialogue;
-    public NPCTalk(NPC npc, Animator animator, TextMessage dialogue) : base(npc, animator)
+    private MessageHandler dialogue;
+    private bool dialogueNeedsReset = false;
+    public NPCTalk(NPC npc, Animator animator, MessageHandler dialogue) : base(npc, animator)
     {
         this.dialogue = dialogue;
     }
@@ -19,7 +20,12 @@ public class NPCTalk : NPCState
         base.EnterState();
         animator.SetBool("isMoving", false);
         npc.ChangeAnim(Vector2.zero);
-        npc.FacePlayer(player);
+        npc.FaceTarget(player.transform);
+
+        if (!npc.HasEyesOnPlayer())
+        {
+            SetTempDialogue(new string[] { "Oh, hello!" });
+        }
         dialogue.StartOrResumeDialogue();
     }
 
@@ -32,6 +38,18 @@ public class NPCTalk : NPCState
         }
     }
 
+    public void SetTempDialogue(string[] lines)
+    {
+        dialogue.SetDialogue(lines);
+        dialogueNeedsReset = true;
+    }
+
+    public void ResetDialogue()
+    {
+        dialogue.ResetDialogue();
+    }
+
+
     public void NextLine()
     {
         Debug.Log("NPC " + npc.name + " advancing dialogue.");
@@ -42,5 +60,10 @@ public class NPCTalk : NPCState
     {
         base.ExitState();
         dialogue.EndDialogue();
+        if (dialogueNeedsReset)
+        {
+            dialogue.ResetDialogue();
+            dialogueNeedsReset = false;
+        }
     }
 }

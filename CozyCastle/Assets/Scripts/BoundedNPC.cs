@@ -3,7 +3,7 @@ using UnityEngine;
 public class BoundedNPC : VisionAI, IInteractable
 {
 
-    [SerializeField] TextMessage dialogue;
+    [SerializeField] MessageHandler dialogue;
     public Collider2D boundsCollider;
     public float speed = 1.5f;
     private Transform myTransform;

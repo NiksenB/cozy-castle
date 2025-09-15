@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MessageBoard : TextMessage, IInteractable
+public class MessageBoard : MessageHandler, IInteractable
 {
     public void Interact(GameObject player)
     {
