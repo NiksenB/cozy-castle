@@ -6,15 +6,16 @@ public class NPCFollow : NPCState
     private Transform target;
     private Transform transform;
     private Rigidbody2D rigidbody;
-    GameObject exclamationBubble;
-    private float minDistance = 3f;
-    private float maxDistance = 5f;
+    private GameObject exclamationBubble;
+    private readonly float tooClose = 1.5f;
+    private readonly float tooFar = 2f;
 
-    public NPCFollow(NPC npc, Animator animator, GameObject exclamationBubble, Transform transform, Rigidbody2D rigidbody) : base(npc, animator)
+    public NPCFollow(NPC npc, Animator animator, GameObject exclamationBubble, Transform transform, Rigidbody2D rigidbody, Transform target, float giveUpDistance) : base(npc, animator)
     {
         this.exclamationBubble = exclamationBubble;
         this.transform = transform;
         this.rigidbody = rigidbody;
+        this.target = target;
     }
 
     public override void EnterState()
@@ -29,18 +30,25 @@ public class NPCFollow : NPCState
         base.UpdateState();
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Reaction"))
         {
+            Debug.Log(npc.name + " is waiting for Reaction animation to finish.");
             return; // Wait until the "Reaction" animation is finished
         }
-
+        
         float distance = DistanceToTarget();
-        if (distance > maxDistance)
+
+        switch (distance)
         {
-            animator.SetBool("isMoving", true);
-            FollowTarget(distance);
-        }
-        else if (distance < minDistance)
-        {
-            animator.SetBool("isMoving", false);
+            case float d when d < tooClose:
+                animator.SetBool("isMoving", false);
+                npc.FaceTarget(target);
+                break;
+            case float d when d < tooFar && animator.GetBool("isMoving") == false:
+                npc.FaceTarget(target);
+                break;
+            default:
+                animator.SetBool("isMoving", true);
+                FollowTarget(distance);
+                break;
         }
     }
 
@@ -49,11 +57,6 @@ public class NPCFollow : NPCState
         base.ExitState();
 
         animator.SetBool("isMoving", false);
-    }
-
-    public void SetTarget(Transform target)
-    {
-        this.target = target;
     }
 
     private float DistanceToTarget()
@@ -73,7 +76,7 @@ public class NPCFollow : NPCState
     {
         if (target != null)
         {
-            Vector2 temp = Vector2.MoveTowards(transform.position, target.position, 0.3f * distance * Time.deltaTime);
+            Vector2 temp = Vector2.MoveTowards(transform.position, target.position, 0.7f * (3f + distance) * Time.deltaTime);
 
             npc.UpdateDirection(temp - (Vector2)transform.position);
             npc.ChangeAnim(temp - (Vector2)transform.position);

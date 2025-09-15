@@ -5,7 +5,7 @@ public class VisionAI : MonoBehaviour
     protected Transform targetPlayer;
 
     [Header("Perception")]
-    public float viewDistance = 5f;
+    protected float viewDistance = 5f;
     public void SetTarget(Transform t) => targetPlayer = t;
     public void ClearTarget()
     {

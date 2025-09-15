@@ -163,6 +163,11 @@ public class Animal : VisionAI, IInteractable
     public void ChangeBehavior(AnimalState newBehavior)
     {
         if (currentBehavior == newBehavior) return;
+        if (newBehavior == null)
+        { 
+            Debug.LogWarning(animalName + " attempted to change to a null behavior.");
+            return;
+        }
 
         currentBehavior?.ExitState();
         currentBehavior = newBehavior;
@@ -205,7 +210,7 @@ public class Animal : VisionAI, IInteractable
     private IEnumerator WaitForFlee(Transform source)
     {
         yield return new WaitForSeconds(0.5f);
-        fleeBehavior.SetTargetPlayer(source);
+        fleeBehavior?.SetTargetPlayer(source);
         ChangeBehavior(fleeBehavior);
     }
 
