@@ -29,7 +29,6 @@ public class FollowingNPC : NPC
     {
         base.LoseSight();
         StartCoroutine(ShowBubble(1.0f, exclamationBubble));
-        Debug.Log(npcName + " changed to idle behavior.");
         ChangeBehavior(idleBehavior);
     }
 }

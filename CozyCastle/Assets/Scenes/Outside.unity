@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2021845248193957934, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
       propertyPath: m_Name
-      value: Tailing guard
+      value: Tail Guard 1
       objectReference: {fileID: 0}
     - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
       propertyPath: defaultLines.Array.size
@@ -1175,7 +1175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2021845248193957934, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
       propertyPath: m_Name
-      value: Tailing guard
+      value: Tail Guard 2
       objectReference: {fileID: 0}
     - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
       propertyPath: isActive
@@ -40088,6 +40088,10 @@ PrefabInstance:
     - target: {fileID: 675156279015161115, guid: d4e2c6e635c2044478606f34daffb065, type: 3}
       propertyPath: 'defaultLines.Array.data[2]'
       value: Stay safe.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324390734627093947, guid: d4e2c6e635c2044478606f34daffb065, type: 3}
+      propertyPath: m_Name
+      value: Path Guard 1
       objectReference: {fileID: 0}
     - target: {fileID: 4150264954188638046, guid: d4e2c6e635c2044478606f34daffb065, type: 3}
       propertyPath: m_LocalPosition.y

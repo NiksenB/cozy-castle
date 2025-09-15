@@ -93,6 +93,11 @@ public class VisionAI : MonoBehaviour
 
         if (hasEyesOnPlayer) return true;
 
+        return IsPlayerInLineOfSight();
+    }
+    
+    private bool IsPlayerInLineOfSight()
+    {
         Vector2 facingVector = facingDirection switch
         {
             FacingDirection.Up => Vector2.up,
@@ -103,11 +108,19 @@ public class VisionAI : MonoBehaviour
         };
 
         Vector2 toPlayer = (targetPlayer.position - transform.position).normalized;
-        if (Vector2.Angle(facingVector, toPlayer) >= 60.0f) return false;
 
-        return true;
+        return Vector2.Angle(facingVector, toPlayer) <= 60.0f;
     }
-    
+
+    public bool IsPlayerThisClose(float limit)
+    { 
+        if (targetPlayer == null) return false;
+
+        if (!IsPlayerInLineOfSight()) return false;
+
+        return Vector2.Distance(transform.position, targetPlayer.position) <= limit;
+    }
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
