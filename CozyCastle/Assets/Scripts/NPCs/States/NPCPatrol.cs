@@ -42,6 +42,12 @@ public class NPCPatrol : NPCState
             return;
         }
 
+        if (npc.IsPlayerThisClose(1.5f))
+        {
+            animator.SetBool("isMoving", false);
+            return;
+        }
+
         animator.SetBool("isMoving", true);
         Move();
     }
