@@ -51,20 +51,21 @@ public class Inventory_UI : MonoBehaviour
         }
     }
 
-    public void Remove()
+    public void Remove(int slotID, bool single)
     {
-        Debug.Log("Trying to remove item " + UI_Manager.draggedSlot.slotID);
-        Item itemToDrop = ItemManager.instance.GetItemByName(inventoryData.slots[UI_Manager.draggedSlot.slotID].itemName);
+        Item itemToDrop = ItemManager.instance.GetItemByName(inventoryData.slots[slotID].itemName);
         if (itemToDrop != null)
         {
-            int numToRemove = UI_Manager.dragSingle ? 1 : inventoryData.slots[UI_Manager.draggedSlot.slotID].count;
+            int numToRemove = single ? 1 : inventoryData.slots[slotID].count;
 
-            inventoryData.RemoveFromInventory(UI_Manager.draggedSlot.slotID, numToRemove);
+            inventoryData.RemoveFromInventory(slotID, numToRemove);
             GameManager.gameInstance.player.DropItem(itemToDrop, numToRemove);
             Refresh();
         }
-
-        UI_Manager.draggedSlot = null;
+        else
+        {
+            Debug.LogWarning("Item to drop not found.");
+        }
     }
 
     public void SlotBeginDrag(Slot_UI slot)
