@@ -51,7 +51,6 @@ Fixed some bugs too, yay we're learning.
 
 
 ### Images
-![2024-11-13-unity.png](images/2024-11-13-unity.png)
 ![2025-06-05-chased-by-goats.png](images/2025-06-05-chased-by-goats.png)
 ![2025-09-01-npc-guard-dialogue.png](images/2025-09-01-npc-guard-dialogue.png)
 
