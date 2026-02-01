@@ -23,9 +23,4 @@ public class Idle : AnimalState
             ExitState();
         }
     }
-
-    public override void ExitState()
-    {
-        base.ExitState();
-    }
 }

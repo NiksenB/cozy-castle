@@ -7,12 +7,7 @@ public class Interact : AnimalState
     {
         this.heartBubble = heartBubble;
     }
-
-    public override void EnterState()
-    {
-        base.EnterState();        
-    }
-
+    
     public override void UpdateState()
     {
         base.UpdateState();
