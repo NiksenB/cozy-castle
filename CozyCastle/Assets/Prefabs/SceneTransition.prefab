@@ -99,3 +99,5 @@ MonoBehaviour:
   sceneToLoadName: 
   playerPosition: {x: 0, y: 0, z: 0}
   playerPositionValue: {fileID: 11400000, guid: 04e942a554155ec43b9a85893345ba96, type: 2}
+  fadeInPanel: {fileID: 4911651710035889437, guid: ba41f400328bdee43b813710257cb5e2, type: 3}
+  fadeOutPanel: {fileID: 4911651710035889437, guid: b4d5f63076cd8754ebc255e8bb93fb6a, type: 3}

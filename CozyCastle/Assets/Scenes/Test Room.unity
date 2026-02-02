@@ -14398,6 +14398,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
+      propertyPath: fadePanel
+      value: 
+      objectReference: {fileID: 4911651710035889437, guid: ba41f400328bdee43b813710257cb5e2, type: 3}
+    - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 4911651710035889437, guid: b4d5f63076cd8754ebc255e8bb93fb6a, type: 3}
+    - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 4911651710035889437, guid: ba41f400328bdee43b813710257cb5e2, type: 3}
+    - target: {fileID: 8456441676268901429, guid: a36041acedb1e68438e7cf78f3ea7c43, type: 3}
       propertyPath: sceneToLoadName
       value: 
       objectReference: {fileID: 0}
