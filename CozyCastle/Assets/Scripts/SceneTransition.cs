@@ -18,12 +18,11 @@ public class SceneTransition : MonoBehaviour
                 return;
             }
 
-            playerPositionValue.value = playerPosition;
+            playerPositionValue.initialValue = playerPosition;
 
             // Load the scene using the scene index or name
             if (sceneToLoadIndex >= 0)
             {
-                Debug.Log("Transitioning to scene: " + sceneToLoadName + ", scene index: " + sceneToLoadIndex);
                 SceneManager.LoadScene(sceneToLoadIndex);
             }
             else if (!string.IsNullOrEmpty(sceneToLoadName))

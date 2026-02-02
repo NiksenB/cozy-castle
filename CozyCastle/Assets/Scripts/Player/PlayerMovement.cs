@@ -8,20 +8,19 @@ public class PlayerMovementScript : MonoBehaviour
     public GameObject wand;
     private Vector3 direction;
     private Rigidbody2D myRigidbody;
+    private Transform myTransform;
     public VectorValue startingPosition;
 
     private void Start()
     {
-        // TODO remove this, it is only for testing purposes
-        VectorValue pos = Resources.Load<VectorValue>("PlayerPosition");
-        if (pos != null) pos.value = Vector3.zero;
-
         myRigidbody = GetComponent<Rigidbody2D>();
-        if (myRigidbody == null)
+        myTransform = GetComponent<Transform>();
+        if (myRigidbody == null) { Debug.LogError("Rigidbody2D component not found on PlayerMovementScript."); }
+        if (myTransform == null) { Debug.LogError("Transform component not found on PlayerMovementScript."); }
+        if (startingPosition.initialValue != startingPosition.defaultValue)
         {
-            Debug.LogError("Rigidbody2D component not found on PlayerMovementScript.");
+            transform.position = startingPosition.initialValue;
         }
-        myRigidbody.MovePosition(startingPosition.value);
     }
 
     public void Update()
