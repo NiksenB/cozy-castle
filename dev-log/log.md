@@ -1,3 +1,20 @@
+## PR #43 - UI related features (2026-02-02)
+
+
+### What's changed
+- Added title screen
+- Added fade effects between scenes
+- Toolbar items are now droppable
+- Fixed player spawn position bug.
+
+
+
+
+
+
+---
+
+
 ## PR #38 - New guard types + animal behavior (2025-09-15)
 
 
