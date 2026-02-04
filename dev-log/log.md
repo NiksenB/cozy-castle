@@ -1,3 +1,18 @@
+## PR #46 - Bugfix (2026-02-04)
+
+
+### What's changed
+- Refactored the dialogue system
+- Fixed bugs related to GameObject lifetimes
+
+
+
+
+
+
+---
+
+
 ## PR #43 - UI related features (2026-02-02)
 
 
