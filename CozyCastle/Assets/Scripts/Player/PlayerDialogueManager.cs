@@ -1,50 +1,51 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MessageHandler : MonoBehaviour
+public class PlayerDialogueManager : MonoBehaviour
 {
+    
     private GameObject dialogueBox;
     private Text dialogueText;
-    [SerializeField] private string[] defaultLines;
     private string[] currentLines;
-    private int currentLineIndex = 0;
-    public bool isActive = false;
+    private int currentLineIndex;
+    private bool isActive;
     public bool IsActive() => isActive;
-
-    private void Awake()
+    
+    private void Start()
     {
-        dialogueBox = GameObject.Find("DialogueBox");
-        dialogueText = dialogueBox.GetComponentInChildren<Text>();
-        currentLines = defaultLines;
-    }
+        GameObject[] objs  = FindObjectsByType<GameObject>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        dialogueBox = objs.FirstOrDefault(item => item.name == "DialogueBox");
 
-    void Start()
-    {
-        dialogueBox.SetActive(false);
-        if (currentLines.Length == 0)
+        if (dialogueBox == null)
         {
-            Debug.LogWarning("Dialogue lines are not set.");
+            Debug.LogWarning("DialogueBox not found");
         }
-    }
 
+        dialogueText = dialogueBox?.GetComponentInChildren<Text>();
+        dialogueBox?.SetActive(false);
+    }
+    
     public void SetDialogue(string[] newDialogue)
     {
         currentLines = newDialogue; 
         currentLineIndex = 0;
     }
 
-    public void ResetDialogue()
-    {
-        currentLines = defaultLines; 
-    }
-
-    public void StartOrResumeDialogue()
+    public void AdvanceDialogue()
     {
         isActive = true;
+
+        if (dialogueBox == null)
+        {
+            Debug.LogWarning("PlayerDialogueManager missing dialogueBox.");
+            return;
+        }
+
         if (!dialogueBox.activeSelf)
         {
             currentLineIndex = 0;
-            if (currentLines.Length == 0)
+            if (currentLines == null || currentLines.Length == 0)
             {
                 Debug.LogWarning("No dialogue lines set for this dialogue.");
                 return;
@@ -64,6 +65,11 @@ public class MessageHandler : MonoBehaviour
     public void EndDialogue()
     {
         isActive = false;
+        if (dialogueBox == null)
+        {
+            Debug.LogWarning("PlayerDialogueManager missing dialogueBox.");
+            return;
+        }
         if (dialogueBox.activeSelf)
         {
             dialogueBox.SetActive(false);

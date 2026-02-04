@@ -13,7 +13,7 @@ public class NPC : VisionAI, IInteractable
     protected GameObject heartBubble;
     protected GameObject exclamationBubble;
     protected Rigidbody2D myRigidbody;
-    protected MessageHandler dialogue;
+    protected Message dialogue;
     protected NPCState currentBehavior;
 
     protected NPCIdle idleBehavior;
@@ -49,9 +49,9 @@ public class NPC : VisionAI, IInteractable
         }
         else Debug.LogError("Exclamation Bubble prefab is not assigned. Please assign it in the inspector.");
 
-        if (GetComponentInChildren<MessageHandler>() != null)
+        if (GetComponentInChildren<Message>() != null)
         {
-            dialogue = GetComponentInChildren<MessageHandler>();
+            dialogue = GetComponentInChildren<Message>();
         }
         else Debug.LogError("Dialogue component not found. Please add a TextMessage component as a child.");
 
@@ -108,7 +108,7 @@ public class NPC : VisionAI, IInteractable
     {
         if (currentBehavior == talkBehavior)
         {
-            talkBehavior.NextLine();
+            talkBehavior.AdvanceDialogue();
             return;
         }
         Debug.Log(player.name + " is interacting with " + npcName);

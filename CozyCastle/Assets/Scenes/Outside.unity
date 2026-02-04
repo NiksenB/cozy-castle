@@ -184,6 +184,22 @@ PrefabInstance:
       value: Tail Guard 1
       objectReference: {fileID: 0}
     - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: Good morning princess!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: You look nice today.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
+      propertyPath: 'lines.Array.data[2]'
+      value: Stay safe.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
       propertyPath: defaultLines.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -197,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
       propertyPath: 'defaultLines.Array.data[2]'
-      value: The king wanted me to say that.
+      value: The king wanted me to say that!
       objectReference: {fileID: 0}
     - target: {fileID: 8385248924592926237, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
       propertyPath: npcName
@@ -1180,6 +1196,22 @@ PrefabInstance:
     - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
       propertyPath: isActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: Good morning princess.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: Stay safe.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
+      propertyPath: 'lines.Array.data[2]'
+      value: The king wanted me to say that.
       objectReference: {fileID: 0}
     - target: {fileID: 4283821851638435982, guid: f9f4b15e8a9ad7e468dc857c96a6e540, type: 3}
       propertyPath: defaultLines.Array.size
@@ -21773,6 +21805,7 @@ GameObject:
   - component: {fileID: 883431144}
   - component: {fileID: 883431148}
   - component: {fileID: 883431146}
+  - component: {fileID: 883431149}
   - component: {fileID: 883431142}
   - component: {fileID: 883431143}
   m_Layer: 0
@@ -21942,6 +21975,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionZone: {fileID: 2076922995}
+--- !u!114 &883431149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883431134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08af3acbe20863941807c59b35afe6cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &902569427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40026,29 +40071,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5448351140223454610, guid: e0dd70425a2611c46bf5735ec819720f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 917235022903804040}
-    - targetCorrespondingSourceObject: {fileID: 5448351140223454610, guid: e0dd70425a2611c46bf5735ec819720f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 917235022903804046}
+      addedObject: {fileID: 917235022903804051}
   m_SourcePrefab: {fileID: 100100000, guid: e0dd70425a2611c46bf5735ec819720f, type: 3}
 --- !u!1 &917235022903804029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5448351140223454610, guid: e0dd70425a2611c46bf5735ec819720f, type: 3}
   m_PrefabInstance: {fileID: 917235022903804028}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &917235022903804040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 917235022903804029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec6358b90ffcd3240b47bbb74d32a1bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &917235022903804046
+--- !u!114 &917235022903804051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40060,9 +40090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ea524b5d30d3dc439886af83195be4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultLines:
+  lines:
   - I'm not home. Come back later.
-  isActive: 0
 --- !u!1001 &2046357099344006284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40074,6 +40103,22 @@ PrefabInstance:
     - target: {fileID: 262769903587525055, guid: d4e2c6e635c2044478606f34daffb065, type: 3}
       propertyPath: m_Name
       value: NPC Path
+      objectReference: {fileID: 0}
+    - target: {fileID: 675156279015161115, guid: d4e2c6e635c2044478606f34daffb065, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 675156279015161115, guid: d4e2c6e635c2044478606f34daffb065, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: Good morning princess.
+      objectReference: {fileID: 0}
+    - target: {fileID: 675156279015161115, guid: d4e2c6e635c2044478606f34daffb065, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: I'm on patrol duty.
+      objectReference: {fileID: 0}
+    - target: {fileID: 675156279015161115, guid: d4e2c6e635c2044478606f34daffb065, type: 3}
+      propertyPath: 'lines.Array.data[2]'
+      value: Stay safe.
       objectReference: {fileID: 0}
     - target: {fileID: 675156279015161115, guid: d4e2c6e635c2044478606f34daffb065, type: 3}
       propertyPath: defaultLines.Array.size
