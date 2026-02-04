@@ -15,6 +15,8 @@ public class TileManager : MonoBehaviour
 
     public void HideInteractableTiles()
     {
+        if (interactableMap == null) return;
+        
         foreach (Vector3Int position in interactableMap.cellBounds.allPositionsWithin)
         {
             TileBase tile = interactableMap.GetTile(position);
@@ -38,7 +40,7 @@ public class TileManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("InteractableMap GameObject not found in the scene.");
+            Debug.Log("InteractableMap GameObject not found in the scene.");
         }
     }
 
@@ -46,7 +48,7 @@ public class TileManager : MonoBehaviour
     public void SetInteracted(Vector3Int position)
     {
         Debug.Log($"Setting interacted tile at position: {position}");
-        interactableMap.SetTile(position, overgrownTile);
+        interactableMap?.SetTile(position, overgrownTile);
     }
 
     public string GetTileName(Vector3Int position)
