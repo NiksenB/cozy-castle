@@ -28,7 +28,10 @@ public class FollowingNPC : NPC
     protected override void LoseSight()
     {
         base.LoseSight();
-        StartCoroutine(ShowBubble(1.0f, exclamationBubble));
+        if (gameObject.activeInHierarchy)
+        {
+            StartCoroutine(ShowBubble(1.0f, exclamationBubble));
+        }
         ChangeBehavior(idleBehavior);
     }
 }
