@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PerceptionZone : MonoBehaviour
 {
-    [SerializeField] private VisionAI visionAI;
+    private VisionAI visionAI;
 
     private void Awake()
     {
