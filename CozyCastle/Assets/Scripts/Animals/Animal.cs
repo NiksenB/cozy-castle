@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 public class Animal : VisionAI, IInteractable
 {
     [SerializeField] protected string animalName = "Default Animal";
@@ -9,9 +11,10 @@ public class Animal : VisionAI, IInteractable
     [SerializeField] protected bool canIdle = true;
     [SerializeField] protected bool canWander = true;
     [SerializeField] protected bool canChase = true;
-    [SerializeField] protected bool canFlee = false;
-    [SerializeField] protected bool canSleep = false;
+    [SerializeField] protected bool canFlee;
+    [SerializeField] protected bool canSleep;
     [SerializeField] protected FacingDirection startFacingDirection = FacingDirection.Down;
+    
     protected Animator animator;
     protected GameObject heartBubble;
     protected GameObject exclamationBubble;
@@ -26,6 +29,8 @@ public class Animal : VisionAI, IInteractable
     private readonly List<AnimalState> cyclicBehaviors = new();
     private AnimalState currentBehavior;
     private bool wantsPat;
+    
+    private System.Action<Transform> fleeHandler;
 
     void Start()
     {
@@ -65,11 +70,16 @@ public class Animal : VisionAI, IInteractable
 
         if (canFlee)
             fleeBehavior = new Flee(this, animator, exclamationBubble, transform, myRigidbody, speed);
-            Flee.onFlee += source =>
+            
+            fleeHandler = source =>
             {
-                if (currentBehavior != fleeBehavior && !isFriendly)
-                    StartCoroutine(WaitForFlee(source));
+                if (!canFlee) return;
+                if (isFriendly) return;
+                if (currentBehavior == fleeBehavior) return;
+
+                StartCoroutine(WaitForFlee(source));
             };
+            Flee.onFlee += fleeHandler;
 
         if (canWander)
         {
@@ -222,5 +232,11 @@ public class Animal : VisionAI, IInteractable
     public void OnCollisionStay2D(Collision2D collision)
     {
         currentBehavior?.OnCollisionStay2D(collision);
+    }
+
+    private void OnDestroy()
+    {
+        if (fleeHandler != null)
+            Flee.onFlee -= fleeHandler;
     }
 }

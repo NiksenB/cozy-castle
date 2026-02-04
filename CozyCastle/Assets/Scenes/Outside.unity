@@ -300,7 +300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: animalName
-      value: Goaty
+      value: Scared Goaty
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: isFriendly
@@ -316,11 +316,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.33
+      value: -6.18
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.9
+      value: -8.91
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22653,6 +22653,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: animalName
+      value: Goat 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: isFriendly
       value: 1
       objectReference: {fileID: 0}
@@ -22666,7 +22670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.76
+      value: -12.7
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27258,6 +27262,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: animalName
+      value: Goat 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: isFriendly
       value: 0
       objectReference: {fileID: 0}
@@ -27267,11 +27275,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.66
+      value: -10.49
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.27
+      value: -18.16
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36657,6 +36665,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
+      propertyPath: animalName
+      value: Goat 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747913883732684434, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: isFriendly
       value: 1
       objectReference: {fileID: 0}
@@ -36666,7 +36678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.7
+      value: -21.71
       objectReference: {fileID: 0}
     - target: {fileID: 8758782354870661661, guid: ac319537255ed6c4ab67eab658df291e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -36784,7 +36796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: animalName
-      value: Bun-bun
+      value: Scared Bun-bun
       objectReference: {fileID: 0}
     - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: isFriendly
@@ -40245,6 +40257,10 @@ PrefabInstance:
     - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: canFlee
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
+      propertyPath: animalName
+      value: Bunny
       objectReference: {fileID: 0}
     - target: {fileID: 6148172385453507810, guid: 38d8dedb19fc3ad40b33360ad26869fd, type: 3}
       propertyPath: isFriendly
