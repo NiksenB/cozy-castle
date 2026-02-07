@@ -1,14 +1,15 @@
 using UnityEngine;
 using System;
 
+[Serializable]
 public class SlotData 
 {
 
     public string itemName;
-    public Sprite icon;
-    public bool isStackable;
     public int count;
-    public int maxStackSize;
+    [NonSerialized] public bool isStackable;
+    [NonSerialized] public Sprite icon;
+    [NonSerialized] public int maxStackSize;
     public event Action OnSlotChanged;
 
     public SlotData()
