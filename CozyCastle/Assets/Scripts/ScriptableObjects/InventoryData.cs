@@ -11,7 +11,7 @@ public class InventoryData : ScriptableObject
 {
     public List<SlotData> slots = new();
     public int defaultSlotCount;
-    public SlotData selectedSlot = null;
+    public SlotData selectedSlot;
 
     public void InitializeSlots(int? slotCount)
     {
@@ -52,6 +52,12 @@ public class InventoryData : ScriptableObject
         {
             Debug.Log($"No suitable slot found for {item.itemName}.");
         }
+    }
+
+    public void PopulateInventory(List<SlotData> newSlots)
+    {
+        slots.Clear();
+        slots.AddRange(newSlots);
     }
 
     public void RemoveFromInventory(int index)

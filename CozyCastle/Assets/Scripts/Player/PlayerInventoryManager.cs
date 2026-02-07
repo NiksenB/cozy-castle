@@ -5,6 +5,7 @@ public class PlayerInventoryManager : MonoBehaviour
 {
     public InventoryData backpack;
     public InventoryData toolbar;
+    public InventoryData chest;
     public Dictionary<string, InventoryData> inventoryByName = new();
 
     public void Awake()
@@ -17,9 +18,13 @@ public class PlayerInventoryManager : MonoBehaviour
 
         if (toolbar == null)
             toolbar = Resources.Load<InventoryData>("Inventory/Toolbar");
-            
+        
+        if (chest == null)
+            chest = Resources.Load<InventoryData>("Inventory/Chest");
+        
         if (backpack != null) inventoryByName.Add("backpack", backpack);
         if (toolbar != null) inventoryByName.Add("toolbar", toolbar);    
+        if (chest != null) inventoryByName.Add("chest", chest);    
     }
 
     public InventoryData GetInventoryByName(string inventoryName)
