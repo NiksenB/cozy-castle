@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3671815645222765233}
   - component: {fileID: 7589835949873518035}
   - component: {fileID: 8832969736913107652}
+  - component: {fileID: 121660406247569999}
   m_Layer: 0
   m_Name: Notice Board
   m_TagString: Untagged
@@ -181,3 +182,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.4430411}
   m_EdgeRadius: 0
+--- !u!114 &121660406247569999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5448351140223454610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea524b5d30d3dc439886af83195be4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - I'm not home. Come back later.
