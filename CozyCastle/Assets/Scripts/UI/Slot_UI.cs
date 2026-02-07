@@ -39,14 +39,14 @@ public class Slot_UI : MonoBehaviour
         UpdateUI();
     }
 
-    public void SetItem(SlotData slotData)
+    public void SetItem(SlotData data)
     {
-        if (slotData != null)
+        if (data != null)
         {
-            itemIcon.sprite = slotData.icon;
+            itemIcon.sprite = data.icon;
             itemIcon.color = new Color(1, 1, 1, 1);
-            quantityText.text = slotData.count.ToString();
-            this.slotData = slotData;
+            quantityText.text = data.count.ToString();
+            slotData = data;
         }
     }
 

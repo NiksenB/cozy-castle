@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
@@ -8,14 +9,16 @@ public class UI_Manager : MonoBehaviour
     public GameObject inventoryPanel;
     public List<Inventory_UI> inventoryUIs;
     public Manabar_UI manabarUI;
+    public GameObject swapInventoryPanel;
     public static UI_Manager instance { get; private set; }
     public static Slot_UI draggedSlot;
     public static Image draggedIcon;
     public static int draggedQuantity;
     public static bool dragSingle;
-
+    
     void Awake()
     {
+        Debug.LogWarning("I AWAKE");
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -34,6 +37,7 @@ public class UI_Manager : MonoBehaviour
 
         Initialize();
         ToggleInventoryUI(); 
+        swapInventoryPanel?.SetActive(false);
     }
 
     public void Update()
@@ -70,6 +74,16 @@ public class UI_Manager : MonoBehaviour
         if (inventoryUIByName.ContainsKey(inventoryName))
         {
             inventoryUIByName[inventoryName].Refresh();
+        }
+    }
+    
+    public void ToggleChestInventory()
+    {
+        Debug.Log("ToggleChestInventory");
+        if (inventoryUIByName.ContainsKey("chest"))
+        {
+            swapInventoryPanel.SetActive(!swapInventoryPanel.activeSelf);
+            Time.timeScale = Time.timeScale == 0 ? 1 : 0;
         }
     }
 
@@ -110,6 +124,5 @@ public class UI_Manager : MonoBehaviour
                 inventoryUIByName.Add(ui.inventoryName, ui);
             }
         }
-        return;
     }
 }
