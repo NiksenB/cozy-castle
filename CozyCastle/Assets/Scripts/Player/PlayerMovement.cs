@@ -31,11 +31,12 @@ public class PlayerMovement : MonoBehaviour
 
         AnimateMovement(direction);
 
-        InventoryData toolbarData = GameManager.gameInstance.player.playerInventoryManager.toolbar;
         bool wandEquipped = false;
-        if (toolbarData != null && toolbarData.selectedSlot != null)
+        var g = GameManager.gameInstance;
+        var inventoryManager = g.Player.playerInventoryManager;
+        if (inventoryManager != null && inventoryManager.selectedSlot != null)
         {
-            if (toolbarData.selectedSlot.itemName == "Magic Wand")
+            if (inventoryManager.selectedSlot.itemName == "Magic Wand")
             {
                 wandEquipped = true;
             }

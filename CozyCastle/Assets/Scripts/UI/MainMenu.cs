@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public void NewGame()
     {
-        SceneManager.LoadScene("Bedroom");
+        SceneManager.LoadScene("Outside");
     }
 
     public void QuitGame()

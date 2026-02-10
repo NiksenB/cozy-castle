@@ -7,6 +7,18 @@ public class Player : MonoBehaviour
     private PlayerStats playerStats;
     private PlayerMovement _movement;
 
+    // private void Awake()
+    // {
+    //     playerInventoryManager = GetComponent<PlayerInventoryManager>();
+    //     Debug.Assert(playerInventoryManager != null, "PlayerInventoryManager component is missing on Player GameObject.");
+    //
+    //     _movement = GetComponent<PlayerMovement>();
+    //     Debug.Assert(_movement != null, "PlayerMovementScript component is missing on Player GameObject.");
+    //
+    //     playerStats = GetComponent<PlayerStats>();
+    //     Debug.Assert(playerStats != null, "PlayerStats component is missing on Player GameObject.");
+    // }
+
     private void Awake()
     {
         playerInventoryManager = GetComponent<PlayerInventoryManager>();
@@ -17,8 +29,16 @@ public class Player : MonoBehaviour
 
         playerStats = GetComponent<PlayerStats>();
         Debug.Assert(playerStats != null, "PlayerStats component is missing on Player GameObject.");
+
+        GameManager.gameInstance.RegisterPlayer(this);
     }
 
+    private void OnDestroy()
+    {
+        if (GameManager.gameInstance != null)
+            GameManager.gameInstance.UnregisterPlayer(this);
+    }
+    
     private void Start()
     {
         tileManager = GameManager.gameInstance.tileManager;
@@ -36,7 +56,7 @@ public class Player : MonoBehaviour
 
                 if (!string.IsNullOrEmpty(tileName))
                 {
-                    if (tileName == "Interactable" && playerInventoryManager.toolbar.selectedSlot.itemName == "Magic Wand")
+                    if (tileName == "Interactable" && playerInventoryManager.selectedSlot.itemName == "Magic Wand")
                     {
                         TryInteract(position);
                     }

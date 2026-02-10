@@ -7,18 +7,27 @@ public class SlotData
 
     public string itemName;
     public int count;
-    [NonSerialized] public bool isStackable;
-    [NonSerialized] public Sprite icon;
-    [NonSerialized] public int maxStackSize;
+    [NonSerialized] public bool IsStackable;
+    [NonSerialized] public Sprite Icon;
+    [NonSerialized] public int MaxStackSize;
     public event Action OnSlotChanged;
 
     public SlotData()
     {
         itemName = "";
-        icon = null;
-        isStackable = true;
+        Icon = null;
+        IsStackable = true;
         count = 0;
-        maxStackSize = 100;
+        MaxStackSize = 100;
+    }
+    
+    public SlotData(string itemName, Sprite icon, bool isStackable, int count, int maxStackSize)
+    {
+        this.itemName = itemName;
+        Icon = icon;
+        IsStackable = isStackable;
+        this.count = count;
+        MaxStackSize = maxStackSize;
     }
     
     public bool IsEmpty()
@@ -28,25 +37,26 @@ public class SlotData
 
     public bool CanAddItem(string itemName)
     {
-        return IsEmpty() || (isStackable && this.itemName == itemName && count <= maxStackSize);
+        return IsEmpty() || (IsStackable && this.itemName == itemName && count < MaxStackSize);
     }
 
     public void AddItem(ItemData item)
     {
         itemName = item.itemName;
-        icon = item.icon;
-        isStackable = item.isStackable;
+        Icon = item.icon;
+        IsStackable = item.isStackable;
+        MaxStackSize = item.maxStackSize;
         count++;
         OnSlotChanged?.Invoke();
     }
 
-    public void AddItem(string itemName, Sprite icon, bool isStackable)
+    public void AddItem(string name)
     {
-        this.itemName = itemName;
-        this.icon = icon;
-        this.isStackable = isStackable;
-        count++;
-        OnSlotChanged?.Invoke();
+        if (ItemManager.instance.itemDict.TryGetValue(name, out var item))
+        {
+            AddItem(item.data);
+        }
+        else { Debug.LogError($"Item {name} not found."); }
     }
 
     public void RemoveItem()
@@ -58,8 +68,8 @@ public class SlotData
             if (count == 0)
             {
                 itemName = "";
-                icon = null;
-                isStackable = false;
+                Icon = null;
+                IsStackable = false;
             }
         }
         OnSlotChanged?.Invoke();
@@ -68,9 +78,26 @@ public class SlotData
     public void SetEmpty()
     {
         itemName = "";
-        icon = null;
-        isStackable = false;
+        Icon = null;
+        IsStackable = false;
         count = 0;
         OnSlotChanged?.Invoke();
     }
+    
+    public void RebuildFromItemDatabase()
+    {
+        if (string.IsNullOrEmpty(itemName))
+            return;
+
+        var item = ItemManager.instance.itemDict[itemName];
+
+        Debug.Assert(item != null, "Item " + itemName + " not found in item dictionary!");
+        
+        Icon = item.data.icon;
+        IsStackable = item.data.isStackable;
+        MaxStackSize = item.data.maxStackSize;
+
+        OnSlotChanged?.Invoke();
+    }
+
 }

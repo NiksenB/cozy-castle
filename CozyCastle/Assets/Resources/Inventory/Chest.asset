@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86313af98639f6742bb3546b2be358d7, type: 3}
   m_Name: Chest
   m_EditorClassIdentifier: 
+  slots:
+  - itemName: Leaf
+    count: 5
   defaultSlotCount: 27
+  selectedSlot:
+    itemName: 
+    count: 0

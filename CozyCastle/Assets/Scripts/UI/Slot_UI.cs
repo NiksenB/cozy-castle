@@ -13,13 +13,6 @@ public class Slot_UI : MonoBehaviour
 
     [SerializeField] private GameObject highlight;
 
-
-    private void OnEnable()
-    {
-        if (slotData != null)
-            slotData.OnSlotChanged += UpdateUI;
-    }
-
     private void OnDisable()
     {
         if (slotData != null)
@@ -30,7 +23,7 @@ public class Slot_UI : MonoBehaviour
     {
         if (slotData != null)
             slotData.OnSlotChanged -= UpdateUI;
-
+        
         slotData = data;
 
         if (slotData != null)
@@ -41,9 +34,10 @@ public class Slot_UI : MonoBehaviour
 
     public void SetItem(SlotData data)
     {
+        if (this == null || !gameObject.activeInHierarchy) return;
         if (data != null)
         {
-            itemIcon.sprite = data.icon;
+            itemIcon.sprite = data.Icon;
             itemIcon.color = new Color(1, 1, 1, 1);
             quantityText.text = data.count.ToString();
             slotData = data;
@@ -52,6 +46,7 @@ public class Slot_UI : MonoBehaviour
 
     public void SetEmpty()
     {
+        if (this == null || !gameObject.activeInHierarchy) return;
         itemIcon.sprite = null;
         itemIcon.color = new Color(1, 1, 1, 0); // make empty image invisible
         quantityText.text = "";
@@ -67,13 +62,23 @@ public class Slot_UI : MonoBehaviour
     {
         if (slotData != null)
         {
+            if (slotData.Icon == null && !string.IsNullOrEmpty(slotData.itemName))
+                slotData.RebuildFromItemDatabase();
+
             SetItem(slotData);
         }
         else
         {
             SetEmpty();
         }
-        parentInventoryUI?.Refresh();
+
+        // TODO remove this call
+        //parentInventoryUI?.Refresh();
     }
 
+    private void OnDestroy()
+    {
+        if (slotData != null)
+            slotData.OnSlotChanged -= UpdateUI;
+    }
 }

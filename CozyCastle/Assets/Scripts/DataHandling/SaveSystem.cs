@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public static class SaveSystem
@@ -17,7 +18,15 @@ public static class SaveSystem
         if (chest == null)
             return null;
 
-        return new List<SlotData>(chest.slots);
+        var slots = chest.slots
+            .Select(s => s.ToSlotData())
+            .ToList();
+
+        // IMPORTANT: rebuild runtime-only data
+        foreach (var slot in slots)
+            slot.RebuildFromItemDatabase();
+
+        return slots;
     }
 
     public static void SaveChest(string chestId, List<SlotData> slots)
@@ -31,7 +40,10 @@ public static class SaveSystem
             _save.chests.Add(chest);
         }
 
-        chest.slots = new List<SlotData>(slots);
+        chest.slots = slots
+            .Select(s => new SlotDataSave(s))
+            .ToList();
+
         WriteFile();
     }
 
@@ -56,5 +68,11 @@ public static class SaveSystem
         File.WriteAllText(
             SavePath,
             JsonUtility.ToJson(_save, true));
+    }
+    
+    public static void RebuildSlots(List<SlotData> slots)
+    {
+        foreach (var slot in slots)
+            slot.RebuildFromItemDatabase();
     }
 }

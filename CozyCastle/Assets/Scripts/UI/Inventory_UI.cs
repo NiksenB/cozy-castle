@@ -6,37 +6,135 @@ public class Inventory_UI : MonoBehaviour
     public string inventoryName;
     public List<Slot_UI> slotUIs = new ();
     [SerializeField] private Canvas canvas;
-    private InventoryData inventoryData;
+    private List<SlotData> slots;
 
     private void Awake()
     {
         canvas = FindFirstObjectByType<Canvas>();
     }
 
-    private void Start()
+    private void Start() { } // nothing needed here
+
+    // private void OnEnable()
+    // {
+    //     PlayerInventoryManager.OnInventoriesReady += TryBind;
+    //     TryBind();
+    // }
+    //
+    // private void OnDisable()
+    // {
+    //     PlayerInventoryManager.OnInventoriesReady -= TryBind;
+    // }
+    
+    // private void TryBind()
+    // {
+    //     if (slots != null) return;
+    //     if (inventoryName == "chest") return; // chest binds manually via Chest.Interact
+    //
+    //     if (GameManager.gameInstance == null) return;
+    //     var player = GameManager.gameInstance.Player;
+    //     if (player == null) return;
+    //     var inv = player.playerInventoryManager;
+    //     if (inv == null) return;
+    //
+    //     var slotDatas = inv.GetInventoryByName(inventoryName);
+    //     if (slotDatas != null)
+    //             Bind(slotDatas);
+    // }
+    
+    private void OnEnable()
     {
-        inventoryData = GameManager.gameInstance.player.playerInventoryManager.GetInventoryByName(inventoryName);
-
-        Debug.Assert(inventoryData != null, $"Inventory '{inventoryName}' not found in PlayerInventoryManager.");
-
-        if (inventoryData.slots == null || inventoryData.slots.Count == 0)
-        {
-            inventoryData.InitializeSlots(inventoryData.defaultSlotCount);
-        }
-
-        SetupSlots();
-        Refresh();
+        PlayerInventoryManager.OnInventoriesReady += TryBind;
+        GameManager.OnPlayerRegistered += OnPlayerRegistered;
+        TryBind();
     }
 
+    private void OnDisable()
+    {
+        PlayerInventoryManager.OnInventoriesReady -= TryBind;
+        GameManager.OnPlayerRegistered -= OnPlayerRegistered;
+    }
+
+    private void OnPlayerRegistered(Player player)
+    {
+        TryBind();
+    }
+    
+    private void TryBind()
+    {
+        if (inventoryName == "chest")
+            return;
+
+        if (GameManager.gameInstance == null)
+            return;
+
+        var player = GameManager.gameInstance.Player;
+
+        if (player == null)
+            return;
+
+        var inv = player.playerInventoryManager;
+
+        if (inv == null)
+            return;
+
+        Debug.LogWarning($"[UI:{inventoryName}] TryBind resolved Player id={player.GetInstanceID()}, PIM id={inv.GetInstanceID()}");
+        
+        var slotDatas = inv.GetInventoryByName(inventoryName);
+
+        if (slotDatas == null)
+        {
+            Debug.LogWarning(
+                $"'{inventoryName}': inventory not found."
+            );
+            return;
+        }
+
+        Bind(slotDatas);
+    }
+
+    
+    public void Unbind()
+    {
+        slots = null;
+    }
+    
+    private void SetupSlots()
+    {
+        for (int i = 0; i < slotUIs.Count; i++)
+        {
+            var data = slots.Count > i ? slots[i] : new SlotData();
+            
+            slotUIs[i].slotID = i;
+            slotUIs[i].SetSlotData(data);
+            slotUIs[i].parentInventoryUI = this;
+        }
+    }
+    
     public void Refresh()
     {
-        if (slotUIs.Count == inventoryData.slots.Count)
+        if (slots == null)
+        {
+            TryBind(); // self-heal: attempt to (re)bind before giving up
+        }
+
+        if (slots == null)
+        {
+            Debug.LogWarning($"Inventory_UI '{inventoryName}' has not been bound.");
+            return;
+        }
+
+        Debug.Log($"Refreshing inventory UI: {inventoryName}");
+        
+        if (slotUIs.Count == slots.Count) 
         {
             for (int i = 0; i < slotUIs.Count; i++)
             {
-                if (inventoryData.slots[i].itemName != "")
+                if (!string.IsNullOrEmpty(slots[i].itemName))
                 {
-                    slotUIs[i].SetItem(inventoryData.slots[i]);
+                    if (slots[i].Icon == null)
+                        slots[i].RebuildFromItemDatabase(); // safety net
+                    slotUIs[i].SetItem(slots[i]);
                 }
                 else
                 {
@@ -46,26 +144,28 @@ public class Inventory_UI : MonoBehaviour
         }
         else
         {
-            Debug.Log("Error! Failed to populate inventory: Player has invalid number of inventory slots.");
-            Debug.Log($"Inventory '{inventoryName}' has {inventoryData.slots.Count} slots, but Slot_UI has {slotUIs.Count} slots defined.");
+            Debug.LogWarning($"Inventory '{inventoryName}' has {slots.Count} slots, but Slot_UI has {slotUIs.Count} slots defined.");
         }
     }
 
     public void Remove(int slotID, bool single)
     {
-        Item itemToDrop = ItemManager.instance.GetItemByName(inventoryData.slots[slotID].itemName);
-        if (itemToDrop != null)
-        {
-            int numToRemove = single ? 1 : inventoryData.slots[slotID].count;
+        var slot = slots[slotID];
+        Item itemToDrop = ItemManager.instance.GetItemByName(slot.itemName);
 
-            inventoryData.RemoveFromInventory(slotID, numToRemove);
-            GameManager.gameInstance.player.DropItem(itemToDrop, numToRemove);
-            Refresh();
-        }
-        else
+        if (itemToDrop == null)
         {
             Debug.LogWarning("Item to drop not found.");
+            return;
         }
+
+        int numToRemove = single ? 1 : slot.count;
+
+        for (int i = 0; i < numToRemove; i++)
+            slot.RemoveItem();
+
+        GameManager.gameInstance.Player.DropItem(itemToDrop, numToRemove);
+        Refresh();
     }
 
     public void SlotBeginDrag(Slot_UI slot)
@@ -112,17 +212,18 @@ public class Inventory_UI : MonoBehaviour
         }
 
         Slot_UI sourceSlotUI = UI_Manager.draggedSlot;
-        InventoryData sourceInventory = sourceSlotUI.parentInventoryUI.inventoryData;
-        InventoryData targetInventory = targetSlotUI.parentInventoryUI.inventoryData;
+        PlayerInventoryManager inv = 
+            GameManager.gameInstance.Player.playerInventoryManager;
 
-        sourceInventory.MoveSlot(
+        inv.MoveSlot(
             sourceSlotUI.slotID,
             targetSlotUI.slotID,
-            targetInventory,
+            sourceSlotUI.parentInventoryUI.inventoryName,
+            targetSlotUI.parentInventoryUI.inventoryName,
             UI_Manager.draggedQuantity
         );
-        Debug.Log("Dropped " + sourceSlotUI.name + " on " + targetSlotUI.name);
 
+        Debug.Log("Dropped " + sourceSlotUI.name + " on " + targetSlotUI.name);
         UI_Manager.instance.RefreshAll();
     }
 
@@ -134,17 +235,12 @@ public class Inventory_UI : MonoBehaviour
             toMove.transform.position = canvas.transform.TransformPoint(position);
         }
     }
-
-    private void SetupSlots()
+    
+    public void Bind(List<SlotData> newSlots)
     {
-        Debug.Assert(slotUIs.Count == inventoryData.slots.Count, 
-            $"Inventory_UI '{inventoryName}' has {inventoryData.slots.Count} slots, but Slot_UI has {slotUIs.Count} slots defined.");
-
-        for (int i = 0; i < slotUIs.Count; i++)
-        {
-            slotUIs[i].slotID = i;
-            slotUIs[i].SetSlotData(inventoryData.slots[i]);
-            slotUIs[i].parentInventoryUI = this;
-        }
+        Debug.LogWarning($"[UI:{inventoryName}] Bind() using list hash={newSlots.GetHashCode()} count={newSlots.Count}");
+        slots = newSlots;
+        SetupSlots();
+        Refresh();
     }
 }

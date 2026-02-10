@@ -3,37 +3,43 @@ using UnityEngine.UI;
 
 public class Manabar_UI : MonoBehaviour
 {
-    [SerializeField]
-    private Image manaFillImage;
+    [SerializeField] private Image manaFillImage;
     private PlayerStats playerStats;
 
-    public void Start()
+    private void OnEnable()
     {
-        manaFillImage.fillAmount = 1;
-
-        playerStats = FindFirstObjectByType<PlayerStats>();
-        if (playerStats != null)
-        {
-            playerStats.onManaChanged += UpdateBar; // Subscribe to event
-            UpdateBar(playerStats.GetCurrentMana(), playerStats.GetMaxMana());
-        }
+        PlayerInventoryManager.OnInventoriesReady += TryBind;
+        TryBind();
     }
 
-    public void OnDestroy()
+    private void OnDisable()
     {
-        if (playerStats != null)
-        {
-            playerStats.onManaChanged -= UpdateBar; // Unsubscribe from event, avoids memory leaks
-            playerStats = null; 
-        }
+        PlayerInventoryManager.OnInventoriesReady -= TryBind;
+        Unbind();
+    }
+
+    private void TryBind()
+    {
+        var stats = FindFirstObjectByType<PlayerStats>();
+        if (stats == null) return;
+
+        Unbind();
+        playerStats = stats;
+        playerStats.onManaChanged += UpdateBar;
+        UpdateBar(playerStats.GetCurrentMana(), playerStats.GetMaxMana());
+    }
+
+    private void Unbind()
+    {
+        if (playerStats == null) return;
+        playerStats.onManaChanged -= UpdateBar;
+        playerStats = null;
     }
 
     public void Refresh()
     {
         if (playerStats != null)
-        {
             UpdateBar(playerStats.GetCurrentMana(), playerStats.GetMaxMana());
-        }
     }
 
     public void UpdateBar(float currentMana, float maxMana)

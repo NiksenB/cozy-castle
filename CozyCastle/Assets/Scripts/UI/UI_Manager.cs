@@ -10,15 +10,16 @@ public class UI_Manager : MonoBehaviour
     public List<Inventory_UI> inventoryUIs;
     public Manabar_UI manabarUI;
     public GameObject swapInventoryPanel;
+    
     public static UI_Manager instance { get; private set; }
     public static Slot_UI draggedSlot;
     public static Image draggedIcon;
     public static int draggedQuantity;
     public static bool dragSingle;
+    public Chest currentChest;
     
     void Awake()
     {
-        Debug.LogWarning("I AWAKE");
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -26,7 +27,6 @@ public class UI_Manager : MonoBehaviour
         else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
 
         // Ensure draggedSlot and draggedIcon are initialized.
@@ -36,8 +36,12 @@ public class UI_Manager : MonoBehaviour
         dragSingle = false;
 
         Initialize();
+    }
+
+    private void Start()
+    {
         ToggleInventoryUI(); 
-        swapInventoryPanel?.SetActive(false);
+        swapInventoryPanel.SetActive(false);
     }
 
     public void Update()
@@ -48,6 +52,22 @@ public class UI_Manager : MonoBehaviour
         }
         
         dragSingle = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) || Input.GetMouseButton(1);   
+    }
+
+    private void OnEnable()
+    {
+        PlayerInventoryManager.OnInventoryChanged += RefreshAll;
+    }
+
+    private void OnDisable()
+    {
+        PlayerInventoryManager.OnInventoryChanged -= RefreshAll;
+    }
+    
+    private void OnDestroy()
+    {
+        if (instance == this)
+            instance = null;
     }
 
     public void ToggleInventoryUI()
@@ -73,20 +93,26 @@ public class UI_Manager : MonoBehaviour
     {
         if (inventoryUIByName.ContainsKey(inventoryName))
         {
-            inventoryUIByName[inventoryName].Refresh();
+                inventoryUIByName[inventoryName].Refresh();
         }
     }
     
     public void ToggleChestInventory()
     {
-        Debug.Log("ToggleChestInventory");
         if (inventoryUIByName.ContainsKey("chest"))
         {
-            swapInventoryPanel.SetActive(!swapInventoryPanel.activeSelf);
-            Time.timeScale = Time.timeScale == 0 ? 1 : 0;
+            bool opening = !swapInventoryPanel.activeSelf;
+            if (!opening)
+            {
+                inventoryUIByName["chest"].Unbind();
+                currentChest?.SaveState(); // persist immediately on manual close too
+            }
+
+            swapInventoryPanel.SetActive(opening);
+            Time.timeScale = opening ? 0 : 1;
         }
     }
-
+    
     public void RefreshAll()
     {
         foreach (KeyValuePair<string, Inventory_UI> keyValuePair in inventoryUIByName)
@@ -115,6 +141,12 @@ public class UI_Manager : MonoBehaviour
         }
     }
 
+    public void UnbindChestIfBound()
+    {
+        if (inventoryUIByName.TryGetValue("chest", out var chestUI))
+            chestUI.Unbind();
+    }
+    
     private void Initialize()
     {
         foreach (Inventory_UI ui in inventoryUIs)

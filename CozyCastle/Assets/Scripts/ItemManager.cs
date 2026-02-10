@@ -25,7 +25,7 @@ public class ItemManager : MonoBehaviour
             AddItem(item);
         }
     }
-
+    
     private void AddItem(Item item)
     {
         if (!itemDict.ContainsKey(item.data.itemName))

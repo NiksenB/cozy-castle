@@ -11,14 +11,14 @@ public class SceneTransition : MonoBehaviour
     public GameObject fadeInPanel;
     public GameObject fadeOutPanel;
 
-    private void Awake()
-    {
-        if (fadeInPanel != null)
-        {
-            GameObject panel = Instantiate(fadeInPanel);
-            Destroy(panel, 1);
-        }
-    }
+    // private void Awake()
+    // {
+    //     if (fadeInPanel != null)
+    //     {
+    //         GameObject panel = Instantiate(fadeInPanel);
+    //         Destroy(panel, 1);
+    //     }
+    // }
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -33,41 +33,25 @@ public class SceneTransition : MonoBehaviour
             playerPositionValue.initialValue = playerPosition;
 
             StartCoroutine(FadeOut());
-
-            
         }
     }
 
     public IEnumerator FadeOut()
     {
+        GameObject fade = null;
         if (fadeOutPanel != null)
         {
-            Instantiate(fadeOutPanel);
+            fade = Instantiate(fadeOutPanel);
+            // Move it into THIS scene explicitly, not Bootstrap's
+            SceneManager.MoveGameObjectToScene(fade, gameObject.scene);
         }
+
         yield return new WaitForSeconds(0.6f);
 
-        AsyncOperation async = LoadSceneAsync();
-        
-        while (!async.isDone)
-        {
-            yield return null;
-        }
+        string currentScene = gameObject.scene.name;
+        yield return Bootstrap.Instance.TransitionToScene(sceneToLoadName, sceneToLoadIndex, currentScene);
+
+        if (fade != null)
+            Destroy(fade);
     }
-
-    private AsyncOperation LoadSceneAsync()
-    {
-        // Load the scene using the scene index or name
-        if (sceneToLoadIndex >= 0)
-        {
-            return SceneManager.LoadSceneAsync(sceneToLoadIndex);
-        }
-        
-        if (!string.IsNullOrEmpty(sceneToLoadName))
-        {
-            return SceneManager.LoadSceneAsync(sceneToLoadName);
-        }
-
-        return null;
-    }
-
 }
