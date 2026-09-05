@@ -6,19 +6,7 @@ public class Player : MonoBehaviour
     private TileManager tileManager;
     private PlayerStats playerStats;
     private PlayerMovement _movement;
-
-    // private void Awake()
-    // {
-    //     playerInventoryManager = GetComponent<PlayerInventoryManager>();
-    //     Debug.Assert(playerInventoryManager != null, "PlayerInventoryManager component is missing on Player GameObject.");
-    //
-    //     _movement = GetComponent<PlayerMovement>();
-    //     Debug.Assert(_movement != null, "PlayerMovementScript component is missing on Player GameObject.");
-    //
-    //     playerStats = GetComponent<PlayerStats>();
-    //     Debug.Assert(playerStats != null, "PlayerStats component is missing on Player GameObject.");
-    // }
-
+    
     private void Awake()
     {
         playerInventoryManager = GetComponent<PlayerInventoryManager>();

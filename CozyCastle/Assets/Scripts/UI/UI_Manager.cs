@@ -39,7 +39,7 @@ public class UI_Manager : MonoBehaviour
 
     private void Start()
     {
-        ToggleInventoryUI(); 
+        inventoryPanel.SetActive(false);
         swapInventoryPanel.SetActive(false);
     }
 
@@ -71,6 +71,9 @@ public class UI_Manager : MonoBehaviour
 
     public void ToggleInventoryUI()
     {   
+        if (swapInventoryPanel != null && swapInventoryPanel.activeSelf)
+            return;
+        
         if (inventoryPanel != null)
         {
             if (!inventoryPanel.activeSelf) 
@@ -149,9 +152,7 @@ public class UI_Manager : MonoBehaviour
         {
             // First registration wins per name. For "backpack" this is
             // always the main panel's copy (registered before the swap
-            // panel's copy, by hierarchy order) — fine, since the only
-            // single-UI lookups by name ("backpack" here) intentionally
-            // mean "the main panel." "chest" is genuinely unique.
+            // panel's copy, by hierarchy order).
             if (!inventoryUIByName.ContainsKey(ui.inventoryName))
             {
                 inventoryUIByName.Add(ui.inventoryName, ui);

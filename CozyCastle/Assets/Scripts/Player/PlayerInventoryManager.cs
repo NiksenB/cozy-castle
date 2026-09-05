@@ -59,12 +59,6 @@ public class PlayerInventoryManager : MonoBehaviour
         _inventoryByName.TryGetValue(inventoryName, out var slots);
         return slots;
     }
-    public void MoveSlot(int sourceIndex, int targetIndex, string sourceInventoryName, string targetInventoryName, int amountToMove = 1)
-    {
-        List<SlotData> sourceSlots = GetInventoryByName(sourceInventoryName);
-        List<SlotData> targetSlots = GetInventoryByName(targetInventoryName);
-        MoveItem(sourceSlots, sourceIndex, targetSlots, targetIndex, amountToMove);
-    }
 
     public static void MoveItem(List<SlotData> sourceSlots, int sourceIndex, List<SlotData> targetSlots, int targetIndex, int amountToMove = 1)
     {

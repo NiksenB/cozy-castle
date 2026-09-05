@@ -11,15 +11,6 @@ public class SceneTransition : MonoBehaviour
     public GameObject fadeInPanel;
     public GameObject fadeOutPanel;
 
-    // private void Awake()
-    // {
-    //     if (fadeInPanel != null)
-    //     {
-    //         GameObject panel = Instantiate(fadeInPanel);
-    //         Destroy(panel, 1);
-    //     }
-    // }
-    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !collision.isTrigger)
@@ -32,26 +23,41 @@ public class SceneTransition : MonoBehaviour
 
             playerPositionValue.initialValue = playerPosition;
 
-            StartCoroutine(FadeOut());
+            string currentScene = gameObject.scene.name;
+
+            // Run the whole sequence on Bootstrap (persistent, DontDestroyOnLoad).
+            Bootstrap.Instance.StartCoroutine(
+                DoTransition(sceneToLoadName, sceneToLoadIndex, currentScene));
         }
     }
 
-    public IEnumerator FadeOut()
+    private IEnumerator DoTransition(string sceneName, int sceneIndex, string sceneToUnload)
     {
-        GameObject fade = null;
-        if (fadeOutPanel != null)
+        GameObject fadeIn = null;
+        if (fadeInPanel != null)
         {
-            fade = Instantiate(fadeOutPanel);
-            // Move it into THIS scene explicitly, not Bootstrap's
-            SceneManager.MoveGameObjectToScene(fade, gameObject.scene);
+            fadeIn = Instantiate(fadeInPanel);
+            // Must survive the coming scene unload.
+            DontDestroyOnLoad(fadeIn);
         }
 
         yield return new WaitForSeconds(0.6f);
 
-        string currentScene = gameObject.scene.name;
-        yield return Bootstrap.Instance.TransitionToScene(sceneToLoadName, sceneToLoadIndex, currentScene);
+        if (fadeIn != null)
+            Destroy(fadeIn);
 
-        if (fade != null)
-            Destroy(fade);
+        GameObject fadeOut = null;
+        if (fadeOutPanel != null)
+        {
+            fadeOut = Instantiate(fadeOutPanel);
+            DontDestroyOnLoad(fadeOut); 
+        }
+
+        yield return Bootstrap.Instance.TransitionToScene(sceneName, sceneIndex, sceneToUnload);
+
+        yield return new WaitForSeconds(0.6f);
+
+        if (fadeOut != null)
+            Destroy(fadeOut);
     }
 }
