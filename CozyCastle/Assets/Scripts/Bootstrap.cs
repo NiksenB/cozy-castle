@@ -16,7 +16,7 @@ public class Bootstrap : MonoBehaviour
     IEnumerator Start()
     {
         yield return SceneManager.LoadSceneAsync("Canvas", LoadSceneMode.Additive);
-        yield return SceneManager.LoadSceneAsync("Outside", LoadSceneMode.Additive);
+        yield return SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
     }
     
     public IEnumerator TransitionToScene(string sceneName, int sceneIndex, string sceneToUnload)
