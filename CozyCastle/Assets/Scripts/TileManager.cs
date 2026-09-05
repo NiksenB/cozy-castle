@@ -7,16 +7,33 @@ public class TileManager : MonoBehaviour
     [SerializeField] private Tile hiddenInteractableTile;
     [SerializeField] private Tile overgrownTile;
 
-
-    void Start()
+    public void RegisterInteractableMap(Tilemap map)
     {
+        interactableMap = map;
+        Debug.Log($"[TileManager] Registered InteractableMap: {map.name}");
         HideInteractableTiles();
+    }
+
+    public void UnregisterInteractableMap(Tilemap map)
+    {
+        // Only clear if this is the map we're currently tracking — during
+        // the load-before-unload overlap, the new scene's map may already
+        // have registered and overwritten this by the time the old scene's
+        // map is destroyed. Guard against clobbering the live reference.
+        if (interactableMap == map)
+        {
+            interactableMap = null;
+        }
     }
 
     public void HideInteractableTiles()
     {
-        if (interactableMap == null) return;
-        
+        if (interactableMap == null)
+        {
+            Debug.LogWarning("[TileManager] HideInteractableTiles: no InteractableMap registered.");
+            return;
+        }
+
         foreach (Vector3Int position in interactableMap.cellBounds.allPositionsWithin)
         {
             TileBase tile = interactableMap.GetTile(position);
@@ -27,28 +44,16 @@ public class TileManager : MonoBehaviour
         }
     }
 
-    public void RefreshTilemapReference()
-    {
-        GameObject tilemapObj = GameObject.Find("InteractableMap");
-        if (tilemapObj != null)
-        {
-            interactableMap = tilemapObj.GetComponent<Tilemap>();
-            if (interactableMap == null)
-            {
-                Debug.LogError("InteractableMap GameObject found, but no Tilemap component attached.");
-            }
-        }
-        else
-        {
-            Debug.Log("InteractableMap GameObject not found in the scene.");
-        }
-    }
-
-
     public void SetInteracted(Vector3Int position)
     {
+        if (interactableMap == null)
+        {
+            Debug.LogWarning("[TileManager] SetInteracted: no InteractableMap registered.");
+            return;
+        }
+
         Debug.Log($"Setting interacted tile at position: {position}");
-        interactableMap?.SetTile(position, overgrownTile);
+        interactableMap.SetTile(position, overgrownTile);
     }
 
     public string GetTileName(Vector3Int position)
@@ -57,12 +62,8 @@ public class TileManager : MonoBehaviour
         {
             TileBase tile = interactableMap.GetTile(position);
             if (tile != null)
-            {
                 return tile.name;
-            }
         }
         return "";
     }
-
 }
-

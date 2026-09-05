@@ -12,8 +12,6 @@ public class Inventory_UI : MonoBehaviour
     {
         canvas = FindFirstObjectByType<Canvas>();
     }
-
-    private void Start() { } // nothing needed here
     
     private void OnEnable()
     {
@@ -50,8 +48,6 @@ public class Inventory_UI : MonoBehaviour
 
         if (inv == null)
             return;
-
-        Debug.LogWarning($"[UI:{inventoryName}] TryBind resolved Player id={player.GetInstanceID()}, PIM id={inv.GetInstanceID()}");
         
         var slotDatas = inv.GetInventoryByName(inventoryName);
 
@@ -93,11 +89,9 @@ public class Inventory_UI : MonoBehaviour
 
         if (slots == null)
         {
-            Debug.LogWarning($"Inventory_UI '{inventoryName}' has not been bound.");
+            Debug.Log($"Inventory_UI '{inventoryName}' has not been bound.");
             return;
         }
-
-        Debug.Log($"Refreshing inventory UI: {inventoryName}");
         
         if (slotUIs.Count == slots.Count) 
         {
@@ -212,7 +206,6 @@ public class Inventory_UI : MonoBehaviour
     
     public void Bind(List<SlotData> newSlots)
     {
-        Debug.LogWarning($"[UI:{inventoryName}] Bind() using list hash={newSlots.GetHashCode()} count={newSlots.Count}");
         slots = newSlots;
         SetupSlots();
         Refresh();

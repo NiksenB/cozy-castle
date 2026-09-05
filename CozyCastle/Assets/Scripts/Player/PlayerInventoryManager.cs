@@ -18,7 +18,6 @@ public class PlayerInventoryManager : MonoBehaviour
 
     private void Awake()
     {
-        Debug.LogWarning($"[PIM] Awake id={GetInstanceID()} at frame={Time.frameCount}, scene={gameObject.scene.name}");
         RegisterInventory("backpack", backpackTemplate);
         RegisterInventory("toolbar", toolbarTemplate);
     }
@@ -26,8 +25,6 @@ public class PlayerInventoryManager : MonoBehaviour
     private void Start()
     {
         // Build runtime inventories AFTER ItemManager is ready
-
-        
         OnInventoriesReady?.Invoke();
     }
 
@@ -35,10 +32,7 @@ public class PlayerInventoryManager : MonoBehaviour
     {
         var loaded = SaveSystem.LoadChest(inventoryName);
         List<SlotData> slots = loaded ?? CloneTemplateSlots(template);
-
-        Debug.LogWarning($"[PIM] RegisterInventory('{inventoryName}') id={GetInstanceID()} " +
-                         $"source={(loaded != null ? "SAVE" : "TEMPLATE")} nonEmptySlots={slots.FindAll(s => !s.IsEmpty()).Count}");
-
+        
         Debug.Assert(slots is not null, "Failing to register inventory, " + inventoryName + " has neither template nor save data.");
         SaveSystem.RebuildSlots(slots);
         _inventoryByName[inventoryName] = slots;
@@ -142,49 +136,6 @@ public class PlayerInventoryManager : MonoBehaviour
         }
     }
     
-    public void RaiseInventoriesReady()
-    {
-        OnInventoriesReady?.Invoke();
-    }
-    
-    private void InitializeSlots(InventoryData invData, int? slotCount)
-    {
-        var slots = invData.slots;
-        var defaultSlotCount = invData.defaultSlotCount;
-        
-        slots.Clear();
-
-        if (slotCount == null || slotCount <= 0)
-        {
-            slotCount = defaultSlotCount;
-        }
-        
-        for (int i = 0; i < slotCount; i++)
-        {
-            slots.Add(new SlotData());
-        }
-    }
-
-    private void RemoveFromInventory(List<SlotData> inv, int index)
-    {
-        inv[index].RemoveItem();
-        if (inv[index].count <= 0)
-        {
-            inv[index].SetEmpty();
-        }
-    }
-
-    private void RemoveFromInventory(List<SlotData> inv, int index, int numToRemove)
-    {
-        if (inv[index].count >= numToRemove)
-        {
-            for (int i = 0; i < numToRemove; i++)
-            {
-                RemoveFromInventory(inv, index);
-            }
-        }
-    }
-
     public void SelectSlot(List<SlotData> inv,  int index)
     {
         if (inv != null && inv.Count > 0)
@@ -197,7 +148,6 @@ public class PlayerInventoryManager : MonoBehaviour
     {
         foreach (var (k, v) in _inventoryByName)
         {
-            Debug.Log($"[PIM] Explicit SaveAll: saving '{k}'");
             SaveSystem.SaveChest(k, v);
         }
     }

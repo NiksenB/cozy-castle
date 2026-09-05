@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Leaf
   icon: {fileID: 5299311183393993297, guid: 7af0069aa3596f54c8208fc6eadfbe6b, type: 3}
   isStackable: 1
-  maxStackSize: 5
+  maxStackSize: 10
