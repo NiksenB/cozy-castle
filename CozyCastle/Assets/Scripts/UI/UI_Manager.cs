@@ -29,7 +29,6 @@ public class UI_Manager : MonoBehaviour
             instance = this;
         }
 
-        // Ensure draggedSlot and draggedIcon are initialized.
         draggedSlot = null;
         draggedIcon = null;
         draggedQuantity = 0;
@@ -72,7 +71,6 @@ public class UI_Manager : MonoBehaviour
 
     public void ToggleInventoryUI()
     {   
-        // Ensures only main inventory can be toggled.
         if (inventoryPanel != null)
         {
             if (!inventoryPanel.activeSelf) 
@@ -91,9 +89,9 @@ public class UI_Manager : MonoBehaviour
 
     public void RefreshInventoryUI(string inventoryName)
     {
-        if (inventoryUIByName.ContainsKey(inventoryName))
+        if (inventoryUIByName.TryGetValue(inventoryName, out var ui))
         {
-                inventoryUIByName[inventoryName].Refresh();
+            ui.Refresh();
         }
     }
     
@@ -105,7 +103,7 @@ public class UI_Manager : MonoBehaviour
             if (!opening)
             {
                 inventoryUIByName["chest"].Unbind();
-                currentChest?.SaveState(); // persist immediately on manual close too
+                currentChest?.SaveState();
             }
 
             swapInventoryPanel.SetActive(opening);
@@ -115,19 +113,17 @@ public class UI_Manager : MonoBehaviour
     
     public void RefreshAll()
     {
-        foreach (KeyValuePair<string, Inventory_UI> keyValuePair in inventoryUIByName)
-        {
-            keyValuePair.Value.Refresh();
-        }
+        foreach (var ui in inventoryUIs)
+            ui.Refresh();
+
         manabarUI?.Refresh();
     }
 
     public Inventory_UI GetInventoryUI(string inventoryName)
     {
-        if (inventoryUIByName.ContainsKey(inventoryName))
-        {
-            return inventoryUIByName[inventoryName];
-        } 
+        if (inventoryUIByName.TryGetValue(inventoryName, out var ui))
+            return ui;
+
         Debug.LogWarning("There is no UI associated with inventoryName: " + inventoryName);
         return null;
     }
@@ -151,6 +147,11 @@ public class UI_Manager : MonoBehaviour
     {
         foreach (Inventory_UI ui in inventoryUIs)
         {
+            // First registration wins per name. For "backpack" this is
+            // always the main panel's copy (registered before the swap
+            // panel's copy, by hierarchy order) — fine, since the only
+            // single-UI lookups by name ("backpack" here) intentionally
+            // mean "the main panel." "chest" is genuinely unique.
             if (!inventoryUIByName.ContainsKey(ui.inventoryName))
             {
                 inventoryUIByName.Add(ui.inventoryName, ui);

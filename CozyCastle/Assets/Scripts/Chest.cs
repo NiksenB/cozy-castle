@@ -9,9 +9,15 @@ public class Chest : MonoBehaviour, IInteractable
 
     private void Start()
     {
+        const int expectedSlotCount = 27; // match the UI
+        
         slots = SaveSystem.LoadChest(chestId);
-        if (slots == null)
+        
+        if (slots == null || slots.Count != expectedSlotCount)
         {
+            if (slots != null)
+                Debug.LogWarning($"[Chest:{chestId}] Saved slot count ({slots.Count}) doesn't match expected ({expectedSlotCount}). Resetting to empty.");
+            
             slots = new List<SlotData>();
             for (int i = 0; i < 27; i++)
                 slots.Add(new SlotData());
@@ -21,8 +27,7 @@ public class Chest : MonoBehaviour, IInteractable
             SaveSystem.RebuildSlots(slots);
         }
 
-        // Live-save: persist the moment any slot in this chest changes,
-        // instead of relying on OnDestroy timing.
+        // Live-save: persist the moment any slot in this chest changes.
         foreach (var slot in slots)
             slot.OnSlotChanged += HandleSlotChanged;
     }
@@ -47,11 +52,13 @@ public class Chest : MonoBehaviour, IInteractable
 
         SaveSystem.RebuildSlots(slots);
 
+        // Activate the panel FIRST so the slot GameObjects are live in the
+        // hierarchy before we bind — SetItem/SetEmpty no-op on inactive objects,
+        // which previously left stale placeholder sprites on empty slots.
+        uiManager.ToggleChestInventory();
+
         Inventory_UI chestUI = uiManager.GetInventoryUI("chest");
         chestUI.Bind(slots);
-        uiManager.currentChest = this; // track which chest is open, for save-on-close
-
-        uiManager.ToggleChestInventory();
     }
     
     private void OnDestroy()
@@ -59,6 +66,6 @@ public class Chest : MonoBehaviour, IInteractable
         foreach (var slot in slots)
             slot.OnSlotChanged -= HandleSlotChanged;
 
-        SaveState(); // safety net, now redundant in the common case but harmless
+        SaveState(); // safety net
     }
 }

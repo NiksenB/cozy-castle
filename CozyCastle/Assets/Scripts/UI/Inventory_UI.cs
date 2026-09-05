@@ -14,33 +14,6 @@ public class Inventory_UI : MonoBehaviour
     }
 
     private void Start() { } // nothing needed here
-
-    // private void OnEnable()
-    // {
-    //     PlayerInventoryManager.OnInventoriesReady += TryBind;
-    //     TryBind();
-    // }
-    //
-    // private void OnDisable()
-    // {
-    //     PlayerInventoryManager.OnInventoriesReady -= TryBind;
-    // }
-    
-    // private void TryBind()
-    // {
-    //     if (slots != null) return;
-    //     if (inventoryName == "chest") return; // chest binds manually via Chest.Interact
-    //
-    //     if (GameManager.gameInstance == null) return;
-    //     var player = GameManager.gameInstance.Player;
-    //     if (player == null) return;
-    //     var inv = player.playerInventoryManager;
-    //     if (inv == null) return;
-    //
-    //     var slotDatas = inv.GetInventoryByName(inventoryName);
-    //     if (slotDatas != null)
-    //             Bind(slotDatas);
-    // }
     
     private void OnEnable()
     {
@@ -63,7 +36,7 @@ public class Inventory_UI : MonoBehaviour
     private void TryBind()
     {
         if (inventoryName == "chest")
-            return;
+           return; // chest binds manually via Chest.Interact();
 
         if (GameManager.gameInstance == null)
             return;
@@ -212,14 +185,15 @@ public class Inventory_UI : MonoBehaviour
         }
 
         Slot_UI sourceSlotUI = UI_Manager.draggedSlot;
-        PlayerInventoryManager inv = 
-            GameManager.gameInstance.Player.playerInventoryManager;
-
-        inv.MoveSlot(
+        List<SlotData> sourceSlots = sourceSlotUI.parentInventoryUI.slots;
+        List<SlotData> targetSlots = targetSlotUI.parentInventoryUI.slots;
+        
+        PlayerInventoryManager.MoveItem
+        (
+            sourceSlots,
             sourceSlotUI.slotID,
+            targetSlots,
             targetSlotUI.slotID,
-            sourceSlotUI.parentInventoryUI.inventoryName,
-            targetSlotUI.parentInventoryUI.inventoryName,
             UI_Manager.draggedQuantity
         );
 

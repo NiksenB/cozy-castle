@@ -60,20 +60,16 @@ public class Slot_UI : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (slotData != null)
+        if (slotData != null && !slotData.IsEmpty())
         {
             if (slotData.Icon == null && !string.IsNullOrEmpty(slotData.itemName))
                 slotData.RebuildFromItemDatabase();
-
             SetItem(slotData);
         }
         else
         {
             SetEmpty();
         }
-
-        // TODO remove this call
-        //parentInventoryUI?.Refresh();
     }
 
     private void OnDestroy()

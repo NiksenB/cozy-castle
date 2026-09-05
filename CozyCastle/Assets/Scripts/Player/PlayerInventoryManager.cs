@@ -21,7 +21,6 @@ public class PlayerInventoryManager : MonoBehaviour
         Debug.LogWarning($"[PIM] Awake id={GetInstanceID()} at frame={Time.frameCount}, scene={gameObject.scene.name}");
         RegisterInventory("backpack", backpackTemplate);
         RegisterInventory("toolbar", toolbarTemplate);
-        RegisterInventory("chest", chestTemplate);
     }
 
     private void Start()
@@ -70,14 +69,24 @@ public class PlayerInventoryManager : MonoBehaviour
     {
         List<SlotData> sourceSlots = GetInventoryByName(sourceInventoryName);
         List<SlotData> targetSlots = GetInventoryByName(targetInventoryName);
-        
-        Debug.LogWarning($"[PIM id={GetInstanceID()}] MoveSlot using sourceList hash={sourceSlots.GetHashCode()} targetList hash={targetSlots.GetHashCode()}");
-        
+        MoveItem(sourceSlots, sourceIndex, targetSlots, targetIndex, amountToMove);
+    }
+
+    public static void MoveItem(List<SlotData> sourceSlots, int sourceIndex, List<SlotData> targetSlots, int targetIndex, int amountToMove = 1)
+    {
+        if (sourceSlots == null || targetSlots == null)
+        {
+            Debug.LogWarning("MoveItem: source or target inventory is unbound. Cannot move item.");
+            return;
+        }
+        if (sourceIndex < 0 || sourceIndex >= sourceSlots.Count || targetIndex < 0 || targetIndex >= targetSlots.Count)
+        {
+            Debug.LogWarning($"MoveItem: index out of range (source {sourceIndex}/{sourceSlots.Count}, target {targetIndex}/{targetSlots.Count}).");
+            return;
+        }
+
         SlotData sourceSlotData = sourceSlots[sourceIndex];
         SlotData targetSlotData = targetSlots[targetIndex];
-
-        Debug.Assert(sourceSlotData != null, $"Source slot at index {sourceIndex} is null.");
-        Debug.Assert(targetSlotData != null, $"Target slot at index {targetIndex} is null.");
 
         for (int i = 0; i < amountToMove; i++)
         {
@@ -92,7 +101,8 @@ public class PlayerInventoryManager : MonoBehaviour
                 sourceSlotData.RemoveItem();
             }
         }
-        OnInventoryChanged?.Invoke(); // notify UI
+
+        OnInventoryChanged?.Invoke();
     }
     
     public void AddItem(string inventoryName, ItemData item)
